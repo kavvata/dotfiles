@@ -1,91 +1,106 @@
 {
-    "modules-left": ["sway/workspaces", "sway/mode"],
-    "modules-center": ["clock", "idle_inhibitor"],
-    /* "modules-right": ["tray", "custom/scratchpad-indicator", "pulseaudio", "custom/power"], */
-    "modules-right": ["tray", "custom/scratchpad-indicator", "pulseaudio", "battery#ext", "battery#int", "custom/power"],
-
-    "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>"
+  "modules-left": [
+    "sway/workspaces",
+    "sway/mode"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "tray",
+    "network",
+    "pulseaudio",
+    "battery#ext",
+    "battery#int",
+    "custom/power"
+  ],
+  "sway/mode": {
+    "format": "<span style=\"italic\">{}</span>"
+  },
+  "network": {
+    "format-wifi": "{essid}({signalStrength}%) ",
+    "format-ethernet": "{ifname} ",
+    "format-disconnected": "",
+    "max-length": 50,
+    "on-click": "kitty -e 'nmtui'"
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
     },
-    "network": {
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ifname} ",
-        "format-disconnected": "", 
-        "max-length": 50,
-        "on-click": "kitty -e 'nmtui'"
+    "on-click": "bash /home/dg/.local/bin/toggleRemote"
+  },
+  "tray": {
+    "icon-size": 15,
+    "spacing": 10
+  },
+  "clock": {
+    "on-click": "gnome-calendar"
+  },
+  "pulseaudio": {
+    "format": "{volume}% {icon} ",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": "0% {icon} ",
+    "format-source": "{volume}% ",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        "",
+        ""
+      ]
     },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        },
-		"on-click": "bash /home/dg/.local/bin/toggleRemote"
+    "on-click": "pavucontrol"
+  },
+  "battery#ext": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 15
     },
-    "tray": {
-        "icon-size": 15,
-        "spacing": 10
+    "bat": "BAT0",
+    "format": "{capacity}% {icon}",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{icon} {time}",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "battery#int": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 15
     },
-    "clock": {
-        // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        // "format-alt": "{:%Y-%m-%d}"
-		"on-click": "gnome-calendar"
-    },
-    "pulseaudio": {
-        "format": "{volume}% {icon} ",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": "0% {icon} ",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        },
-        "on-click": "pavucontrol"
-    },
-    "battery#ext": {
-      "states": {
-        "good": 95,
-        "warning": 30,
-        "critical": 15
-      },
-      "bat":"BAT0",
-      "format": "{capacity}% {icon}",
-      "format-charging": " {capacity}%",
-      "format-plugged": " {capacity}%",
-      "format-alt": "{icon} {time}",
-      "format-icons": ["", "", "", "", ""]
-    },
-    "battery#int": {
-      "states": {
-        "good": 95,
-        "warning": 30,
-        "critical": 15
-      },
-      "bat":"BAT1",
-      "format": "{capacity}% {icon}",
-      "format-charging": " {capacity}%",
-      "format-plugged": " {capacity}%",
-      "format-alt": "{icon} {time}",
-      "format-icons": ["", "", "", "", ""]
-    },
-	"custom/power": {
-		"format": " ",
-		"on-click": "swaynag -t warning -m 'Power Menu Options' -b 'Logout' 'swaymsg exit' -b 'Restart' 'shutdown -r now' -b 'Shutdown'  'shutdown -h now' --background=#005566 --button-background=#009999 --button-border=#002b33 --border-bottom=#002b33"
-	},
-    "custom/scratchpad-indicator": {
-        "format-text": "{}hi",
-        "return-type": "json",
-        "interval": 3,
-        "exec": "~/.local/bin/scratchpad-indicator 2> /dev/null",
-        "exec-if": "exit 0",
-        "on-click": "swaymsg 'scratchpad show'",
-        "on-click-right": "swaymsg 'move scratchpad'"
-    }
+    "bat": "BAT1",
+    "format": "{capacity}% {icon}",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{icon} {time}",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "custom/power": {
+    "format": " ",
+    "on-click": "swaynag -t warning -m 'Power Menu Options' -b 'Logout' 'swaymsg exit' -b 'Restart' 'shutdown -r now' -b 'Shutdown'  'shutdown -h now' --background=#005566 --button-background=#009999 --button-border=#002b33 --border-bottom=#002b33"
+  }
 }
