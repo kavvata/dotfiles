@@ -36,7 +36,6 @@ color=#00FF00
 command=iwgetid -r
 interval=1
 
-
 # Volume indicator
 [volume]
 command=~/.config/i3blocks/blocklets/volume-pipewire/volume-pipewire

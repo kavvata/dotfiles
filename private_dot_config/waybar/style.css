@@ -31,7 +31,7 @@ window#waybar {
     background-color: transparent;
 }
 #workspaces button:hover {
-    box-shadow: inherit;
+  box-shadow: inherit;
 	background-color: rgba(0,153,153,1);
 }
 
