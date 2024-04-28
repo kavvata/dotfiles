@@ -69,8 +69,8 @@
     },
     "bat": "BAT0",
     "format": "{capacity}% {icon}",
-    "format-charging": " {capacity}%",
-    "format-plugged": " {capacity}%",
+    "format-charging": "{capacity}% ",
+    "format-plugged": "{capacity}% ",
     "format-alt": "{icon} {time}",
     "format-icons": [
       "",
@@ -87,7 +87,7 @@
       "critical": 15
     },
     "bat": "BAT1",
-    "format": "{capacity}% {icon}",
+    "format": "{icon} {capacity}%",
     "format-charging": " {capacity}%",
     "format-plugged": " {capacity}%",
     "format-alt": "{icon} {time}",
