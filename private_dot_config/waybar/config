@@ -40,10 +40,10 @@
     "on-click": "gnome-calendar"
   },
   "pulseaudio": {
-    "format": "{volume}% {icon} ",
+    "format": "{volume}% {icon}",
     "format-bluetooth": "{volume}% {icon} {format_source}",
     "format-bluetooth-muted": " {icon} {format_source}",
-    "format-muted": "0% {icon} ",
+    "format-muted": "0% {icon}",
     "format-source": "{volume}% ",
     "format-source-muted": "",
     "format-icons": {

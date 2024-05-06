@@ -1,42 +1,39 @@
 * {
     border: none;
-    font-family: Font Awesome, GeistMono Nerd Font, Arial, sans-serif;
-    font-size: 13px;
-    color: #ffffff;
-    border-radius: 20px;
+    border-radius: 0;
+    font-family: GeistMono Nerd Font, Arial, sans-serif;
+    font-size: 11px;
 }
 
-window {
-	/*font-weight: bold;*/
-}
 window#waybar {
-    background: rgba(0, 0, 0, 0);
+    background: transparent;
+    color: white;
 }
-/*-----module groups----*/
-.modules-right {
-	background-color: rgba(0,43,51,0.85);
-    margin: 2px 10px 0 0;
+
+#window {
+    font-weight: bold;
 }
-.modules-center {
-	background-color: rgba(0,43,51,0.85);
-    margin: 2px 0 0 0;
+/*
+#workspaces {
+    padding: 0 5px;
 }
-.modules-left {
-    margin: 2px 0 0 5px;
-	background-color: rgba(0,119,179,0.6);
-}
-/*-----modules indv----*/
+*/
+
 #workspaces button {
-    padding: 1px 5px;
-    background-color: transparent;
-}
-#workspaces button:hover {
-  box-shadow: inherit;
-	background-color: rgba(0,153,153,1);
+    padding: 0 5px;
+    background: transparent;
+    color: white;
+    border-top: 2px solid transparent;
 }
 
 #workspaces button.focused {
-	background-color: rgba(0,43,51,0.85);
+    color: #c9545d;
+    border-top: 2px solid #c9545d;
+}
+
+#mode {
+    background: #64727D;
+    border-bottom: 3px solid white;
 }
 
 #clock,
@@ -54,39 +51,60 @@ window#waybar {
 #idle_inhibitor {
     padding: 0 10px;
 }
-#mode {
-    color: #cc3436;
+
+#clock {
     font-weight: bold;
 }
-#custom-power {
-    background-color: rgba(0,119,179,0.6);
-    border-radius: 100px;
-    margin: 5px 5px;
-    padding: 1px 1px 1px 6px;
+
+#battery {
 }
-/*-----Indicators----*/
-#idle_inhibitor.activated {
-    color: #2dcc36;
+
+#battery icon {
+    color: red;
 }
-#pulseaudio.muted {
-    color: #cc3436;
-}
+
 #battery.charging {
-    color: #2dcc36;
 }
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
 #battery.warning:not(.charging) {
-	color: #e6e600;
+    color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
-#battery.critical:not(.charging) {
-    color: #cc3436;
+
+#cpu {
 }
-#temperature.critical {
-    color: #cc3436;
+
+#memory {
 }
-/*-----Colors----*/
-/*
- *rgba(0,85,102,1),#005566 --> Indigo(dye)
- *rgba(0,43,51,1),#002B33 --> Dark Green 
- *rgba(0,153,153,1),#009999 --> Persian Green 
- *
- */
+
+#network {
+}
+
+#network.disconnected {
+    background: #f53c3c;
+}
+
+#pulseaudio {
+}
+
+#pulseaudio.muted {
+}
+
+#custom-spotify {
+    color: rgb(102, 220, 105);
+}
+
+#tray {
+}
+
