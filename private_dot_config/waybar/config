@@ -22,7 +22,7 @@
     "format-ethernet": "{ifname} ",
     "format-disconnected": "",
     "max-length": 50,
-    "on-click": "kitty -e 'nmtui'"
+    "on-click": "swaymsg exec wezterm start -- nmtui"
   },
   "idle_inhibitor": {
     "format": "{icon}",
@@ -37,7 +37,7 @@
     "spacing": 10
   },
   "clock": {
-    "on-click": "gnome-calendar"
+    "on-click": "swaymsg exec wezterm start -- calcurse"
   },
   "pulseaudio": {
     "format": "{volume}% {icon}",
@@ -59,7 +59,8 @@
         ""
       ]
     },
-    "on-click": "pavucontrol"
+    "on-click": "pavucontrol",
+    "scroll-step": 5
   },
   "battery#ext": {
     "states": {
@@ -101,6 +102,6 @@
   },
   "custom/power": {
     "format": " ",
-    "on-click": "swaynag -t warning -m 'Power Menu Options' -b 'Logout' 'swaymsg exit' -b 'Restart' 'shutdown -r now' -b 'Shutdown'  'shutdown -h now' --background=#005566 --button-background=#009999 --button-border=#002b33 --border-bottom=#002b33"
+    "on-click": "swaynag -t warning -m 'Power Menu Options' -b 'Logout' 'swaymsg exit' -b 'Restart' 'shutdown -r now' -b 'Shutdown'  'shutdown -h now' --background=#1f2335 --button-background=#565f89 --button-border=#002b33 --border-bottom=#002b33 --text=#e0e0e0 --button-text=#e0e0e0"
   }
 }

@@ -1,2 +1,5 @@
-font=monospace 8
+font=FiraCode Nerd Font 8
 background-color=#1f2335dd
+default-timeout=6000
+border-size=0
+border-color=#334155

@@ -49,11 +49,11 @@ exec swayidle -w \
 # resumed. It will also lock your screen before your computer goes to sleep.
 
 # Gaps and border configuration:
-gaps inner 8
-gaps outer 4
-default_border pixel 3
+gaps inner 5
+# gaps outer 5
+default_border pixel 2
 default_floating_border normal 2
-# client.focused          #ffffff #ffffff #ffffff #0066ff     #ffffff
+client.focused          #334155 #334155 #334155 #475569     #334155
 # client.unfocused        #4080bf #4080bf #4080bf #4080bf     #4080bf
 # client.urgent           #33ccff #33ccff #33ccff #33ccff     #33ccff
 

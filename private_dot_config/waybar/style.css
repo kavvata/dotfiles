@@ -1,7 +1,7 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: GeistMono Nerd Font, Arial, sans-serif;
+    font-family: FiraCode Nerd Font, Arial, sans-serif;
     font-size: 11px;
 }
 
@@ -13,11 +13,9 @@ window#waybar {
 #window {
     font-weight: bold;
 }
-/*
 #workspaces {
     padding: 0 5px;
 }
-*/
 
 #workspaces button {
     padding: 0 5px;
