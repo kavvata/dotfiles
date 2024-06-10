@@ -25,7 +25,9 @@ set $menu fuzzel
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/kav/Pictures/Wallpapers/T480.png fill
+# output * bg /home/kav/Pictures/Wallpapers/T480.png fill
+output * bg /home/kav/Pictures/Wallpapers/tokyonight.jpg fill
+
 #
 # Example configuration:
 #
@@ -40,9 +42,9 @@ exec udiskie
 # Example configuration:
 #
 exec swayidle -w \
-         timeout 300 'swaylock -f --image ~/Pictures/Wallpapers/lock-T480.png' \
+         timeout 300 'swaylock -f --image ~/Pictures/Wallpapers/lock-tokyonight.jpg --font-size 12' \
          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-         before-sleep 'swaylock -f --image ~/Pictures/Wallpapers/lock-T480.png'
+         before-sleep 'swaylock -f --image ~/Pictures/Wallpapers/lock-tokyonight.jpg --font-size 12'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -53,9 +55,10 @@ gaps inner 5
 # gaps outer 5
 default_border pixel 2
 default_floating_border normal 2
-client.focused          #334155 #334155 #334155 #475569     #334155
-# client.unfocused        #4080bf #4080bf #4080bf #4080bf     #4080bf
-# client.urgent           #33ccff #33ccff #33ccff #33ccff     #33ccff
+client.focused          #565f89 #565f89 #565f89 #737aa2     #565f89
+client.unfocused        #24283b #24283b #24283b #24283b     #24283b
+client.focused_inactive #24283b #24283b #24283b #24283b     #24283b
+client.urgent           #ffc777 #ffc777 #ffc777 #ffc777     #ffc777
 
 ### Input configuration
 
