@@ -1,4 +1,4 @@
 function la --wraps='lsd -a' --description 'alias la lsd -a'
-  lsd -a $argv
-        
+    eza --icons auto -a $argv
+
 end

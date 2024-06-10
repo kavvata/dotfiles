@@ -1,4 +1,3 @@
-function l --wraps=lsd --description 'alias l lsd'
-  lsd $argv
-        
+function l --wraps=eza --description 'alias l eza'
+    eza --icons auto $argv
 end
