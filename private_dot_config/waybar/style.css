@@ -25,8 +25,8 @@ window#waybar {
 }
 
 #workspaces button.focused {
-    color: #c9545d;
-    border-top: 2px solid #c9545d;
+    color: #c53b53;
+    border-top: 2px solid #c53b53;
 }
 
 #mode {
@@ -58,7 +58,7 @@ window#waybar {
 }
 
 #battery icon {
-    color: red;
+    color: #c53b53;
 }
 
 #battery.charging {
@@ -90,17 +90,13 @@ window#waybar {
 }
 
 #network.disconnected {
-    background: #f53c3c;
+    background: #c53b53;
 }
 
 #pulseaudio {
 }
 
 #pulseaudio.muted {
-}
-
-#custom-spotify {
-    color: rgb(102, 220, 105);
 }
 
 #tray {
