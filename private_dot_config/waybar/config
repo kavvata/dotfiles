@@ -18,11 +18,18 @@
     "format": "<span style=\"italic\">{}</span>"
   },
   "network": {
-    "format-wifi": "{essid}({signalStrength}%) ",
+    "format-wifi": "{essid} {icon}",
     "format-ethernet": "{ifname} ",
     "format-disconnected": "",
     "max-length": 50,
-    "on-click": "swaymsg exec wezterm start -- nmtui"
+    "on-click": "swaymsg exec wezterm start -- nmtui",
+    "format-icons": [
+      "󰤯",
+      "󰤟",
+      "󰤢",
+      "󰤥",
+      "󰤨"
+    ]
   },
   "idle_inhibitor": {
     "format": "{icon}",
@@ -33,7 +40,7 @@
     "on-click": "bash /home/dg/.local/bin/toggleRemote"
   },
   "tray": {
-    "icon-size": 15,
+    "icon-size": 12,
     "spacing": 10
   },
   "clock": {
