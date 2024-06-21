@@ -19,6 +19,7 @@
   },
   "network": {
     "format-wifi": "{essid} {icon}",
+    "tooltip-format": "{essid} - {frequency}G ({signalStrength}%)",
     "format-ethernet": "{ifname} ",
     "format-disconnected": "",
     "max-length": 50,
@@ -44,6 +45,7 @@
     "spacing": 10
   },
   "clock": {
+    "format": "{:%a, %H:%M %b %d}",
     "on-click": "swaymsg exec wezterm start -- calcurse"
   },
   "pulseaudio": {
@@ -110,5 +112,16 @@
   "custom/power": {
     "format": " ",
     "on-click": "swaynag -t warning -m 'Power Menu Options' -b 'Logout' 'swaymsg exit' -b 'Restart' 'shutdown -r now' -b 'Shutdown'  'shutdown -h now' --background=#1f2335 --button-background=#565f89 --button-border=#002b33 --border-bottom=#002b33 --text=#e0e0e0 --button-text=#e0e0e0"
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{percent}% {icon}",
+    "format-icons": [
+      "󰃞 ",
+      "󰃝 ",
+      "󰃟 ",
+      "󰃠 "
+    ],
+    "scroll-step": 5
   }
 }
