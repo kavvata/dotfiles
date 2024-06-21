@@ -53,12 +53,12 @@ exec swayidle -w \
 # Gaps and border configuration:
 gaps inner 5
 # gaps outer 5
-default_border pixel 2
-default_floating_border normal 2
-client.focused          #565f89 #565f89 #565f89 #737aa2     #565f89
-client.unfocused        #24283b #24283b #24283b #24283b     #24283b
-client.focused_inactive #24283b #24283b #24283b #24283b     #24283b
-client.urgent           #ffc777 #ffc777 #ffc777 #ffc777     #ffc777
+default_border pixel 1
+default_floating_border normal 1
+client.focused          #54546D #54546D #54546D #938AA9     #54546D
+client.unfocused        #2A2A37 #2A2A37 #2A2A37 #2A2A37     #2A2A37
+client.focused_inactive #2A2A37 #2A2A37 #2A2A37 #2A2A37     #2A2A37
+client.urgent           #FF9E3B #FF9E3B #FF9E3B #FF9E3B     #FF9E3B
 
 ### Input configuration
 
@@ -72,6 +72,8 @@ input type:touchpad {
 input type:keyboard {
     xkb_layout us,br(thinkpad)
     xkb_options grp:alt_caps_toggle
+    # xkb_options ctrl:swapcaps
+    # xkb_options altwin:swap_alt_win
     repeat_delay 250
     repeat_rate 30
 }
@@ -99,6 +101,7 @@ input type:keyboard {
     bindsym $mod+q kill
 
     # Start your launcher
+    bindsym Mod1+space exec $menu
     bindsym $mod+d exec $menu
 
     # Drag floating windows by holding down $mod and left mouse button.
