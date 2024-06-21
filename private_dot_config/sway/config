@@ -243,6 +243,14 @@ bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
 
 bindsym $mod+Shift+s exec slurp | grim -g - ~/Pictures/Screenshots/$(date +'screenshot_%Y-%m-%d-%H%M%S.png') && notify-send -t 3000 "📷 Screenshot Taken".
 
+#
+# Gestures:
+#
+
+bindgesture swipe:right workspace prev
+bindgesture swipe:left workspace next
+bindgesture swipe:up exec $menu
+
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
