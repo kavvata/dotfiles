@@ -4,7 +4,8 @@
     "sway/mode"
   ],
   "modules-center": [
-    "clock"
+    "clock",
+    "idle_inhibitor"
   ],
   "modules-right": [
     "tray",
@@ -16,6 +17,26 @@
   ],
   "sway/mode": {
     "format": "<span style=\"italic\">{}</span>"
+  },
+  "sway/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+      "1": "一",
+      "2": "に",
+      "3": "三",
+      "4": "四",
+      "5": "五",
+      "6": "六",
+      "7": "七",
+      "8": "八",
+      "9": "九",
+      "10": "十",
+      "urgent": "",
+      "active": "",
+      "default": ""
+    },
+    "sort-by-number": true
   },
   "network": {
     "format-wifi": "{essid} {icon}",
@@ -35,8 +56,8 @@
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
-      "activated": "",
-      "deactivated": ""
+      "activated": "󰅶",
+      "deactivated": "󰾪"
     },
     "on-click": "bash /home/dg/.local/bin/toggleRemote"
   },

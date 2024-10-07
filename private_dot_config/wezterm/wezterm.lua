@@ -1,10 +1,10 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
-config.color_scheme = "Kanagawa (Gogh)"
+config.color_scheme = "kanagawabones"
 
 config.enable_tab_bar = false
-config.window_background_opacity = 0.97
+-- config.window_background_opacity = 0.98
 
 config.font = wezterm.font("FiraCode Nerd Font")
 -- config.font = wezterm.font_with_fallback({ "Tamzen", "Cozette" })

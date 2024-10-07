@@ -26,7 +26,8 @@ set $menu fuzzel
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # output * bg /home/kav/Pictures/Wallpapers/T480.png fill
-output * bg /home/kav/Pictures/Wallpapers/tokyonight.jpg fill
+output * bg #1F1F28 solid_color
+output HDMI-A-2 mode 1920x1080 pos -1920,0
 
 #
 # Example configuration:
@@ -42,23 +43,25 @@ exec udiskie
 # Example configuration:
 #
 exec swayidle -w \
-         timeout 300 'swaylock -f --image ~/Pictures/Wallpapers/lock-tokyonight.jpg --font-size 12' \
+         timeout 300 'swaylock -f --color "#1F1F28" --font-size 12' \
          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-         before-sleep 'swaylock -f --image ~/Pictures/Wallpapers/lock-tokyonight.jpg --font-size 12'
+         before-sleep 'swaylock -f --color "#1F1F28" --font-size 12'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
+
+exec --no-startup-id autotiling-rs
 
 # Gaps and border configuration:
 gaps inner 5
 # gaps outer 5
 default_border pixel 1
 default_floating_border normal 1
-client.focused          #54546D #54546D #54546D #938AA9     #54546D
 client.unfocused        #2A2A37 #2A2A37 #2A2A37 #2A2A37     #2A2A37
-client.focused_inactive #2A2A37 #2A2A37 #2A2A37 #2A2A37     #2A2A37
+client.focused          #C8C093 #C8C093 #C8C093 #C8C093     #C8C093
 client.urgent           #FF9E3B #FF9E3B #FF9E3B #FF9E3B     #FF9E3B
+client.focused_inactive #2A2A37 #2A2A37 #2A2A37 #2A2A37     #2A2A37
 
 ### Input configuration
 
@@ -71,22 +74,13 @@ input type:touchpad {
 
 input type:keyboard {
     xkb_layout us,br(thinkpad)
-    xkb_options grp:alt_caps_toggle
+    xkb_options grp:win_space_toggle
     # xkb_options ctrl:swapcaps
     # xkb_options altwin:swap_alt_win
     repeat_delay 250
     repeat_rate 30
 }
  
-# Example configuration:
-#
-#   input "2:14:SynPS/2_Synaptics_TouchPad" {
-#       dwt enabled
-#       tap enabled
-#       natural_scroll enabled
-#       middle_emulation enabled
-#   }
-#
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
 
@@ -112,7 +106,10 @@ input type:keyboard {
     floating_modifier $mod normal
 
     # Reload the configuration file
-    bindsym $mod+Shift+c reload
+    bindsym $mod+Ctrl+r reload
+
+    # Locks screen
+    bindsym Ctrl+Shift+Escape exec swaylock -f --color "#1F1F28" --font-size 12
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
@@ -167,6 +164,9 @@ input type:keyboard {
     bindsym $mod+Shift+0 move container to workspace number 10
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
+    
+    bindsym $mod+Ctrl+$left workspace prev
+    bindsym $mod+Ctrl+$right workspace next
 #
 # Layout stuff:
 #
@@ -262,16 +262,6 @@ bar {
 
     swaybar_command waybar
 	  workspace_buttons yes
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    
-    # status_command i3blocks
-
-    # colors {
-    #     statusline #ffffff
-    #     background #323232
-    #     inactive_workspace #32323200 #32323200 #5c5c5c
-    # }
 }
 
 include /etc/sway/config.d/*
