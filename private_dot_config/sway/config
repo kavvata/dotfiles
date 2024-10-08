@@ -4,6 +4,10 @@
 #
 # Read `man 5 sway` for a complete reference.
 
+### Userspace configuration
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec udiskie
+
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -36,7 +40,6 @@ output HDMI-A-2 mode 1920x1080 pos -1920,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
-exec udiskie
 
 ### Idle configuration
 #
@@ -57,7 +60,7 @@ exec --no-startup-id autotiling-rs
 gaps inner 5
 # gaps outer 5
 default_border pixel 1
-default_floating_border normal 1
+default_floating_border pixel 1
 client.unfocused        #2A2A37 #2A2A37 #2A2A37 #2A2A37     #2A2A37
 client.focused          #C8C093 #C8C093 #C8C093 #C8C093     #C8C093
 client.urgent           #FF9E3B #FF9E3B #FF9E3B #FF9E3B     #FF9E3B
