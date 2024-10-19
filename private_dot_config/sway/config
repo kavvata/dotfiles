@@ -170,6 +170,9 @@ input type:keyboard {
     
     bindsym $mod+Ctrl+$left workspace prev
     bindsym $mod+Ctrl+$right workspace next
+
+    bindsym --whole-window $mod+button8 workspace prev
+    bindsym --whole-window $mod+button9 workspace next
 #
 # Layout stuff:
 #
