@@ -7,7 +7,7 @@
 
 window#waybar {
     background: transparent;
-    color: #DCD7BA;
+    color: #B4BDC3;
 }
 
 #window {
@@ -20,18 +20,17 @@ window#waybar {
 #workspaces button {
     padding: 0 5px;
     background: transparent;
-    color: #DCD7BA;
+    color: #B4BDC3;
     border-top: 2px solid transparent;
 }
 
 #workspaces button.focused {
-    color: #E46876;
-    border-top: 2px solid #E46876;
+    border-top: 2px solid #B4BDC3;
 }
 
 #mode {
-    background: #1F1F28;
-    border-bottom: 3px solid white;
+    background: #302B29;
+    border-bottom: 3px solid #B4BDC3;
 }
 
 #clock,
@@ -58,7 +57,7 @@ window#waybar {
 }
 
 #battery icon {
-    color: #C34043;
+    color: #DE6E7C;
 }
 
 #battery.charging {
@@ -72,7 +71,7 @@ window#waybar {
 /*}*/
 
 #battery.warning:not(.charging) {
-    color: #DCD7BA;
+    color: #888F94;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -90,7 +89,7 @@ window#waybar {
 }
 
 #network.disconnected {
-    background: #C34043;
+    background: #DE6E7C;
 }
 
 #pulseaudio {

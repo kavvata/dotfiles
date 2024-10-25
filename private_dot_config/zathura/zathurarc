@@ -19,20 +19,20 @@ set selection-clipboard clipboard
 # zathurarc-dark
 
 set font "FiraCode Nerd Font 9"
-set default-bg "#1F1F28" #00
-set default-fg "#DCD7BA" #01
+set default-bg "#1C1917" #00
+set default-fg "#B4BDC3" #01
 
 set statusbar-fg "#B0B0B0" #04
-set statusbar-bg "#1F1F28" #01
+set statusbar-bg "#1C1917" #01
 
-set inputbar-bg "#1F1F28" #00 currently not used
+set inputbar-bg "#1C1917" #00 currently not used
 set inputbar-fg "#FFFFFF" #02
 
 set notification-error-bg "#AC4142" #08
-set notification-error-fg "#1F1F28" #00
+set notification-error-fg "#1C1917" #00
 
 set notification-warning-bg "#AC4142" #08
-set notification-warning-fg "#1F1F28" #00
+set notification-warning-fg "#1C1917" #00
 
 set highlight-color "#F4BF75" #0A
 set highlight-active-color "#6A9FB5" #0D
@@ -47,8 +47,8 @@ set notification-bg "#90A959" #0B
 set notification-fg "#151515" #00
 
 set recolor "true"
-set recolor-lightcolor "#1F1F28" #00
-set recolor-darkcolor "#DCD7BA" #01
+set recolor-lightcolor "#1C1917" #00
+set recolor-darkcolor "#B4BDC3" #01
 set recolor-reverse-video "true"
 set recolor-keephue "true"
 
