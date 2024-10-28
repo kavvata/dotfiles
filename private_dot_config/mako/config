@@ -1,6 +1,5 @@
 font=FiraCode Nerd Font 8
-text-color=#B4BDC3ff
-background-color=#1C1917dd
+background-color=#1F1F28dd
 default-timeout=6000
 border-size=1
-border-color=#B4BDC3
+border-color=#54546D

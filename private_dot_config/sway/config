@@ -30,7 +30,7 @@ set $menu fuzzel
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # output * bg /home/kav/Pictures/Wallpapers/T480.png fill
-output * bg #1C1917 solid_color
+output * bg #1F1F28 solid_color
 output HDMI-A-2 mode 1920x1080 pos -1920,0
 
 #
@@ -46,9 +46,9 @@ output HDMI-A-2 mode 1920x1080 pos -1920,0
 # Example configuration:
 #
 exec swayidle -w \
-         timeout 300 'swaylock -f --color "#1C1917" --font-size 12' \
+         timeout 300 'swaylock -f --color "#1F1F28" --font-size 12' \
          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-         before-sleep 'swaylock -f --color "#1C1917" --font-size 12'
+         before-sleep 'swaylock -f --color "#1F1F28" --font-size 12'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -61,10 +61,10 @@ gaps inner 5
 # gaps outer 5
 default_border pixel 1
 default_floating_border pixel 1
-client.unfocused        #403833 #403833 #403833 #403833     #403833
-client.focused          #B4BDC3 #B4BDC3 #B4BDC3 #B4BDC3     #B4BDC3
-client.urgent           #E8838F #E8838F #E8838F #E8838F     #E8838F
-client.focused_inactive #403833 #403833 #403833 #403833     #403833
+client.unfocused        #2A2A37 #2A2A37 #2A2A37 #2A2A37     #2A2A37
+client.focused          #C8C093 #C8C093 #C8C093 #C8C093     #C8C093
+client.urgent           #FF9E3B #FF9E3B #FF9E3B #FF9E3B     #FF9E3B
+client.focused_inactive #2A2A37 #2A2A37 #2A2A37 #2A2A37     #2A2A37
 
 ### Input configuration
 
@@ -251,12 +251,6 @@ bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
 #
 
 bindsym $mod+Shift+s exec slurp | grim -g - ~/Pictures/Screenshots/$(date +'screenshot_%Y-%m-%d-%H%M%S.png') && notify-send -t 3000 "📷 Screenshot Taken".
-
-#
-# Color Picker:
-#
-
-bindsym $mod+Shift+c exec grim -g "$(slurp -p)" -t ppm - | magick convert - -format '%[pixel:p{0,0}]' txt:- | tail -n 1 | cut -d ' ' -f 4 | wl-copy
 
 #
 # Gestures:
