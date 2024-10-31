@@ -36,7 +36,7 @@
     }
   },
   {
-    "context": "Dock || Terminal || (Editor && vim_mode != insert)",
+    "context": "Dock || Terminal || (Editor && vim_mode != insert || EmptyPane)",
     "bindings": {
       "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
       "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
