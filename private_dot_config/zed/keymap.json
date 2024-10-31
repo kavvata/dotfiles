@@ -25,7 +25,6 @@
       "space t": "workspace::NewCenterTerminal",
       "space c r": "editor::Rename",
       "space c d": "editor::Hover",
-      "space space": "file_finder::Toggle",
       "ctrl d": "editor::SelectNext"
     }
   },
@@ -42,7 +41,8 @@
       "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
       "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
       "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
-      "space e": "workspace::ToggleLeftDock"
+      "space e": "workspace::ToggleLeftDock",
+      "space space": "file_finder::Toggle"
     }
   }
 ]
