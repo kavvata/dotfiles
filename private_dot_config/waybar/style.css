@@ -30,7 +30,7 @@ window#waybar {
 }
 
 #mode {
-    background: #16161D;
+    background: #1F1F28;
     border-bottom: 3px solid white;
 }
 
@@ -64,12 +64,12 @@ window#waybar {
 #battery.charging {
 }
 
-@keyframes blink {
-    to {
-        background-color: #DCD7BA;
-        color: #16161D;
-    }
-}
+/*@keyframes blink {*/
+/*    to {*/
+/*        background-color: #DCD7BA;*/
+/*        color: #16161D;*/
+/*    }*/
+/*}*/
 
 #battery.warning:not(.charging) {
     color: #DCD7BA;
