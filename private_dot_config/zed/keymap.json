@@ -7,12 +7,6 @@
 // from the command palette.
 [
   {
-    "context": "Editor && vim_mode == normal && !menu",
-    "bindings": {
-      "space space": "file_finder::Toggle"
-    }
-  },
-  {
     "context": "Editor && vim_mode == insert && !menu",
     "bindings": {
       "j k": ["vim::SwitchMode", "Normal"]
@@ -21,7 +15,8 @@
   {
     "context": "Workspace",
     "bindings": {
-      "space e": "workspace::ToggleLeftDock"
+      "space e": "workspace::ToggleLeftDock",
+      "space space": "file_finder::Toggle"
     }
   },
   {
@@ -34,7 +29,9 @@
       "space b d": "pane::CloseActiveItem",
       "space w d": "pane::CloseAllItems",
       "space b b": "tab_switcher::Toggle",
-      "space t": "workspace::NewCenterTerminal"
+      "space t": "workspace::NewCenterTerminal",
+      "space c r": "editor::Rename",
+      "space c d": "editor::Hover"
     }
   },
   {
