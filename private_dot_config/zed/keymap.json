@@ -15,8 +15,7 @@
   {
     "context": "Workspace",
     "bindings": {
-      "space e": "workspace::ToggleLeftDock",
-      "space space": "file_finder::Toggle"
+      "space e": "workspace::ToggleLeftDock"
     }
   },
   {
@@ -31,7 +30,14 @@
       "space b b": "tab_switcher::Toggle",
       "space t": "workspace::NewCenterTerminal",
       "space c r": "editor::Rename",
-      "space c d": "editor::Hover"
+      "space c d": "editor::Hover",
+      "space space": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "EmptyPane",
+    "bindings": {
+      "space space": "file_finder::Toggle"
     }
   },
   {
