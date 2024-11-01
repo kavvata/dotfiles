@@ -25,7 +25,8 @@
       "space t": "workspace::NewCenterTerminal",
       "space c r": "editor::Rename",
       "space c d": "editor::Hover",
-      "ctrl d": "editor::SelectNext"
+      "space v": "editor::SelectNext",
+      "ctrl-d": "vim::SelectNext"
     }
   },
   {
