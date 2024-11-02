@@ -27,5 +27,6 @@
     "code_actions": false,
     "folds": false,
     "runnables": false
-  }
+  },
+  "wrap_guides": [120]
 }
