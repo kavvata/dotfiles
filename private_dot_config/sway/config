@@ -4,6 +4,12 @@
 #
 # Read `man 5 sway` for a complete reference.
 
+# swayfx options
+# corner_radius 4
+shadows enable
+default_dim_inactive 0.045
+blur enable
+
 ### Userspace configuration
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec udiskie
@@ -45,11 +51,18 @@ output HDMI-A-2 mode 1920x1080 pos -1920,0
 #
 # Example configuration:
 #
+
+set $locker 'playerctl pause; swaylock -f --color "#1F1F28" --font-size 12'
+
 exec swayidle -w \
-         timeout 300 'swaylock -f --color "#1F1F28" --font-size 12' \
-         timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-         before-sleep 'swaylock -f --color "#1F1F28" --font-size 12'
-#
+         timeout 300 $locker \
+         timeout 600 'swaymsg "output * power off"' \
+         resume 'swaymsg "output * power on"' \
+         timeout 1200 'systemctl suspend' \
+         resume 'swaymsg "output * power on"' \
+         before-sleep $locker
+
+
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
@@ -57,7 +70,7 @@ exec swayidle -w \
 exec --no-startup-id autotiling-rs
 
 # Gaps and border configuration:
-gaps inner 5
+gaps inner 10
 # gaps outer 5
 default_border pixel 1
 default_floating_border pixel 1
