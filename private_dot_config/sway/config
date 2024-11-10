@@ -4,11 +4,12 @@
 #
 # Read `man 5 sway` for a complete reference.
 
-# swayfx options
-# corner_radius 4
+### swayfx options
+corner_radius 4
 shadows enable
 default_dim_inactive 0.045
 blur enable
+#layer_effects "waybar" 'blur enable; shadows enable; corner_radius 6'
 
 ### Userspace configuration
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -35,8 +36,10 @@ set $menu fuzzel
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-# output * bg /home/kav/Pictures/Wallpapers/T480.png fill
-output * bg #1F1F28 solid_color
+
+# output * bg /home/kav/Pictures/Wallpapers/enigmatriz-church.jpg fit #101012
+output * bg /home/kav/Pictures/Wallpapers/kanagawa-inverted.jpg fill #1F1F28
+# output * bg #1F1F28 solid_color
 output HDMI-A-2 mode 1920x1080 pos -1920,0
 
 #
