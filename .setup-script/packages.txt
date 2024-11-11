@@ -139,6 +139,7 @@ wireless_tools
 wireplumber
 wl-clipboard
 xdg-desktop-portal-gtk
+xdg-user-dirs
 xdg-utils
 xf86-video-amdgpu
 xf86-video-ati
@@ -153,4 +154,3 @@ zathura-pdf-mupdf
 zed
 zip
 zram-generator
-xdg-user-dirs
