@@ -266,7 +266,9 @@ bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
 # Screenshot:
 #
 
-bindsym $mod+Shift+s exec slurp | grim -g - ~/Pictures/Screenshots/$(date +'screenshot_%Y-%m-%d-%H%M%S.png') && notify-send -t 3000 "📷 Screenshot Taken".
+unbindsym $mod+s
+bindsym $mod+Shift+s exec scr_path=~/Pictures/Screenshots/$(date +'screenshot_%Y-%m-%d-%H%M%S.png') && slurp | grim -g - $scr_path && cat $scr_path | wl-copy && notify-send -t 3000 "📷 Screenshot Taken".
+bindsym $mod+s exec scr_path=~/Pictures/Screenshots/$(date +'screenshot_%Y-%m-%d-%H%M%S.png') && grim $scr_path && cat $scr_path | wl-copy && notify-send -t 3000 "📷 Screenshot Taken".
 
 #
 # Gestures:
