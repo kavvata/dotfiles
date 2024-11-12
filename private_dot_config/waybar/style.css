@@ -13,7 +13,9 @@ window#waybar {
 #window {
     font-weight: bold;
 }
+
 #workspaces {
+    font-weight: bold;
     padding: 0 5px;
 }
 
