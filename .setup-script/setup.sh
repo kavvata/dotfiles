@@ -17,3 +17,8 @@ do
 done < ./packages.txt
 
 xdg-user-dirs-update
+gsettings set org.gnome.desktop.wm.preferences button-layout ''
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+gsettings set org.gnome.desktop.interface icon-theme Adwaita
+# gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-dark
+gsettings set org.gnome.desktop.interface gtk-theme Adwaita
