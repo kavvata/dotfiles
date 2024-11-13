@@ -23,4 +23,4 @@ gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 # gsettings set org.gnome.desktop.interface icon-theme Adwaita
 gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-dark
 
-read -p "Don't forget to configure: tuigreeter, docker user group and apparmor"
+read -p "Don't forget to configure: tuigreeter, keyboard layouts, docker user group and apparmor"
