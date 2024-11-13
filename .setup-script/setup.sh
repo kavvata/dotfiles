@@ -10,6 +10,7 @@ makepkg -si
 cd ..
 rm -rf paru
 
+paru -Syy
 
 while IFS="" read -r p || [ -n "$p" ]
 do
