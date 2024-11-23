@@ -6,9 +6,16 @@
 }
 
 window#waybar {
-    background: transparent;
+    background: rgba(31, 31, 40, 0.90);
     color: #DCD7BA;
 }
+
+/* window > box { */
+/* 	  margin: 8px; */
+/*     background: rgba(31, 31, 40, 0.90); */
+/*     color: #DCD7BA; */
+/*     border-radius: 4px; */
+/* } */
 
 #window {
     font-weight: bold;
@@ -49,7 +56,7 @@ window#waybar {
 #custom-power,
 #custom-menu,
 #idle_inhibitor {
-    padding: 0 10px;
+    padding: 0 8px;
 }
 
 #clock {
