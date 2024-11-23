@@ -17,7 +17,6 @@ chezmoi
 cmatrix
 composer
 cozette-otb
-cozette-ttf
 curlftpfs
 dmenu
 docker
@@ -38,6 +37,7 @@ fzf
 git
 github-cli
 gnome-disk-utility
+gnome-software
 greetd-tuigreet
 grim
 gst-plugin-pipewire
@@ -60,7 +60,6 @@ libnotify
 libpulse
 libqalculate
 libva-intel-driver
-libva-mesa-driver
 libva-utils
 libvncserver
 linux
