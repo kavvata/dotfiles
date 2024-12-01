@@ -36,6 +36,7 @@ set $menu fuzzel
 ### Output configuration
 
 output eDP-1 pos 0 0 res 1920x1080
+output HDMI-A-2 pos 0 -1080 res 1920x1080
 
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 
