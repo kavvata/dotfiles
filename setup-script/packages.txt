@@ -106,6 +106,7 @@ rsync
 ruby
 slurp
 smartmontools
+sof-firmware
 swaybg
 swayfx
 swayidle
