@@ -4,11 +4,11 @@ if ! command -v git &> /dev/null; then
   sudo pacman -Sy git --noconfirm --needed
 fi
 
-# git clone https://aur.archlinux.org/paru.git
-# cd paru
-# makepkg -si
-# cd ..
-# rm -rf paru
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+cd ..
+rm -rf paru
 
 paru -Syy
 # Absolute path this script is in. /home/user/bin
