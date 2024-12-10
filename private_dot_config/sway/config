@@ -280,6 +280,12 @@ bindgesture swipe:right workspace prev
 bindgesture swipe:left workspace next
 bindgesture swipe:up exec $menu
 
+#
+# Assign windows to workspaces
+#
+
+assign [class="armcord"] workspace number 10
+assign [class="tidal-hifi"] workspace number 9
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
