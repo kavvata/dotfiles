@@ -9,7 +9,6 @@ corner_radius 4
 shadows enable
 default_dim_inactive 0.045
 blur enable
-layer_effects "waybar" 'blur enable; shadows enable;'
 
 ### Userspace configuration
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -40,8 +39,7 @@ output HDMI-A-2 pos 0 -1080 res 1920x1080
 
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 
-# output * bg /home/kav/Pictures/Wallpapers/enigmatriz-church.jpg fit #101012
-output * bg /home/kav/Pictures/Wallpapers/think-mountain.jpg fill #1F1F28
+output * bg /home/kav/Pictures/Wallpapers/kanagawa-focus.png fill #1F1F28
 # output * bg #1F1F28 solid_color
 
 #
@@ -75,8 +73,8 @@ exec swayidle -w \
 exec --no-startup-id autotiling-rs
 
 # Gaps and border configuration:
-gaps inner 8
-# gaps outer 5
+gaps inner 4
+gaps outer 0
 default_border pixel 1
 default_floating_border pixel 1
 client.unfocused        #2A2A37 #2A2A37 #2A2A37 #2A2A37     #2A2A37
@@ -271,6 +269,7 @@ bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
 unbindsym $mod+s
 bindsym $mod+Shift+s exec scr_path=~/Pictures/Screenshots/$(date +'screenshot_%Y-%m-%d-%H%M%S.png') && slurp | grim -g - $scr_path && cat $scr_path | wl-copy && notify-send -t 3000 "📷 Screenshot Taken".
 bindsym $mod+s exec scr_path=~/Pictures/Screenshots/$(date +'screenshot_%Y-%m-%d-%H%M%S.png') && grim $scr_path && cat $scr_path | wl-copy && notify-send -t 3000 "📷 Screenshot Taken".
+bindsym $mod+Shift+p exec hyprpicker | wl-copy
 
 #
 # Gestures:

@@ -5,8 +5,13 @@
     font-size: 11px;
 }
 
+/* window#waybar { */
+/*     background: rgba(31, 31, 40, 0.80); */
+/*     color: #DCD7BA; */
+/* } */
+
 window#waybar {
-    background: rgba(31, 31, 40, 0.90);
+    background: transparent;
     color: #DCD7BA;
 }
 
