@@ -59,10 +59,9 @@ set $locker 'playerctl pause; swaylock -f --color "#1F1F28" --font-size 12'
 
 exec swayidle -w \
          timeout 300 $locker \
-         timeout 600 'swaymsg "output * power off"' \
-         resume 'swaymsg "output * power on"' \
+         timeout 600 'swaymsg "output * dpms off"' \
          timeout 1200 'systemctl suspend' \
-         resume 'swaymsg "output * power on"' \
+         after-resume 'swaymsg "output * dpms on"' \
          before-sleep $locker
 
 
