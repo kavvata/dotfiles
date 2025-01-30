@@ -18,7 +18,7 @@ set guioptions "s"
 set selection-clipboard clipboard
 # zathurarc-dark
 
-set font "FiraCode Nerd Font 9"
+set font "JetBrainsMono Nerd Font 9"
 set default-bg "#1F1F28" #00
 set default-fg "#DCD7BA" #01
 

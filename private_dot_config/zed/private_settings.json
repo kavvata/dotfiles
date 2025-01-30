@@ -10,7 +10,7 @@
   "vim_mode": true,
   "ui_font_size": 14,
   "buffer_font_size": 12,
-  "buffer_font_family": "FiraCode Nerd Font Mono",
+  "buffer_font_family": "JetBrainsMono Nerd Font",
   "theme": {
     "mode": "system",
     "light": "One Light",
@@ -29,5 +29,7 @@
     "runnables": false
   },
   "preferred_line_length": 100,
-  "wrap_guides": [100]
+  "wrap_guides": [
+    100
+  ]
 }

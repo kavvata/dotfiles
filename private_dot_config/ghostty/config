@@ -1,11 +1,14 @@
-font-family = "FiraCode Nerd Font"
-font-size = 12
+font-family = "JetBrainsMono Nerd Font"
+font-size = 9
 bold-is-bright = true
 font-thicken = true
-adjust-cell-width = -10%
+# adjust-cell-width = -10%
 # background-opacity = 0.93
 # background-blur-radius = 20
 
 window-padding-x = 4
 window-padding-y = 4
 theme = "kanagawabones"
+window-theme = ghostty
+gtk-tabs-location = hidden
+adw-toolbar-style = flat
