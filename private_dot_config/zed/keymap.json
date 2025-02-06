@@ -27,7 +27,10 @@
       "space c d": "editor::Hover",
       "space c a": "editor::ToggleCodeActions",
       "space v": "editor::SelectNext",
-      "ctrl-d": "vim::SelectNext"
+      "ctrl-d": "vim::SelectNext",
+      "space m n": "vim::SelectNext",
+      "shift-h": "tab_switcher::Toggle",
+      "shift-l": "tab_switcher::Toggle"
     }
   },
   {
@@ -36,7 +39,8 @@
       "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
       "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
       "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
-      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"]
+      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
+      "= =": "editor::Format"
     }
   },
   {
@@ -44,6 +48,19 @@
     "bindings": {
       "space e": "workspace::ToggleLeftDock",
       "space space": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      "=": "editor::FormatSelections"
+    }
+  },
+  {
+    "context": "TabSwitcher > Picker",
+    "bindings": {
+      "shift-h": "menu::SelectPrev",
+      "shift-l": "menu::SelectNext"
     }
   }
 ]
