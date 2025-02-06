@@ -17,7 +17,7 @@
     "bindings": {
       "shift-k": "editor::Hover",
       "space /": "workspace::NewSearch",
-      "space w v": "pane::SplitLeft",
+      "space w v": "pane::SplitRight",
       "space w s": "pane::SplitDown",
       "space b d": "pane::CloseActiveItem",
       "space w d": "pane::CloseAllItems",
