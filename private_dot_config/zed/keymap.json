@@ -31,18 +31,17 @@
     }
   },
   {
-    "context": "EmptyPane",
-    "bindings": {
-      "space space": "file_finder::Toggle"
-    }
-  },
-  {
-    "context": "Dock || Terminal || (Editor && vim_mode != insert || EmptyPane)",
+    "context": "Dock || Terminal || (Editor && vim_mode != insert) || EmptyPane",
     "bindings": {
       "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
       "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
       "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
-      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
+      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"]
+    }
+  },
+  {
+    "context": "(ProjectPanel|| Terminal || (Editor && vim_mode != insert) || EmptyPane ) && !(ProjectSearchBar > Editor)",
+    "bindings": {
       "space e": "workspace::ToggleLeftDock",
       "space space": "file_finder::Toggle"
     }
