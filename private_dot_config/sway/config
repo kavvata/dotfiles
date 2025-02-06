@@ -282,8 +282,8 @@ bindgesture swipe:up exec $menu
 # Assign windows to workspaces
 #
 
-assign [class="armcord"] workspace number 10
-assign [class="tidal-hifi"] workspace number 9
+assign [app_id="armcord"] workspace number 10
+assign [app_id="com.mastermindzh.tidal-hifi"] workspace number 9
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
