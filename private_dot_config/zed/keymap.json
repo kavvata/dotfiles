@@ -44,7 +44,7 @@
     }
   },
   {
-    "context": "(ProjectPanel|| Terminal || (Editor && vim_mode != insert) || EmptyPane ) && !(ProjectSearchBar > Editor)",
+    "context": "(ProjectPanel|| Terminal || (Editor && vim_mode != insert) || EmptyPane ) && !((ProjectSearchBar || Picker) > Editor)",
     "bindings": {
       "space e": "workspace::ToggleLeftDock",
       "space space": "file_finder::Toggle"
