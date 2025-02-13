@@ -7,9 +7,9 @@
 // from the command palette.
 [
   {
-    "context": "Editor && vim_mode == insert && !menu",
+    "context": "Editor && vim_mode == insert",
     "bindings": {
-      "j k": ["vim::SwitchMode", "Normal"]
+      "j k": ["workspace::SendKeystrokes", "escape escape"]
     }
   },
   {
