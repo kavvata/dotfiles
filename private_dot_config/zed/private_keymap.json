@@ -36,15 +36,16 @@
   {
     "context": "Dock || Terminal || (Editor && vim_mode != insert) || EmptyPane",
     "bindings": {
-      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
-      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
-      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
-      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
-      "= =": "editor::Format"
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "= =": "editor::Format",
+      "space d": "editor::ToggleInlineDiagnostics"
     }
   },
   {
-    "context": "(ProjectPanel|| Terminal || (Editor && vim_mode != insert) || EmptyPane ) && !((ProjectSearchBar || Picker) > Editor)",
+    "context": "(ProjectPanel || Terminal || (Editor && vim_mode != insert) || EmptyPane ) && !((ProjectSearchBar || Picker) > Editor) && !(GitPanel)",
     "bindings": {
       "space e": "workspace::ToggleLeftDock",
       "space space": "file_finder::Toggle"
@@ -59,7 +60,7 @@
   {
     "context": "TabSwitcher > Picker",
     "bindings": {
-      "shift-h": "menu::SelectPrev",
+      "shift-h": "menu::SelectPrevious",
       "shift-l": "menu::SelectNext"
     }
   }

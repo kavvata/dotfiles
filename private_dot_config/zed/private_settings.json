@@ -7,9 +7,11 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+  "features": {},
   "vim_mode": true,
   "ui_font_size": 14,
-  "buffer_font_size": 12,
+
+  "buffer_font_size": 12.0,
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "theme": {
     "mode": "system",
@@ -29,7 +31,5 @@
     "runnables": false
   },
   "preferred_line_length": 100,
-  "wrap_guides": [
-    100
-  ]
+  "wrap_guides": [100]
 }
