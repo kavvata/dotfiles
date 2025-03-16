@@ -45,7 +45,7 @@ window#waybar {
 
 #mode {
     background: #1F1F28;
-    border-bottom: 3px solid white;
+    border-top: 2px solid #C8C093;
 }
 
 #clock,
