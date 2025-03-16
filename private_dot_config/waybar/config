@@ -4,15 +4,16 @@
     "sway/mode"
   ],
   "modules-center": [
-    "clock",
-    "idle_inhibitor"
+    "sway/window"
   ],
   "modules-right": [
     "tray",
+    "idle_inhibitor",
     "network",
     "pulseaudio",
     "battery#ext",
     "battery#int",
+    "clock",
     "custom/power"
   ],
   "sway/mode": {
