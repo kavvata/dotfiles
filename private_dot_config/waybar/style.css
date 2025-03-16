@@ -64,6 +64,10 @@ window#waybar {
     padding: 0 8px;
 }
 
+#idle_inhibitor.deactivated {
+  color: #585864;
+}
+
 #clock {
     font-weight: bold;
 }

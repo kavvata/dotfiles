@@ -124,13 +124,13 @@ input type:keyboard {
     floating_modifier $mod normal
 
     # Reload the configuration file
-    bindsym $mod+Ctrl+r reload
+    bindsym $mod+Shift+r reload
 
     # Locks screen
-    bindsym Ctrl+Shift+Escape exec swaylock -f --color "#1F1F28" --font-size 12
+    bindsym $mod+Shift+q exec $locker
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+e exec /home/kav/script/power.sh
 #
 # Moving around:
 #

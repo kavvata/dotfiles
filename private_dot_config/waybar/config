@@ -7,8 +7,8 @@
     "sway/window"
   ],
   "modules-right": [
-    "tray",
     "idle_inhibitor",
+    "tray",
     "network",
     "pulseaudio",
     "battery#ext",
@@ -60,7 +60,7 @@
       "activated": "󰅶",
       "deactivated": "󰾪"
     },
-    "on-click": "bash /home/dg/.local/bin/toggleRemote"
+    "on-click": "bash /home/dg/./bin/toggleRemote"
   },
   "tray": {
     "icon-size": 12,
@@ -133,7 +133,7 @@
   },
   "custom/power": {
     "format": " ",
-    "on-click": "swaynag -t warning -m 'Power Menu Options' -b 'Logout' 'swaymsg exit' -b 'Restart' 'shutdown -r now' -b 'Shutdown'  'shutdown -h now' --background=#1f2335 --button-background=#565f89 --button-border=#002b33 --border-bottom=#002b33 --text=#e0e0e0 --button-text=#e0e0e0"
+    "on-click": "bash /home/kav/script/power.sh"
   },
   "backlight": {
     "device": "intel_backlight",
