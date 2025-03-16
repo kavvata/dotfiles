@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Ascii Think
+Description=Custom boot animation using a two-step module
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/ascii-think
+ScriptFile=/usr/share/plymouth/themes/ascii-think/ascii-think.script
