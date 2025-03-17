@@ -9,6 +9,7 @@ corner_radius 4
 shadows enable
 default_dim_inactive 0.045
 blur enable
+# layer_effects "waybar" 'blur enable; shadows enable;'
 
 ### Userspace configuration
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -39,7 +40,7 @@ output HDMI-A-2 pos 0 -1080 res 1920x1080
 
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 
-output * bg /home/kav/Pictures/Wallpapers/kanagawa-focus.png fill #1F1F28
+output * bg /home/kav/Pictures/Wallpapers/kanagawa-think.jpg fill #1F1F28
 # output * bg #1F1F28 solid_color
 
 #

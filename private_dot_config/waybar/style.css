@@ -1,51 +1,46 @@
 * {
-    border: none;
-    border-radius: 0;
-    font-family: JetBrainsMono Nerd Font, Arial, sans-serif;
-    font-size: 11px;
+  border: none;
+  border-radius: 0;
+  font-family: JetBrainsMono Nerd Font, Arial, sans-serif;
+  font-size: 11px;
 }
-
-/* window#waybar { */
-/*     background: rgba(31, 31, 40, 0.80); */
-/*     color: #DCD7BA; */
-/* } */
 
 window#waybar {
-    background: transparent;
-    color: #DCD7BA;
+  background: transparent;
+  color: #DCD7BA;
 }
 
-/* window > box { */
-/* 	  margin: 8px; */
-/*     background: rgba(31, 31, 40, 0.90); */
-/*     color: #DCD7BA; */
-/*     border-radius: 4px; */
-/* } */
+.modules-left, .modules-right, .modules-center {
+  margin: 4px;
+  border-radius: 4px;
+  background-color: rgba(31, 31, 40, 0.90);
+}
+
 
 #window {
-    font-weight: bold;
+  font-weight: bold;
+  padding: 0px 5px;
 }
 
 #workspaces {
-    font-weight: bold;
-    padding: 0 5px;
+  font-weight: bold;
+  padding: 0 5px;
 }
 
 #workspaces button {
-    padding: 0 5px;
-    background: transparent;
-    color: #DCD7BA;
-    border-top: 2px solid transparent;
+  padding: 0 5px;
+  background: transparent;
+  color: #DCD7BA;
+  border-top: 2px solid transparent;
 }
 
 #workspaces button.focused {
-    color: #E46876;
-    border-top: 2px solid #E46876;
+  color: #E46876;
+  border-top: 2px solid #E46876;
 }
 
 #mode {
-    background: #1F1F28;
-    border-top: 2px solid #C8C093;
+  border-top: 2px solid #C8C093;
 }
 
 #clock,
@@ -61,7 +56,7 @@ window#waybar {
 #custom-power,
 #custom-menu,
 #idle_inhibitor {
-    padding: 0 8px;
+  padding: 0 8px;
 }
 
 #idle_inhibitor.deactivated {
@@ -69,14 +64,11 @@ window#waybar {
 }
 
 #clock {
-    font-weight: bold;
-}
-
-#battery {
+  font-weight: bold;
 }
 
 #battery icon {
-    color: #C34043;
+  color: #C34043;
 }
 
 #battery.charging {
@@ -90,12 +82,12 @@ window#waybar {
 /*}*/
 
 #battery.warning:not(.charging) {
-    color: #DCD7BA;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  color: #DCD7BA;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 #cpu {
@@ -108,7 +100,7 @@ window#waybar {
 }
 
 #network.disconnected {
-    background: #C34043;
+  background: #C34043;
 }
 
 #pulseaudio {

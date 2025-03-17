@@ -11,14 +11,16 @@ window{
 #input {
   outline: none;
   margin: 5px;
-  border-radius: 4px;
+  border-radius: 0px;
   border: none;
+  border-bottom: 1px solid #2A2A37;
   background-color: #1F1F28;
   color: #DCD7BA;
 }
 
 #input:focus {
   box-shadow: none;
+  border-bottom: 1px solid #C8C093;
 }
 
 #inner-box {

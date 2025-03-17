@@ -39,6 +39,7 @@ github-cli
 gnome-disk-utility
 gnome-keyring
 gnome-software
+gowall
 greetd-tuigreet
 grim
 gst-plugin-pipewire
@@ -107,6 +108,7 @@ ranger
 reflector
 remmina
 ripgrep
+rofi
 rsync
 slurp
 smartmontools

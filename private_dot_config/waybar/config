@@ -4,7 +4,7 @@
     "sway/mode"
   ],
   "modules-center": [
-    "sway/window"
+    "clock"
   ],
   "modules-right": [
     "idle_inhibitor",
@@ -13,7 +13,6 @@
     "pulseaudio",
     "battery#ext",
     "battery#int",
-    "clock",
     "custom/power"
   ],
   "sway/mode": {
@@ -133,7 +132,7 @@
   },
   "custom/power": {
     "format": " ",
-    "on-click": "bash /home/kav/script/power.sh"
+    "on-click": "bash /home/kav/.config/rofi/powermenu/type-1/powermenu.sh"
   },
   "backlight": {
     "device": "intel_backlight",
