@@ -6,9 +6,9 @@ ignore-empty-password
 indicator-caps-lock
 indicator-thickness=10
 
-key-hl-color=75B9D5
+key-hl-color=97C062
 bs-hl-color=DA6573
-caps-lock-key-hl-color=97C062
+caps-lock-key-hl-color=D3CEB3
 caps-lock-bs-hl-color=DA6573
 
 separator-color=A09D87
@@ -19,16 +19,16 @@ inside-caps-lock-color=DBB97D00
 inside-ver-color=78ABC000
 inside-wrong-color=DA657300
 
-ring-color=8E79B0D9
+ring-color=39394DD9
 ring-clear-color=91B468D9
 ring-caps-lock-color=E6C07CD9
-ring-ver-color=75B9D5D9
+ring-ver-color=97C062D9
 ring-wrong-color=E17B86D9
 
 line-color=1E1E2600
 line-clear-color=97C062FF
 line-caps-lock-color=DBB97DFF
-line-ver-color=A189C9FF
+line-ver-color=97C062FF
 line-wrong-color=DA6573FF
 
 text-color=D3CEB3
