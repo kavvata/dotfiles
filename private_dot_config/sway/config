@@ -40,7 +40,7 @@ output HDMI-A-2 pos 0 -1080 res 1920x1080
 
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 
-output * bg /home/kav/Pictures/Wallpapers/kanagawa-focus.png fill #1F1F28
+output * bg ~/.wallpaper fill #1F1F28
 # output * bg #1F1F28 solid_color
 
 #
@@ -56,7 +56,7 @@ output * bg /home/kav/Pictures/Wallpapers/kanagawa-focus.png fill #1F1F28
 # Example configuration:
 #
 
-set $locker 'playerctl pause; swaylock -f -i ~/Pictures/Wallpapers/lock-kanagawa.png --font-size 12'
+set $locker 'playerctl pause; swaylock'
 
 exec swayidle -w \
        timeout 300 $locker \
@@ -289,10 +289,7 @@ assign [app_id="com.mastermindzh.tidal-hifi"] workspace number 9
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    position top
-
     swaybar_command waybar
-	  workspace_buttons yes
 }
 
 include /etc/sway/config.d/*

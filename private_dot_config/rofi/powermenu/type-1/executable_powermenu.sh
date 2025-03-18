@@ -86,7 +86,7 @@ case ${chosen} in
         ;;
     $lock)
     playerctl pause
-    swaylock -f --color "#1F1F28" --font-size 12
+    swaylock
         ;;
     $suspend)
 		run_cmd --suspend
