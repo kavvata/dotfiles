@@ -1,0 +1,32 @@
+let mapleader=" "
+set clipboard+=unnamed
+set visualbell
+imap jk <Esc>
+nmap <leader><leader> <Action>(GotoFile)
+
+" Window movement
+nmap <leader>wv :vsplit<CR>
+nmap <leader>ws :split<CR>
+nmap <leader>wh <C-w>h
+nmap <leader>wj <C-w>j
+nmap <leader>wk <C-w>k
+nmap <leader>wl <C-w>l
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
+nmap <leader>wd <Action>(CloseAllEditors)
+nmap H <Action>(PreviousTab)
+nmap L <Action>(NextTab)
+nmap <leader>bd :q<CR>
+nmap <leader>bo  <Action>(CloseAllEditorsButActive)
+nmap <leader>: <Action>(SearchEverywhere)
+nmap <leader>e <Action>(CloseProjectToolWindow)
+nmap <leader>cr <Action>(RenameElement)
+nmap <leader>gc <Action>(CommentByLineComment)
+
+nmap <leader>ca <Action>(ShowIntentionActions)
+nmap <leader>cd <Action>(ShowErrorDescription)
+nmap <leader>sg <Action>(TextSearchAction)
+
+set ideajoin
