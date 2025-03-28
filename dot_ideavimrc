@@ -1,5 +1,5 @@
 let mapleader=" "
-set clipboard+=unnamed
+set clipboard=unnamed,unnamedplus
 set visualbell
 imap jk <Esc>
 nmap <leader><leader> <Action>(GotoFile)
