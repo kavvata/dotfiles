@@ -15,6 +15,7 @@ btop
 btrfs-progs
 calcurse
 chezmoi
+classifier-git
 cmatrix
 composer
 cozette-otb
@@ -40,6 +41,7 @@ gnome-disk-utility
 gnome-keyring
 gnome-software
 gowall
+graphviz
 greetd-tuigreet
 grim
 gst-plugin-pipewire
@@ -93,7 +95,6 @@ otf-libertinus
 pamixer
 paru
 pavucontrol
-pfetch
 php
 php-sqlite
 pipewire
@@ -103,6 +104,7 @@ pipewire-pulse
 plymouth
 polkit-gnome
 python-django
+python-pandas
 python-pipenv
 ranger
 reflector
@@ -124,6 +126,7 @@ tldr
 tlp
 tmux
 traceroute
+trash-cli
 ttf-ancient-fonts
 ttf-firacode-nerd
 ttf-jetbrains-mono-nerd
