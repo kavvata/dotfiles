@@ -28,5 +28,7 @@ nmap <leader>gc <Action>(CommentByLineComment)
 nmap <leader>ca <Action>(ShowIntentionActions)
 nmap <leader>cd <Action>(ShowErrorDescription)
 nmap <leader>sg <Action>(TextSearchAction)
+nmap == <Action>(ReformatCode)
+vmap == <Action>(ReformatCode)
 
 set ideajoin
