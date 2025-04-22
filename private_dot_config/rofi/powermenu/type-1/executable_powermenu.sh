@@ -68,7 +68,7 @@ run_cmd() {
 		elif [[ $1 == '--suspend' ]]; then
 			systemctl suspend
 		elif [[ $1 == '--logout' ]]; then
-      swaymsg exit
+      hyprctl dispatch exit
 		fi
 	else
 		exit 0
