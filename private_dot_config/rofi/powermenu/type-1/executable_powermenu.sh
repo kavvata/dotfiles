@@ -86,7 +86,7 @@ case ${chosen} in
         ;;
     $lock)
     playerctl pause
-    swaylock
+    hyprlock
         ;;
     $suspend)
 		run_cmd --suspend
