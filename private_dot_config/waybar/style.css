@@ -1,8 +1,10 @@
 * {
   border: none;
   border-radius: 0;
-  font-family: JetBrainsMono Nerd Font, Arial, sans-serif;
+  /* font-family: JetBrainsMono Nerd Font, Inter Display Regular, sans-serif; */
+  font-family: Inter, JetBrainsMono Nerd Font, sans-serif;
   font-size: 11px;
+  font-weight: 500;
 }
 
 window#waybar {
@@ -13,9 +15,10 @@ window#waybar {
 .modules-left, .modules-right, .modules-center {
   margin: 4px;
   margin-bottom: 0px;
-  border-radius: 4px;
-  border: 1px solid #53514F;
+  border-radius: 6px;
+  border: 2px solid #4C4E57;
   background-color: rgba(31, 31, 40, 0.90);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 
