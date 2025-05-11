@@ -20,7 +20,9 @@ cmatrix
 composer
 cozette-otb
 curlftpfs
+dhclient
 dmenu
+dnsmasq
 docker
 docker-compose
 dust
@@ -48,8 +50,10 @@ gst-plugin-pipewire
 gvfs
 gvfs-mtp
 hledger
+hledger-ui
 htop
 httpie
+hyprlock
 hyprpicker
 i3blocks
 idlehack-git
@@ -62,9 +66,11 @@ inter-font
 iwd
 jq
 lazygit
+legcord-bin
 libnotify
 libpulse
 libqalculate
+libreoffice-fresh
 libva-intel-driver
 libva-utils
 libvncserver
@@ -83,7 +89,6 @@ networkmanager
 nicotine+
 nmap
 nodejs
-notion-app-electron
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
@@ -106,7 +111,6 @@ polkit-gnome
 python-django
 python-pandas
 python-pipenv
-ranger
 reflector
 remmina
 ripgrep
@@ -129,6 +133,7 @@ traceroute
 trash-cli
 ttf-ancient-fonts
 ttf-firacode-nerd
+ttf-font-awesome
 ttf-jetbrains-mono-nerd
 ttf-ms-fonts
 ttf-nerd-fonts-symbols-mono
@@ -147,6 +152,7 @@ wget
 wireless_tools
 wireplumber
 wl-clipboard
+wlogout
 wofi
 xdg-desktop-portal-gtk
 xdg-utils
@@ -157,6 +163,7 @@ xf86-video-vmware
 xorg-server
 xorg-xinit
 xorg-xwayland
+yazi
 yt-dlp
 zathura
 zathura-pdf-mupdf
