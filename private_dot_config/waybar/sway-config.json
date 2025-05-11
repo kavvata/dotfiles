@@ -1,0 +1,22 @@
+{
+  "include": [
+    "~/.config/waybar/modules.json"
+  ],
+  "modules-left": [
+    "sway/workspaces",
+    "sway/mode"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "idle_inhibitor",
+    "mpd",
+    "pulseaudio",
+    "network",
+    "battery#ext",
+    "battery#int",
+    "tray",
+    "custom/exit"
+  ]
+}
