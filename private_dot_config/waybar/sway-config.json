@@ -1,16 +1,16 @@
 {
   "include": [
-    "~/.config/ml4w/settings/waybar-quicklinks.json",
     "~/.config/waybar/modules.json"
   ],
   "modules-left": [
-    "hyprland/workspaces"
+    "sway/workspaces",
+    "sway/mode"
   ],
   "modules-center": [
     "clock"
   ],
   "modules-right": [
-    "idle_inhibitor",
+    "group/hardware",
     "tray",
     "mpd",
     "pulseaudio",

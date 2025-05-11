@@ -1,4 +1,4 @@
 function calc --wraps=qalc --description 'alias calc qalc'
-  qalc $argv
-        
+    qalc $argv
+
 end

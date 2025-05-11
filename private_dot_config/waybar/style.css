@@ -43,6 +43,10 @@ window#waybar {
   color: #E46876;
   border-top: 2px solid #E46876;
 }
+#workspaces button.focused {
+  color: #E46876;
+  border-top: 2px solid #E46876;
+}
 
 #mode {
   border-top: 2px solid #C8C093;
@@ -56,10 +60,7 @@ window#waybar {
 #network,
 #pulseaudio,
 #custom-media,
-#tray,
 #mode,
-#custom-power,
-#custom-menu,
 #idle_inhibitor {
   padding: 0 8px;
 }
@@ -116,4 +117,5 @@ window#waybar {
 
 #tray {
 }
-
+#hardware {
+}
