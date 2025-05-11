@@ -10,7 +10,7 @@
     "clock"
   ],
   "modules-right": [
-    "idle_inhibitor",
+    "group/hardware",
     "tray",
     "mpd",
     "pulseaudio",

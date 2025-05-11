@@ -65,6 +65,7 @@
     "spacing": 10
   },
   "clock": {
+    "tooltip": false,
     "format": "{:%a, %H:%M %b %d}",
     "on-double-click": "swaymsg exec xdg-open https://calendar.google.com/"
   },
@@ -82,7 +83,7 @@
   },
   "disk": {
     "interval": 30,
-    "format": " {percentage_used}%",
+    "format": "  {percentage_used}%",
     "path": "/",
     "on-click": "wezterm -e btop"
   },
@@ -233,8 +234,9 @@
       "transition-left-to-right": false
     },
     "modules": [
-      "memory",
+      "idle_inhibitor",
       "disk",
+      "memory",
       "cpu"
     ]
   }

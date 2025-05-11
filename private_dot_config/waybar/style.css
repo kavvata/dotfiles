@@ -60,10 +60,7 @@ window#waybar {
 #network,
 #pulseaudio,
 #custom-media,
-#tray,
 #mode,
-#custom-power,
-#custom-menu,
 #idle_inhibitor {
   padding: 0 8px;
 }
@@ -120,4 +117,5 @@ window#waybar {
 
 #tray {
 }
-
+#hardware {
+}
