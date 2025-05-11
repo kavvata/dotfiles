@@ -11,12 +11,11 @@
   ],
   "modules-right": [
     "idle_inhibitor",
+    "tray",
     "mpd",
     "pulseaudio",
     "network",
-    "battery#ext",
-    "battery#int",
-    "tray",
+    "group/batteries",
     "custom/exit"
   ]
 }
