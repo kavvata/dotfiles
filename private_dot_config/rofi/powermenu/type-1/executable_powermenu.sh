@@ -26,6 +26,26 @@ logout='⇠ Logout'
 yes=' Yes'
 no=' No'
 
+# Detect WM on Wayland by scanning compositor processes
+detect_wm_wayland() {
+    for wm in sway weston kwin_wayland gnome-shell; do
+        if pgrep -x "$wm" > /dev/null; then
+            echo "$wm"
+            return
+        fi
+    done
+    echo "Unknown"
+}
+
+# Wrapper to choose WM detection method
+detect_wm() {
+    if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+        detect_wm_wayland
+    else
+        detect_wm_x11
+    fi
+}
+
 # Rofi CMD
 rofi_cmd() {
 	rofi -dmenu \
@@ -68,7 +88,11 @@ run_cmd() {
 		elif [[ $1 == '--suspend' ]]; then
 			systemctl suspend
 		elif [[ $1 == '--logout' ]]; then
-      swaymsg exit
+      if [[ $(detect_wm) == "sway" ]]; then
+        swaymsg exit
+      else
+        hyprctl dispatch exit
+      fi
 		fi
 	else
 		exit 0
@@ -86,7 +110,7 @@ case ${chosen} in
         ;;
     $lock)
     playerctl pause
-    swaylock
+    hyprlock
         ;;
     $suspend)
 		run_cmd --suspend
