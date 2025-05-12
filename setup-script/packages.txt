@@ -37,6 +37,7 @@ freerdp
 fuzzel
 fwupd
 fzf
+ghostty
 git
 github-cli
 gnome-disk-utility
@@ -51,9 +52,13 @@ gvfs
 gvfs-mtp
 hledger
 hledger-ui
+hledger-web
 htop
 httpie
+hypridle
+hyprland
 hyprlock
+hyprpaper
 hyprpicker
 i3blocks
 idlehack-git
@@ -111,6 +116,7 @@ polkit-gnome
 python-django
 python-pandas
 python-pipenv
+qt5-wayland
 reflector
 remmina
 ripgrep
@@ -132,7 +138,7 @@ tmux
 traceroute
 trash-cli
 ttf-ancient-fonts
-ttf-firacode-nerd
+ttf-fira-sans
 ttf-font-awesome
 ttf-jetbrains-mono-nerd
 ttf-ms-fonts
@@ -152,10 +158,11 @@ wget
 wireless_tools
 wireplumber
 wl-clipboard
-wlogout
 wofi
 xdg-desktop-portal-gtk
+xdg-desktop-portal-hyprland
 xdg-utils
+xdotool
 xf86-video-amdgpu
 xf86-video-ati
 xf86-video-nouveau
