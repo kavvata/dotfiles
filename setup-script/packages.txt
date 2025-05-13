@@ -125,10 +125,6 @@ rsync
 slurp
 smartmontools
 sof-firmware
-swaybg
-swayfx
-swayidle
-swaylock
 syncthing
 throttled
 timeshift
