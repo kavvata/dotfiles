@@ -53,5 +53,6 @@ echo "(apparmor) Please add the following to your boot args:"
 echo "lsm=landlock,lockdown,yama,integrity,apparmor,bpf"
 read -p "Honestly i refuse to touch your boot entry files so i am leaving this up to you (Press any key to continue or Ctrl-C to stop)"
 
+sudo mkinitcpio --preset linux
 
 read -p "Don't forget to configure: keyboard layouts, waybar components, etc... (Press any key to finish)"
