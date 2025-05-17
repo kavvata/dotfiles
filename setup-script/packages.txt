@@ -15,7 +15,6 @@ btop
 btrfs-progs
 calcurse
 chezmoi
-classifier-git
 cmatrix
 composer
 cozette-otb
@@ -104,6 +103,7 @@ otf-geist-mono-nerd
 otf-libertinus
 pamixer
 paru
+paru-debug
 pavucontrol
 php
 php-sqlite
@@ -172,4 +172,5 @@ zathura
 zathura-pdf-mupdf
 zed
 zip
+zoxide
 zram-generator
