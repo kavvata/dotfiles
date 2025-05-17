@@ -15,5 +15,5 @@ function fish_right_prompt
     end
 
     # display the timestamp on the utmost right.
-    echo -n -s $gray ' [' (date +%H:%M:%S) ']'
+    echo -n -s $gray ' [' (date +%H:%M:%S) ']' $normal
 end
