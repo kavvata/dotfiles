@@ -15,6 +15,7 @@
     "mpd",
     "pulseaudio",
     "network",
+    "bluetooth",
     "group/batteries",
     "custom/exit"
   ]

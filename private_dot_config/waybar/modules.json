@@ -96,30 +96,13 @@
     "format-ethernet": "{ifname} ",
     "format-disconnected": "",
     "max-length": 50,
-    "on-click": "ghostty -e nmtui",
+    "on-click": "~/.config/wofi/scripts/wifimenu",
     "format-icons": [
       "󰤯",
       "󰤟",
       "󰤢",
       "󰤥",
       "󰤨"
-    ]
-  },
-  "battery": {
-    "states": {
-      "warning": 30,
-      "critical": 15
-    },
-    "format": "{icon}   {capacity}%",
-    "format-charging": "  {capacity}%",
-    "format-plugged": "  {capacity}%",
-    "format-alt": "{icon}  {time}",
-    "format-icons": [
-      " ",
-      " ",
-      " ",
-      " ",
-      " "
     ]
   },
   "pulseaudio": {
@@ -146,10 +129,11 @@
     "scroll-step": 5
   },
   "bluetooth": {
+    "format": "󰂯 ",
+    "format-off": "󰂲",
     "format-disabled": "",
-    "format-off": "",
     "interval": 30,
-    "on-click": "blueman-manager",
+    "on-double-click": "ghostty -e bluetuith",
     "format-no-controller": ""
   },
   "user": {
@@ -164,6 +148,24 @@
       "deactivated": "󰾪"
     },
     "on-click-right": "hyprlock"
+  },
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{capacity}% {icon} ",
+    "format-charging": "{capacity}% ",
+    "format-plugged": "{capacity}% ",
+    "format-alt": "{time} {icon}",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
   },
   "battery#ext": {
     "states": {
@@ -222,8 +224,8 @@
       "transition-left-to-right": true
     },
     "modules": [
-      "battery#ext",
-      "battery#int"
+      "battery",
+      "backlight"
     ]
   },
   "group/hardware": {
