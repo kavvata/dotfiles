@@ -36,7 +36,16 @@
   "wrap_guides": [100],
   "languages": {
     "Python": {
-      "language_servers": ["pyright", "ruff"]
+      "language_servers": ["basedpyright", "ruff"]
+    }
+  },
+  "lsp": {
+    "basedpyright": {
+      "settings": {
+        "basedpyright.analysis": {
+          "typeCheckingMode": "off"
+        }
+      }
     }
   }
 }
