@@ -30,7 +30,10 @@
       "ctrl-d": "vim::SelectNext",
       "space m n": "vim::SelectNext",
       "shift-h": "tab_switcher::Toggle",
-      "shift-l": "tab_switcher::Toggle"
+      "shift-l": "tab_switcher::Toggle",
+      "= =": "editor::Format",
+      "space c f": "editor::Format",
+      "space d": "editor::ToggleInlineDiagnostics"
     }
   },
   {
@@ -39,13 +42,11 @@
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
-      "ctrl-j": "workspace::ActivatePaneDown",
-      "= =": "editor::Format",
-      "space d": "editor::ToggleInlineDiagnostics"
+      "ctrl-j": "workspace::ActivatePaneDown"
     }
   },
   {
-    "context": "(ProjectPanel || Terminal || (Editor && vim_mode != insert) || EmptyPane ) && !((ProjectSearchBar || Picker) > Editor) && !(CommitEditor > Editor)",
+    "context": "(ProjectPanel || Terminal || (Editor && vim_mode != insert) || EmptyPane ) && !((ProjectSearchBar || Picker) > Editor) && (!GitPanel) && !(CommitEditor > Editor)",
     "bindings": {
       "space e": "workspace::ToggleLeftDock",
       "space space": "file_finder::Toggle"
