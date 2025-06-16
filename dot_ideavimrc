@@ -1,8 +1,11 @@
 let mapleader=" "
 set clipboard=unnamed,unnamedplus
 set visualbell
+set number
+set relativenumber
 imap jk <Esc>
-nmap <leader><leader> <Action>(GotoFile)
+nmap <leader><leader> <Action>(SearchEverywhere)
+nmap <leader>: <Action>(SearchEverywhere)
 
 " Window movement
 nmap <leader>wv :vsplit<CR>
@@ -24,11 +27,13 @@ nmap <leader>: <Action>(SearchEverywhere)
 nmap <leader>e <Action>(CloseProjectToolWindow)
 nmap <leader>cr <Action>(RenameElement)
 nmap <leader>gc <Action>(CommentByLineComment)
+nmap gr <Action>(GotoDeclaration)
+
+nmap == <Action>(ReformatCode)
+vmap = <Action>(ReformatCode)
 
 nmap <leader>ca <Action>(ShowIntentionActions)
 nmap <leader>cd <Action>(ShowErrorDescription)
 nmap <leader>sg <Action>(TextSearchAction)
-nmap == <Action>(ReformatCode)
-vmap == <Action>(ReformatCode)
 
 set ideajoin
