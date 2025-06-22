@@ -4,14 +4,14 @@
     "~/.config/waybar/modules.json"
   ],
   "modules-left": [
-    "hyprland/workspaces"
+    "hyprland/workspaces",
+    "hyprland/submap"
   ],
   "modules-center": [
     "clock"
   ],
   "modules-right": [
-    "idle_inhibitor",
-    "tray",
+    "group/hardware",
     "mpd",
     "pulseaudio",
     "network",
