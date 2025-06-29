@@ -80,3 +80,8 @@
 
 ;; setting filetype extensions
 (add-to-list 'auto-mode-alist '("\\.puml\\'" . plantuml-mode))
+(setq plantuml-executable-path "/usr/bin/plantuml")
+    (setq plantuml-default-exec-mode 'executable)
+;; jk to escape from insert mode
+(after! evil-escape
+  (setq evil-escape-key-sequence "jk"))
