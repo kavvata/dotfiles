@@ -29,6 +29,9 @@ nmap <leader>cr <Action>(RenameElement)
 nmap <leader>gc <Action>(CommentByLineComment)
 nmap gr <Action>(GotoDeclaration)
 
+nmap <leader>cf <Action>(ReformatCode)
+vmap <leader>cf <Action>(ReformatCode)
+
 nmap == <Action>(ReformatCode)
 vmap = <Action>(ReformatCode)
 
