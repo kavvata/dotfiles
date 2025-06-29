@@ -12,3 +12,6 @@ theme = "kanagawabones"
 window-theme = ghostty
 gtk-tabs-location = hidden
 adw-toolbar-style = flat
+
+window-height = 30
+window-width = 110
