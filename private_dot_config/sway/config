@@ -20,4 +20,10 @@ bar {
 }
 
 include /etc/sway/config.d/*
-include ./conf/*
+
+include ./conf/autostart.conf
+include ./conf/binds.conf
+include ./conf/input.conf
+include ./conf/output.conf
+include ./conf/window-rules.conf
+include ./conf/swayfx.conf
