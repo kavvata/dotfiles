@@ -86,7 +86,7 @@ run_cmd() {
 		elif [[ $1 == '--reboot' ]]; then
 			systemctl reboot
 		elif [[ $1 == '--suspend' ]]; then
-			systemctl suspend
+			systemctl suspend-then-hibernate
 		elif [[ $1 == '--logout' ]]; then
       if [[ $(detect_wm) == "sway" ]]; then
         swaymsg exit

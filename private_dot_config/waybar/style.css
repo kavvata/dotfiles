@@ -21,7 +21,7 @@ window#waybar {
   margin-bottom: 0px;
   border-radius: 6px;
   border: 1px solid #4C4E57;
-  background-color: rgba(31, 31, 40, 0.90);
+  background-color: rgba(31, 31, 40, 1);
   box-shadow: rgba(0, 0, 0, 0.50) 0px -4px 16px;
 }
 
