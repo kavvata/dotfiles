@@ -95,6 +95,7 @@ network-manager-applet
 networkmanager
 networkmanager-openvpn
 nicotine+
+niri
 nmap
 nodejs
 noto-fonts
@@ -166,6 +167,7 @@ wl-clipboard
 woff2-font-awesome
 wofi
 wofi-emoji
+wofi-power-menu
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-desktop-portal-wlr
@@ -178,6 +180,7 @@ xf86-video-vmware
 xorg-server
 xorg-xinit
 xorg-xwayland
+xwayland-satellite
 yazi
 yt-dlp
 zathura

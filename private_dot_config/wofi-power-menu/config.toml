@@ -1,0 +1,23 @@
+[wofi]
+  extra_args = "--allow-markup --columns=1 --hide-scroll"
+
+[menu.lock-screen]
+    title = "Lock"
+    requires_confirmation = "false"
+    cmd = "hyprlock"
+
+[menu.shutdown]
+  title = "Shutdown"
+
+[menu.reboot]
+  title = "Reboot"
+
+[menu.suspend]
+  title = "Suspend"
+
+[menu.hibernate]
+  title = "Hibernate"
+
+[menu.logout]
+  title = "Exit"
+
