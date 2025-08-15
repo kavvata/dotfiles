@@ -20,6 +20,27 @@
     },
     "sort-by-number": true
   },
+  "niri/workspaces": {
+    "on-click": "activate",
+    "active-only": false,
+    "all-outputs": true,
+    "format": "{icon}",
+    "format-icons": {
+      "1": "一",
+      "2": "に",
+      "3": "三",
+      "4": "四",
+      "5": "五",
+      "6": "六",
+      "7": "七",
+      "8": "八",
+      "9": "九",
+      "10": "十",
+      "urgent": "",
+      "default": ""
+    },
+    "sort-by-number": true
+  },
   "sway/workspaces": {
     "on-click": "activate",
     "active-only": false,
@@ -51,6 +72,10 @@
   "custom/exit": {
     "format": "   ",
     "on-click": "bash /home/kav/.config/rofi/scripts/powermenu_t1"
+  },
+  "custom/wofi-exit": {
+    "format": "   ",
+    "on-click": "wofi-power-menu --config /home/kav/.config/wofi-power-menu/config.toml"
   },
   "keyboard-state": {
     "numlock": true,
@@ -146,10 +171,11 @@
     "scroll-step": 5
   },
   "bluetooth": {
+    "format": " 󰂯 ",
     "format-disabled": "",
     "format-off": "",
     "interval": 30,
-    "on-click": "blueman-manager",
+    "on-click": "",
     "format-no-controller": ""
   },
   "user": {
