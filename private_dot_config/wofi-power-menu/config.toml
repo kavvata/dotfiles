@@ -19,5 +19,6 @@
   title = "Hibernate"
 
 [menu.logout]
-  title = "Exit"
+  title = "Logout"
+  cmd = "niri msg action quit"
 
