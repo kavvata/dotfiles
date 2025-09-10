@@ -74,7 +74,7 @@
     "on-click": "bash /home/kav/.config/rofi/scripts/powermenu_t1"
   },
   "custom/wofi-exit": {
-    "format": "   ",
+    "format": "  ",
     "on-click": "wofi-power-menu --config /home/kav/.config/wofi-power-menu/config.toml"
   },
   "keyboard-state": {
@@ -100,28 +100,29 @@
   },
   "cpu": {
     "format": "  {usage}%",
-    "on-double-click": "ghostty -e btop"
+    "on-double-click": "kitty -e btop"
   },
   "memory": {
     "format": "  {}%",
-    "on-double-click": "ghostty -e btop"
+    "on-double-click": "kitty -e btop"
   },
   "disk": {
     "interval": 30,
     "format": "  {percentage_used}%",
     "path": "/",
-    "on-click": "ghostty -e btop"
+    "on-click": "kitty -e btop"
   },
   "hyprland/language": {
     "format": "/ K {short}"
   },
   "network": {
-    "format-wifi": "{essid} {icon}",
+    "format-wifi": "{essid} {icon} ",
     "tooltip-format": "{essid} - {frequency}G ({signalStrength}%)",
     "format-ethernet": "{ifname} ",
+    "format-alt": " {icon} ",
     "format-disconnected": "",
     "max-length": 50,
-    "on-click": "ghostty -e nmtui",
+    "on-double-click": "kitty -e nmtui",
     "format-icons": [
       "󰤯",
       "󰤟",
@@ -148,9 +149,9 @@
     ]
   },
   "pulseaudio": {
-    "format": "{volume}% {icon}",
-    "format-bluetooth": "{volume}% {icon}  {format_source}",
-    "format-bluetooth-muted": " {icon} {format_source}",
+    "format": "{volume}% {icon} ",
+    "format-bluetooth": "{volume}% {icon} ",
+    "format-bluetooth-muted": " {icon}",
     "format-muted": "0% {icon}",
     "format-source": "{volume}% ",
     "format-source-muted": "",
@@ -171,7 +172,7 @@
     "scroll-step": 5
   },
   "bluetooth": {
-    "format": " 󰂯 ",
+    "format": "󰂯",
     "format-disabled": "",
     "format-off": "",
     "interval": 30,
@@ -242,14 +243,21 @@
   },
   "group/batteries": {
     "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 300,
-      "children-class": "not-memory",
-      "transition-left-to-right": true
-    },
     "modules": [
       "battery#ext",
       "battery#int"
+    ]
+  },
+  "group/power": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "not-memory",
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "group/batteries",
+      "backlight"
     ]
   },
   "group/hardware": {
@@ -276,8 +284,14 @@
     },
     "modules": [
       "idle_inhibitor",
-      "backlight",
       "tray"
+    ]
+  },
+  "group/networks": {
+    "orientation": "inherit",
+    "modules": [
+      "network",
+      "bluetooth"
     ]
   }
 }

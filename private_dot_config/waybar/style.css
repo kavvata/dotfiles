@@ -17,12 +17,6 @@ window#waybar {
 .modules-left,
 .modules-right,
 .modules-center {
-  margin: 4px;
-  margin-bottom: 0px;
-  border-radius: 6px;
-  border: 1px solid #4C4E57;
-  background-color: rgba(31, 31, 40, 1);
-  box-shadow: rgba(0, 0, 0, 0.50) 0px -4px 16px;
 }
 
 
@@ -38,7 +32,6 @@ window#waybar {
 
 #workspaces button {
   padding: 0 5px;
-  background: transparent;
   color: #DCD7BA;
   border-top: 2px solid transparent;
 }
@@ -58,18 +51,35 @@ window#waybar {
   border-top: 2px solid #C8C093;
 }
 
+#workspaces,
 #clock,
-#battery,
+#batteries,
 #cpu,
 #memory,
 #temperature,
-#network,
 #pulseaudio,
 #custom-media,
 #mode,
 #submap,
-#idle_inhibitor {
+#custom-wofi-exit,
+#networks,
+#backlight,
+#misc {
   padding: 0 8px;
+  margin: 4px;
+  margin-bottom: 0px;
+  border-radius: 6px;
+  border: 1px solid #4C4E57;
+  background-color: rgba(31, 31, 40, 1);
+  box-shadow: rgba(0, 0, 0, 0.30) 0px -4px 8px;
+}
+
+#battery,
+#network,
+#bluetooth,
+#tray,
+#idle_inhibitor {
+  padding: 0 4px;
 }
 
 #idle_inhibitor.deactivated {

@@ -10,7 +10,7 @@
     "clock"
   ],
   "modules-right": [
-    "group/hardware",
+    "group/misc",
     "mpd",
     "pulseaudio",
     "network",
