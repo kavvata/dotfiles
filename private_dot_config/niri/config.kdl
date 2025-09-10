@@ -173,7 +173,7 @@ layout {
         // off
 
         // How many logical pixels the ring extends out from the windows.
-        width 2
+        width 1
 
         // Colors can be set in a variety of ways:
         // - CSS named colors: "red"
@@ -362,6 +362,9 @@ binds {
     Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
     Mod+N hotkey-overlay-title="Open emoji picker" { spawn "wofi-emoji"; }
     Mod+M hotkey-overlay-title="Open power menu" { spawn "wofi-power-menu" "--config" "/home/kav/.config/wofi-power-menu/config.toml"; }
+    Mod+E hotkey-overlay-title="Open yazi file explorer" { spawn "kitty" "-e" "yazi"; }
+    Mod+Shift+C hotkey-overlay-title="Open color picker" { spawn "/home/kav/.config/niri/color-picker.sh"; }
+    Mod+Shift+B hotkey-overlay-title="Reload bar" { spawn "/home/kav/.config/niri/reload-bar.sh"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.
@@ -590,6 +593,7 @@ binds {
 
     Print { screenshot; }
     Mod+S { screenshot; }
+    Mod+Shift+S { screenshot; }
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
 
