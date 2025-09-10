@@ -1,8 +1,5 @@
-*{
-  font-size: 1em;
-}
-
 window{
+  font-size: 1em;
   border-radius: 4px;
   border: 1px solid #C8C093;
   background-color: #1F1F28;
