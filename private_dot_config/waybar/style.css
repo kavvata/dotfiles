@@ -116,10 +116,8 @@ window#waybar {
 
 #memory {}
 
-#network {}
-
 #network.disconnected {
-  background: #C34043;
+  color: #C34043;
 }
 
 #pulseaudio {}

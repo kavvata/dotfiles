@@ -120,12 +120,28 @@ output "HDMI-A-2" {
   scale 1.0
 }
 
+overview {
+  backdrop-color "#1E1E26"
+  // workspace-shadow {
+  //     off
+  // }
+}
+// layer-rule {
+//     match namespace="^hyprpaper$"
+//     place-within-backdrop true
+// }
+
+
+    
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
     gaps 8
+
+    // Enable this to let the overview background show up
+    // background-color "transparent"
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -334,11 +350,6 @@ window-rule {
     open-floating true
 }
 
-layer-rule {
-    match namespace="^wallpaper$"
-    place-within-backdrop true
-}
-
 binds {
     // Keys consist of modifiers separated by + signs, followed by an XKB key name
     // in the end. To find an XKB name for a particular key, you may use a program
@@ -363,7 +374,8 @@ binds {
     Mod+N hotkey-overlay-title="Open emoji picker" { spawn "wofi-emoji"; }
     Mod+M hotkey-overlay-title="Open power menu" { spawn "wofi-power-menu" "--config" "/home/kav/.config/wofi-power-menu/config.toml"; }
     Mod+E hotkey-overlay-title="Open yazi file explorer" { spawn "kitty" "-e" "yazi"; }
-    Mod+Shift+C hotkey-overlay-title="Open color picker" { spawn "/home/kav/.config/niri/color-picker.sh"; }
+    Mod+Shift+C hotkey-overlay-title="Open color picker" { spawn "/home/kav/.config/kav-scripts/color-picker.sh"; }
+    Mod+Shift+W hotkey-overlay-title="Open color picker" { spawn "/home/kav/.config/kav-scripts/wallpaper-picker.sh"; }
     Mod+Shift+B hotkey-overlay-title="Reload bar" { spawn "/home/kav/.config/niri/reload-bar.sh"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.

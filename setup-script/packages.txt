@@ -1,6 +1,7 @@
 adw-gtk-theme
 apparmor
 apple_cursor
+astroterm
 atool
 autotiling-rs
 baobab
@@ -15,6 +16,7 @@ btop
 btrfs-progs
 calcurse
 chezmoi
+cider
 classifier-git
 cmake
 cmatrix
@@ -22,6 +24,8 @@ composer
 cozette-otb
 cpio
 curlftpfs
+datagrip
+datagrip-jre
 dhclient
 dmenu
 dnsmasq
@@ -45,6 +49,7 @@ gnome-disk-utility
 gnome-keyring
 gnome-software
 gowall
+gparted
 graphviz
 greetd-tuigreet
 grim
@@ -54,10 +59,10 @@ gvfs-mtp
 hledger
 hledger-ui
 hledger-web
+hping
 htop
 httpie
 hypridle
-hyprland
 hyprlock
 hyprpaper
 hyprpicker
@@ -87,6 +92,7 @@ lostfiles
 lzip
 mako
 man-db
+metasploit
 mpv
 nano
 nautilus
