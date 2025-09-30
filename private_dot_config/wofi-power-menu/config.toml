@@ -20,5 +20,4 @@
 
 [menu.logout]
   title = "Logout"
-  cmd = "niri msg action quit"
-
+  cmd = ".config/kav-scripts/logout.sh"
