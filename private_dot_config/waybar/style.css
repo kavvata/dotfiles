@@ -64,6 +64,7 @@ window#waybar {
 #custom-wofi-exit,
 #networks,
 #backlight,
+#mpd,
 #misc {
   padding: 0 8px;
   margin: 4px;
@@ -71,7 +72,7 @@ window#waybar {
   border-radius: 6px;
   border: 1px solid #4C4E57;
   background-color: rgba(31, 31, 40, 1);
-  box-shadow: rgba(0, 0, 0, 0.30) 0px -4px 8px;
+  /* box-shadow: rgba(0, 0, 0, 0.30) 0px -4px 8px; */
 }
 
 #battery,
