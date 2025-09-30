@@ -122,14 +122,17 @@ output "HDMI-A-2" {
 
 overview {
   backdrop-color "#1E1E26"
-  // workspace-shadow {
-  //     off
-  // }
+  workspace-shadow {
+      off
+  }
 }
-// layer-rule {
-//     match namespace="^hyprpaper$"
-//     place-within-backdrop true
-// }
+layer-rule {
+    match namespace="^hyprpaper$"
+    place-within-backdrop true
+}
+layer-rule {
+    match namespace="waybar"
+}
 
 
     
@@ -140,8 +143,8 @@ layout {
     // Set gaps around windows in logical pixels.
     gaps 8
 
-    // Enable this to let the overview background show up
-    // background-color "transparent"
+    // NOTE: Enable this to let the overview background show up
+    background-color "transparent"
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
