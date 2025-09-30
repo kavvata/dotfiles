@@ -12,10 +12,9 @@
   ],
   "modules-right": [
     "group/misc",
-    "mpd",
     "pulseaudio",
-    "network",
-    "group/batteries",
-    "custom/exit"
+    "group/networks",
+    "group/power",
+    "custom/wofi-exit"
   ]
 }
