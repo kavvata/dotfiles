@@ -28,7 +28,6 @@
     "quick_actions": false
   },
   "gutter": {
-    "code_actions": false,
     "folds": false,
     "runnables": false
   },
