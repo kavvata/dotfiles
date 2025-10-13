@@ -1,0 +1,33 @@
+[Default Applications]
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop
+x-scheme-handler/http=io.github.zen_browser.zen.desktop
+x-scheme-handler/https=io.github.zen_browser.zen.desktop
+x-scheme-handler/ftp=firefox.desktop
+x-scheme-handler/chrome=firefox.desktop
+text/html=io.github.zen_browser.zen.desktop
+application/x-extension-htm=io.github.zen_browser.zen.desktop
+application/x-extension-html=io.github.zen_browser.zen.desktop
+application/x-extension-shtml=io.github.zen_browser.zen.desktop
+application/xhtml+xml=io.github.zen_browser.zen.desktop
+application/x-extension-xhtml=io.github.zen_browser.zen.desktop
+application/x-extension-xht=io.github.zen_browser.zen.desktop
+image/jpeg=imv.desktop
+x-scheme-handler/about=io.github.zen_browser.zen.desktop
+x-scheme-handler/unknown=io.github.zen_browser.zen.desktop
+image/png=imv.desktop
+image/gif=imv.desktop
+video/mp4=mpv.desktop
+application/x-zerosize=libreoffice-calc.desktop
+video/webm=mpv.desktop
+image/webp=org.gnome.Loupe.desktop
+inode/directory=org.gnome.Nautilus.desktop
+
+[Added Associations]
+image/jpeg=imv.desktop;org.gnome.Loupe.desktop;
+image/png=imv.desktop;org.gnome.Loupe.desktop;
+image/gif=imv.desktop;org.gnome.Loupe.desktop;
+application/x-zerosize=libreoffice-calc.desktop;
+video/mp4=org.gnome.Showtime.desktop;mpv.desktop;
+video/webm=mpv.desktop;
+application/pdf=app.zen_browser.zen.desktop;org.pwmt.zathura-pdf-mupdf.desktop;
+image/webp=org.gnome.Loupe.desktop;
