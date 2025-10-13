@@ -99,7 +99,7 @@ input {
 
     // Focus windows and outputs automatically when moving the mouse into them.
     // Setting max-scroll-amount="0%" makes it work only on windows already fully on screen.
-    // focus-follows-mouse max-scroll-amount="0%"
+    focus-follows-mouse max-scroll-amount="0%"
 }
 
 // You can configure outputs by their name, which you can find
@@ -192,7 +192,7 @@ layout {
         // off
 
         // How many logical pixels the ring extends out from the windows.
-        width 1
+        width 2
 
         // Colors can be set in a variety of ways:
         // - CSS named colors: "red"
@@ -201,7 +201,6 @@ layout {
 
         // Color of the ring on the active monitor.
         active-color "#C8C093"
-
 
         // Color of the ring on inactive monitors.
         //
@@ -233,9 +232,9 @@ layout {
         // If you enable the border, you probably want to disable the focus ring.
         off
 
-        width 4
+        width 1
         active-color "#C8C093"
-        inactive-color "#2A2A37"
+        inactive-color "#4C4E57"
 
         // Color of the border around windows that request your attention.
         urgent-color "#FF9E3B"
@@ -251,7 +250,7 @@ layout {
     // You can enable drop shadows for windows.
     shadow {
         // Uncomment the next line to enable shadows.
-        // on
+        on
 
         // By default, the shadow draws only around its window, and not behind it.
         // Uncomment this setting to make the shadow draw behind its window.
@@ -273,7 +272,7 @@ layout {
         // pixels and match the CSS box-shadow properties.
 
         // Softness controls the shadow blur radius.
-        softness 30
+        softness 20
 
         // Spread expands the shadow.
         spread 3
@@ -351,6 +350,11 @@ window-rule {
     // - Flatpak Firefox (app-id is "org.mozilla.firefox")
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     open-floating true
+}
+
+window-rule {
+  match app-id="io.bassi.Amberol"
+  default-column-width { proportion 0.33333; }
 }
 
 binds {
