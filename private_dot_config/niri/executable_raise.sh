@@ -11,3 +11,12 @@ CHOICE=$(echo "$WINDOWS" | sed "s/$DELIM.*//" | wofi --width 600 --length 400 --
 WIN_ID=$(echo "$WINDOWS" | grep -F "$CHOICE" | sed "s/.*$DELIM//")
 
 niri msg action focus-window --id "$WIN_ID"
+
+# window_list=$(niri msg --json windows)
+# name=$(echo $window_list | jq -r '.[] | "\(.app_id): \(.title)"' | fuzzel --dmenu)
+# id=$(echo $window_list | jq -r '.[] | ."title", ."id"' | grep "$name" -x -A 1 | grep "$name" -vx)
+#
+# echo $id
+# echo $name
+#
+# niri msg action focus-window --id $id
