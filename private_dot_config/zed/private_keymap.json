@@ -17,6 +17,7 @@
     "bindings": {
       "shift-k": "editor::Hover",
       "space /": "workspace::NewSearch",
+      "space s g": "workspace::NewSearch",
       "space w v": "pane::SplitRight",
       "space w s": "pane::SplitDown",
       "space b d": "pane::CloseActiveItem",
@@ -33,7 +34,8 @@
       "shift-l": "tab_switcher::Toggle",
       "= =": "editor::Format",
       "space c f": "editor::Format",
-      "space d": "editor::ToggleInlineDiagnostics"
+      "space d": "editor::ToggleInlineDiagnostics",
+      "space s s": "project_symbols::Toggle"
     }
   },
   {
@@ -55,7 +57,8 @@
   {
     "context": "Editor && vim_mode == visual",
     "bindings": {
-      "=": "editor::FormatSelections"
+      "=": "editor::FormatSelections",
+      "space c f": "editor::FormatSelections"
     }
   },
   {

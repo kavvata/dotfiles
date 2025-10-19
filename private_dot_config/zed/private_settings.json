@@ -18,10 +18,13 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Kanagawa Wave"
+    "dark": "Kanagawa"
   },
   "tab_bar": {
     "show": true
+  },
+  "title_bar": {
+    "show_branch_icon": true
   },
   "toolbar": {
     "breadcrumbs": false,
@@ -35,7 +38,7 @@
   "wrap_guides": [100],
   "languages": {
     "Python": {
-      "language_servers": ["basedpyright", "ruff"]
+      "language_servers": ["pyrefly", "ruff"]
     }
   },
   "lsp": {
