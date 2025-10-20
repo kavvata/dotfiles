@@ -23,7 +23,6 @@
       "space b d": "pane::CloseActiveItem",
       "space w d": "pane::CloseAllItems",
       "space b b": "tab_switcher::Toggle",
-      "space t": "workspace::NewCenterTerminal",
       "space c r": "editor::Rename",
       "space c d": "editor::Hover",
       "space c a": "editor::ToggleCodeActions",
@@ -35,7 +34,8 @@
       "= =": "editor::Format",
       "space c f": "editor::Format",
       "space d": "editor::ToggleInlineDiagnostics",
-      "space s s": "project_symbols::Toggle"
+      "space s s": "project_symbols::Toggle",
+      "space t": "workspace::NewCenterTerminal"
     }
   },
   {
