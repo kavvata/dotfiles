@@ -1,10 +1,10 @@
 [Default Applications]
 application/pdf=org.pwmt.zathura-pdf-mupdf.desktop
-x-scheme-handler/http=io.github.zen_browser.zen.desktop
-x-scheme-handler/https=io.github.zen_browser.zen.desktop
+x-scheme-handler/http=helium.desktop
+x-scheme-handler/https=helium.desktop
 x-scheme-handler/ftp=firefox.desktop
 x-scheme-handler/chrome=firefox.desktop
-text/html=io.github.zen_browser.zen.desktop
+text/html=helium.desktop
 application/x-extension-htm=io.github.zen_browser.zen.desktop
 application/x-extension-html=io.github.zen_browser.zen.desktop
 application/x-extension-shtml=io.github.zen_browser.zen.desktop
@@ -12,8 +12,8 @@ application/xhtml+xml=io.github.zen_browser.zen.desktop
 application/x-extension-xhtml=io.github.zen_browser.zen.desktop
 application/x-extension-xht=io.github.zen_browser.zen.desktop
 image/jpeg=imv.desktop
-x-scheme-handler/about=io.github.zen_browser.zen.desktop
-x-scheme-handler/unknown=io.github.zen_browser.zen.desktop
+x-scheme-handler/about=helium.desktop
+x-scheme-handler/unknown=helium.desktop
 image/png=imv.desktop
 image/gif=imv.desktop
 video/mp4=mpv.desktop
