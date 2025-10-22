@@ -2,7 +2,10 @@
   border: none;
   border-radius: 0;
   /* font-family: JetBrainsMono Nerd Font, Inter Display Regular, sans-serif; */
-  font-family: Inter, JetBrainsMono Nerd Font, sans-serif;
+  font-family:
+    Inter,
+    JetBrainsMono Nerd Font,
+    sans-serif;
   font-size: 11px;
   font-weight: 500;
 }
@@ -10,15 +13,14 @@
 window#waybar {
   background: transparent;
   transition-property: background-color;
-  transition-duration: .5s;
-  color: #DCD7BA;
+  transition-duration: 0.5s;
+  color: #dcd7ba;
 }
 
 .modules-left,
 .modules-right,
 .modules-center {
 }
-
 
 #window {
   font-weight: bold;
@@ -32,23 +34,23 @@ window#waybar {
 
 #workspaces button {
   padding: 0 5px;
-  color: #DCD7BA;
+  color: #dcd7ba;
   border-top: 2px solid transparent;
 }
 
 #workspaces button.active {
-  color: #E46876;
-  border-top: 2px solid #E46876;
+  color: #e46876;
+  border-top: 2px solid #e46876;
 }
 
 #workspaces button.focused {
-  color: #E46876;
-  border-top: 2px solid #E46876;
+  color: #e46876;
+  border-top: 2px solid #e46876;
 }
 
 #mode,
 #submap {
-  border-top: 2px solid #C8C093;
+  border-top: 2px solid #c8c093;
 }
 
 #workspaces,
@@ -70,7 +72,7 @@ window#waybar {
   margin: 4px;
   margin-bottom: 0px;
   border-radius: 6px;
-  border: 1px solid #4C4E57;
+  border: 1px solid #4c4e57;
   background-color: rgba(31, 31, 40, 1);
   /* box-shadow: rgba(0, 0, 0, 0.30) 0px -4px 8px; */
 }
@@ -92,10 +94,11 @@ window#waybar {
 }
 
 #battery icon {
-  color: #C34043;
+  color: #c34043;
 }
 
-#battery.charging {}
+#battery.charging {
+}
 
 /*@keyframes blink {*/
 /*    to {*/
@@ -105,7 +108,7 @@ window#waybar {
 /*}*/
 
 #battery.warning:not(.charging) {
-  color: #DCD7BA;
+  color: #dcd7ba;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
@@ -113,18 +116,24 @@ window#waybar {
   animation-direction: alternate;
 }
 
-#cpu {}
-
-#memory {}
-
-#network.disconnected {
-  color: #C34043;
+#cpu {
 }
 
-#pulseaudio {}
+#memory {
+}
 
-#pulseaudio.muted {}
+#network.disconnected {
+  color: #c34043;
+}
 
-#tray {}
+#pulseaudio {
+}
 
-#hardware {}
+#pulseaudio.muted {
+}
+
+#tray {
+}
+
+#hardware {
+}
