@@ -64,7 +64,7 @@ input {
         natural-scroll
         // accel-speed 0.2
         // accel-profile "flat"
-        scroll-factor 0.5
+        scroll-factor 0.4
         // scroll-method "two-finger"
         // scroll-button 273
         // scroll-button-lock
@@ -141,7 +141,7 @@ layer-rule {
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 8
+    gaps 4
 
     // NOTE: Enable this to let the overview background show up
     background-color "transparent"
@@ -189,10 +189,10 @@ layout {
     // You can change how the focus ring looks.
     focus-ring {
         // Uncomment this line to disable the focus ring.
-        // off
+        off
 
         // How many logical pixels the ring extends out from the windows.
-        width 2
+        width 1
 
         // Colors can be set in a variety of ways:
         // - CSS named colors: "red"
@@ -230,7 +230,7 @@ layout {
     border {
         // The settings are the same as for the focus ring.
         // If you enable the border, you probably want to disable the focus ring.
-        off
+        // off
 
         width 1
         active-color "#C8C093"
