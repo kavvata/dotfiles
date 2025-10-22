@@ -64,7 +64,7 @@ input {
         natural-scroll
         // accel-speed 0.2
         // accel-profile "flat"
-        scroll-factor 0.4
+        scroll-factor 0.5
         // scroll-method "two-finger"
         // scroll-button 273
         // scroll-button-lock
@@ -141,7 +141,7 @@ layer-rule {
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 4
+    gaps 8
 
     // NOTE: Enable this to let the overview background show up
     background-color "transparent"
@@ -189,7 +189,7 @@ layout {
     // You can change how the focus ring looks.
     focus-ring {
         // Uncomment this line to disable the focus ring.
-        off
+        // off
 
         // How many logical pixels the ring extends out from the windows.
         width 1
@@ -230,7 +230,7 @@ layout {
     border {
         // The settings are the same as for the focus ring.
         // If you enable the border, you probably want to disable the focus ring.
-        // off
+        off
 
         width 1
         active-color "#C8C093"
@@ -326,11 +326,57 @@ screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 // The wiki explains how to configure individual animations:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Animations
 animations {
-    // Uncomment to turn off all animations.
-    // off
+  // Uncomment to turn off all animations.
+  // You can also put "off" into each individual animation to disable it.
+  // off
 
-    // Slow down all animations by this factor. Values below 1 speed them up instead.
-    // slowdown 3.0
+  // Slow down all animations by this factor. Values below 1 speed them up instead.
+  // slowdown 3.0
+
+  // Individual animations.
+
+  workspace-switch {
+      spring damping-ratio=1.0 stiffness=1000 epsilon=0.0001
+  }
+
+  window-open {
+      duration-ms 150
+      curve "ease-out-expo"
+  }
+
+  window-close {
+      duration-ms 150
+      curve "ease-out-quad"
+  }
+
+  horizontal-view-movement {
+      spring damping-ratio=1.0 stiffness=800 epsilon=0.0001
+  }
+
+  window-movement {
+      spring damping-ratio=1.0 stiffness=800 epsilon=0.0001
+  }
+
+  window-resize {
+      spring damping-ratio=1.0 stiffness=800 epsilon=0.0001
+  }
+
+  config-notification-open-close {
+      spring damping-ratio=0.6 stiffness=1000 epsilon=0.001
+  }
+
+  exit-confirmation-open-close {
+      spring damping-ratio=0.6 stiffness=500 epsilon=0.01
+  }
+
+  screenshot-ui-open {
+      duration-ms 200
+      curve "ease-out-quad"
+  }
+
+  overview-open-close {
+      spring damping-ratio=1.0 stiffness=800 epsilon=0.0001
+  }
 }
 
 // Window rules let you adjust behavior for individual windows.
