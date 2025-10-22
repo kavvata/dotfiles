@@ -27,7 +27,10 @@
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
-      "j k": ["workspace::SendKeystrokes", "escape escape"]
+      "j k": [
+        "workspace::SendKeystrokes",
+        "escape escape"
+      ]
     }
   },
   {
@@ -133,15 +136,42 @@
       // Tab things. Almost as good as harpoon.
       "shift-h": "tab_switcher::Toggle",
       "shift-l": "tab_switcher::Toggle",
-      "space 1": ["pane::ActivateItem", 0],
-      "space 2": ["pane::ActivateItem", 1],
-      "space 3": ["pane::ActivateItem", 2],
-      "space 4": ["pane::ActivateItem", 3],
-      "space 5": ["pane::ActivateItem", 4],
-      "space 6": ["pane::ActivateItem", 5],
-      "space 7": ["pane::ActivateItem", 6],
-      "space 8": ["pane::ActivateItem", 7],
-      "space 9": ["pane::ActivateItem", 8],
+      "space 1": [
+        "pane::ActivateItem",
+        0
+      ],
+      "space 2": [
+        "pane::ActivateItem",
+        1
+      ],
+      "space 3": [
+        "pane::ActivateItem",
+        2
+      ],
+      "space 4": [
+        "pane::ActivateItem",
+        3
+      ],
+      "space 5": [
+        "pane::ActivateItem",
+        4
+      ],
+      "space 6": [
+        "pane::ActivateItem",
+        5
+      ],
+      "space 7": [
+        "pane::ActivateItem",
+        6
+      ],
+      "space 8": [
+        "pane::ActivateItem",
+        7
+      ],
+      "space 9": [
+        "pane::ActivateItem",
+        8
+      ],
       "space 0": "pane::ActivateLastItem",
       "] b": "pane::ActivateNextItem",
       "[ b": "pane::ActivatePreviousItem",
@@ -216,11 +246,26 @@
   {
     "context": "VimControl && !menu",
     "bindings": {
-      "ctrl-d": ["workspace::SendKeystrokes", "ctrl-d z z"],
-      "ctrl-u": ["workspace::SendKeystrokes", "ctrl-u z z"],
-      "n": ["workspace::SendKeystrokes", "n z z z v"],
-      "shift-n": ["workspace::SendKeystrokes", "shift-n z z z v"],
-      "shift-g": ["workspace::SendKeystrokes", "shift-g z z"],
+      "ctrl-d": [
+        "workspace::SendKeystrokes",
+        "ctrl-d z z"
+      ],
+      "ctrl-u": [
+        "workspace::SendKeystrokes",
+        "ctrl-u z z"
+      ],
+      "n": [
+        "workspace::SendKeystrokes",
+        "n z z z v"
+      ],
+      "shift-n": [
+        "workspace::SendKeystrokes",
+        "shift-n z z z v"
+      ],
+      "shift-g": [
+        "workspace::SendKeystrokes",
+        "shift-g z z"
+      ],
       "g r": "editor::FindAllReferences"
     }
   },
@@ -249,6 +294,13 @@
     "bindings": {
       "shift-h": "menu::SelectPrevious",
       "shift-l": "menu::SelectNext"
+    }
+  },
+  {
+    "context": "(ProjectPanel || Terminal || (Editor && vim_mode != insert) || EmptyPane ) && !((ProjectSearchBar || Picker) > Editor) && (!GitPanel) && !(CommitEditor > Editor)",
+    "bindings": {
+      "space e": "workspace::ToggleLeftDock",
+      "space space": "file_finder::Toggle"
     }
   }
 ]

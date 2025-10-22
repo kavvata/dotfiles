@@ -10,7 +10,6 @@ Terminal=false
 Icon=/home/kav/.local/share/app-icons/helium.png
 Type=Application
 Categories=Network;WebBrowser;
-MimeType=application/pdf;application/rdf+xml;application/rss+xml;application/xhtml+xml;application/xhtml_xml;application/xml;image/gif;image/jpeg;image/png;image/webp;text/html;text/xml;x-scheme-handler/http;x-scheme-handler/https;
 Actions=new-window;new-private-window;
 X-AppImage-Version=0.5.6.1
 
@@ -21,3 +20,4 @@ Exec=/home/kav/.local/appimages/helium-0.5.6.1-x86_64.AppImage --enable-features
 [Desktop Action new-private-window]
 Name=New Incognito Window
 Exec=/home/kav/.local/appimages/helium-0.5.6.1-x86_64.AppImage --incognito --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-features=TouchpadOverscrollHistoryNavigation
+MimeType=x-scheme-handler/unknown;x-scheme-handler/about;application/pdf;application/rdf+xml;application/rss+xml;application/xhtml+xml;application/xhtml_xml;application/xml;image/gif;image/jpeg;image/png;image/webp;text/html;text/xml;x-scheme-handler/http;x-scheme-handler/https;
