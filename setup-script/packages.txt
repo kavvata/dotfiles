@@ -22,8 +22,6 @@ composer
 cozette-otb
 cpio
 curlftpfs
-datagrip
-datagrip-jre
 dhclient
 dmenu
 dnsmasq
@@ -41,6 +39,7 @@ freerdp
 fuzzel
 fwupd
 fzf
+gdb
 git
 github-cli
 gnome-keyring
@@ -68,12 +67,14 @@ idlehack-git
 imagemagick
 imv
 inetutils
+inotify-tools
 intel-media-driver
 intel-ucode
 inter-font
 iwd
 jq
 kitty
+lazydocker
 lazygit
 legcord-bin
 libnotify
@@ -121,7 +122,7 @@ pipewire-pulse
 plymouth
 polkit-gnome
 pyrefly-bin
-python-django
+python-ipykernel
 python-pipenv
 qt5-wayland
 reflector
