@@ -400,7 +400,7 @@ window-rule {
 
 window-rule {
   match app-id="io.bassi.Amberol"
-  default-column-width { proportion 0.33333; }
+  default-column-width { proportion 0.250; }
 }
 
 binds {
