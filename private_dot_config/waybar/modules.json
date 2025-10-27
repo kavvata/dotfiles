@@ -75,7 +75,7 @@
   },
   "custom/wofi-exit": {
     "format": "  ",
-    "on-click": "wofi-power-menu --config /home/kav/.config/wofi-power-menu/config.toml"
+    "on-click": "/home/kav/.config/kav-scripts/power-menu.sh"
   },
   "keyboard-state": {
     "numlock": true,
@@ -123,13 +123,7 @@
     "format-disconnected": "",
     "max-length": 50,
     "on-double-click": "kitty -e nmtui",
-    "format-icons": [
-      "󰤯",
-      "󰤟",
-      "󰤢",
-      "󰤥",
-      "󰤨"
-    ]
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
   },
   "battery": {
     "states": {
@@ -140,13 +134,7 @@
     "format-charging": "  {capacity}%",
     "format-plugged": "  {capacity}%",
     "format-alt": "{icon}  {time}",
-    "format-icons": [
-      " ",
-      " ",
-      " ",
-      " ",
-      " "
-    ]
+    "format-icons": [" ", " ", " ", " ", " "]
   },
   "pulseaudio": {
     "format": "{volume}% {icon} ",
@@ -162,11 +150,7 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": [
-        "",
-        "",
-        ""
-      ]
+      "default": ["", "", ""]
     },
     "on-click": "pavucontrol",
     "scroll-step": 5
@@ -203,13 +187,7 @@
     "format-charging": "{capacity}% ",
     "format-plugged": "{capacity}% ",
     "format-alt": "{time} {icon}",
-    "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      ""
-    ]
+    "format-icons": ["", "", "", "", ""]
   },
   "battery#int": {
     "states": {
@@ -222,31 +200,17 @@
     "format-charging": "  {capacity}%",
     "format-plugged": "  {capacity}%",
     "format-alt": "{icon} {time}",
-    "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      ""
-    ]
+    "format-icons": ["", "", "", "", ""]
   },
   "backlight": {
     "device": "intel_backlight",
     "format": "{percent}% {icon}",
-    "format-icons": [
-      "󰃞 ",
-      "󰃝 ",
-      "󰃟 ",
-      "󰃠 "
-    ],
+    "format-icons": ["󰃞 ", "󰃝 ", "󰃟 ", "󰃠 "],
     "scroll-step": 5
   },
   "group/batteries": {
     "orientation": "inherit",
-    "modules": [
-      "battery#ext",
-      "battery#int"
-    ]
+    "modules": ["battery#ext", "battery#int"]
   },
   "group/power": {
     "orientation": "inherit",
@@ -255,10 +219,7 @@
       "children-class": "not-memory",
       "transition-left-to-right": false
     },
-    "modules": [
-      "group/batteries",
-      "backlight"
-    ]
+    "modules": ["group/batteries", "backlight"]
   },
   "group/hardware": {
     "orientation": "inherit",
@@ -267,13 +228,7 @@
       "children-class": "not-memory",
       "transition-left-to-right": false
     },
-    "modules": [
-      "idle_inhibitor",
-      "disk",
-      "memory",
-      "cpu",
-      "tray"
-    ]
+    "modules": ["idle_inhibitor", "disk", "memory", "cpu", "tray"]
   },
   "group/misc": {
     "orientation": "inherit",
@@ -282,17 +237,11 @@
       "children-class": "not-memory",
       "transition-left-to-right": false
     },
-    "modules": [
-      "idle_inhibitor",
-      "tray"
-    ]
+    "modules": ["idle_inhibitor", "tray"]
   },
   "group/networks": {
     "orientation": "inherit",
-    "modules": [
-      "network",
-      "bluetooth"
-    ]
+    "modules": ["network", "bluetooth"]
   },
   "mpd": {
     "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ",

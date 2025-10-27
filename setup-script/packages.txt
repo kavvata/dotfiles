@@ -172,7 +172,6 @@ wl-clipboard
 woff2-font-awesome
 wofi
 wofi-emoji
-wofi-power-menu
 xdg-desktop-portal-gnome
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland

@@ -135,7 +135,7 @@ layer-rule {
 }
 
 
-    
+
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
@@ -426,7 +426,7 @@ binds {
     Mod+Return hotkey-overlay-title="Open a Terminal: kitty" {spawn "kitty"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
     Mod+N hotkey-overlay-title="Open emoji picker" { spawn "wofi-emoji"; }
-    Mod+M hotkey-overlay-title="Open power menu" { spawn "wofi-power-menu" "--config" "/home/kav/.config/wofi-power-menu/config.toml"; }
+    Mod+M hotkey-overlay-title="Open power menu" { spawn "/home/kav/.config/kav-scripts/power-menu.sh"; }
     Mod+E hotkey-overlay-title="Open yazi file explorer" { spawn "kitty" "-e" "yazi"; }
     Mod+Shift+C hotkey-overlay-title="Open color picker" { spawn "/home/kav/.config/kav-scripts/color-picker.sh"; }
     Mod+Shift+W hotkey-overlay-title="Open color picker" { spawn "/home/kav/.config/kav-scripts/wallpaper-picker.sh"; }
@@ -443,7 +443,7 @@ binds {
     // XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }
     // XF86AudioMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
     // XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
-    
+
     XF86AudioRaiseVolume allow-when-locked=true { spawn "pamixer" "-i" "5"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn "pamixer" "-d" "5"; }
     XF86AudioMute        allow-when-locked=true { spawn "pamixer" "-t"; }
@@ -681,4 +681,3 @@ binds {
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
 }
-
