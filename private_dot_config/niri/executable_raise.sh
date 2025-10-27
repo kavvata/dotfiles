@@ -2,9 +2,9 @@
 
 DELIM="__WID__"
 
-WINDOWS=$(niri msg -j windows | jq -r --arg D "$DELIM" '.[] | "\(.app_id): \(.title)\($D)\(.id)"')
+WINDOWS=$(niri msg -j windows | jq -r --arg D "$DELIM" '.[] | "   \(.app_id): \(.title)\($D)\(.id)"')
 
-CHOICE=$(echo "$WINDOWS" | sed "s/$DELIM.*//" | wofi --width 600 --length 400 --dmenu --prompt "Select a window:" --matching fuzzy --insensitive)
+CHOICE=$(echo "$WINDOWS" | sed "s/$DELIM.*//" | wofi --width 300 --height 300 --dmenu --prompt "Select a window:" --matching fuzzy --insensitive)
 
 [ -z "$CHOICE" ] && exit
 
