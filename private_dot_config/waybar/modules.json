@@ -63,10 +63,8 @@
     "sort-by-number": true
   },
   "custom/appmenu": {
-    "format": "Apps",
-    "tooltip-format": "Left: Open the application launcher\nRight: Show all keybindings",
+    "format": "  ",
     "on-click": "fuzzel",
-    "on-click-right": "~/.config/ml4w/scripts/keybindings.sh",
     "tooltip": false
   },
   "custom/exit": {
@@ -116,14 +114,20 @@
     "format": "/ K {short}"
   },
   "network": {
-    "format-wifi": "{essid} {icon} ",
+    "format-wifi": "{icon}   {essid}",
     "tooltip-format": "{essid} - {frequency}G ({signalStrength}%)",
     "format-ethernet": "{ifname} ",
-    "format-alt": " {icon} ",
-    "format-disconnected": "",
+    "format-alt": "{icon} ",
+    "format-disconnected": " ",
     "max-length": 50,
     "on-double-click": "kitty -e nmtui",
-    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
+    "format-icons": [
+      "󰤯",
+      "󰤟",
+      "󰤢",
+      "󰤥",
+      "󰤨"
+    ]
   },
   "battery": {
     "states": {
@@ -134,13 +138,19 @@
     "format-charging": "  {capacity}%",
     "format-plugged": "  {capacity}%",
     "format-alt": "{icon}  {time}",
-    "format-icons": [" ", " ", " ", " ", " "]
+    "format-icons": [
+      " ",
+      " ",
+      " ",
+      " ",
+      " "
+    ]
   },
   "pulseaudio": {
-    "format": "{volume}% {icon} ",
-    "format-bluetooth": "{volume}% {icon} ",
+    "format": "{icon}   {volume}% ",
+    "format-bluetooth": "{icon}   {volume}% ",
     "format-bluetooth-muted": " {icon}",
-    "format-muted": "0% {icon}",
+    "format-muted": "   0% ",
     "format-source": "{volume}% ",
     "format-source-muted": "",
     "format-icons": {
@@ -150,9 +160,13 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": ["", "", ""]
+      "default": [
+        "",
+        "",
+        ""
+      ]
     },
-    "on-click": "pavucontrol",
+    "on-double-click": "pavucontrol",
     "scroll-step": 5
   },
   "bluetooth": {
@@ -187,7 +201,13 @@
     "format-charging": "{capacity}% ",
     "format-plugged": "{capacity}% ",
     "format-alt": "{time} {icon}",
-    "format-icons": ["", "", "", "", ""]
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
   },
   "battery#int": {
     "states": {
@@ -200,17 +220,31 @@
     "format-charging": "  {capacity}%",
     "format-plugged": "  {capacity}%",
     "format-alt": "{icon} {time}",
-    "format-icons": ["", "", "", "", ""]
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
   },
   "backlight": {
     "device": "intel_backlight",
     "format": "{percent}% {icon}",
-    "format-icons": ["󰃞 ", "󰃝 ", "󰃟 ", "󰃠 "],
+    "format-icons": [
+      "󰃞 ",
+      "󰃝 ",
+      "󰃟 ",
+      "󰃠 "
+    ],
     "scroll-step": 5
   },
   "group/batteries": {
     "orientation": "inherit",
-    "modules": ["battery#ext", "battery#int"]
+    "modules": [
+      "battery#ext",
+      "battery#int"
+    ]
   },
   "group/power": {
     "orientation": "inherit",
@@ -219,7 +253,10 @@
       "children-class": "not-memory",
       "transition-left-to-right": false
     },
-    "modules": ["group/batteries", "backlight"]
+    "modules": [
+      "group/batteries",
+      "backlight"
+    ]
   },
   "group/hardware": {
     "orientation": "inherit",
@@ -228,7 +265,13 @@
       "children-class": "not-memory",
       "transition-left-to-right": false
     },
-    "modules": ["idle_inhibitor", "disk", "memory", "cpu", "tray"]
+    "modules": [
+      "idle_inhibitor",
+      "disk",
+      "memory",
+      "cpu",
+      "tray"
+    ]
   },
   "group/misc": {
     "orientation": "inherit",
@@ -237,11 +280,17 @@
       "children-class": "not-memory",
       "transition-left-to-right": false
     },
-    "modules": ["idle_inhibitor", "tray"]
+    "modules": [
+      "idle_inhibitor",
+      "tray"
+    ]
   },
   "group/networks": {
     "orientation": "inherit",
-    "modules": ["network", "bluetooth"]
+    "modules": [
+      "network",
+      "bluetooth"
+    ]
   },
   "mpd": {
     "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ",
