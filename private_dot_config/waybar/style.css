@@ -1,56 +1,12 @@
 * {
   border: none;
   border-radius: 0;
-  /* font-family: JetBrainsMono Nerd Font, Inter Display Regular, sans-serif; */
   font-family:
     Inter,
     JetBrainsMono Nerd Font,
     sans-serif;
   font-size: 11px;
   font-weight: 500;
-}
-
-window#waybar {
-  background: transparent;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-  color: #dcd7ba;
-}
-
-.modules-left,
-.modules-right,
-.modules-center {
-}
-
-#window {
-  font-weight: bold;
-  padding: 0px 5px;
-}
-
-#workspaces {
-  font-weight: bold;
-  padding: 0 5px;
-}
-
-#workspaces button {
-  padding: 0 5px;
-  color: #dcd7ba;
-  border-top: 2px solid transparent;
-}
-
-#workspaces button.active {
-  color: #e46876;
-  border-top: 2px solid #e46876;
-}
-
-#workspaces button.focused {
-  color: #e46876;
-  border-top: 2px solid #e46876;
-}
-
-#mode,
-#submap {
-  border-top: 2px solid #c8c093;
 }
 
 #workspaces,
@@ -76,6 +32,44 @@ window#waybar {
   border: 1px solid #4c4e57;
   background-color: rgba(31, 31, 40, 1);
   /* box-shadow: rgba(0, 0, 0, 0.30) 0px -4px 8px; */
+}
+
+window#waybar {
+  background: transparent;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  color: #dcd7ba;
+}
+
+.modules-left,
+.modules-right,
+.modules-center {
+}
+
+#window {
+  font-weight: bold;
+  padding: 0px 5px;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  color: #dcd7ba;
+  border-top: 2px solid transparent;
+}
+
+#workspaces button.active {
+  color: #e46876;
+  border-top: 2px solid #e46876;
+}
+
+#workspaces button.focused {
+  color: #e46876;
+  border-top: 2px solid #e46876;
+}
+
+#mode,
+#submap {
+  border-top: 2px solid #c8c093;
 }
 
 #battery,
