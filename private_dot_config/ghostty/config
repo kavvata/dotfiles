@@ -1,14 +1,14 @@
 font-family = "JetBrainsMono Nerd Font"
 font-size = 9
-bold-is-bright = true
+bold-is-bright = false
 font-thicken = true
 # adjust-cell-width = -10%
-background-opacity = 0.40
+# background-opacity = 0.40
 # background-blur-radius = 20
 
 window-padding-x = 4
 window-padding-y = 4
-theme = "kanagawabones"
+theme = "Kanagawabones"
 window-theme = ghostty
 gtk-tabs-location = hidden
 adw-toolbar-style = flat
