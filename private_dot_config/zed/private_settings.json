@@ -43,7 +43,7 @@
   "wrap_guides": [100],
   "languages": {
     "Python": {
-      "language_servers": ["pyrefly", "ruff"]
+      "language_servers": ["basedpyright", "ruff"]
     }
   },
   "lsp": {
