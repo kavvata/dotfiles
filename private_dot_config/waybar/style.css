@@ -26,7 +26,7 @@
 #mpd,
 #misc {
   padding: 0 8px;
-  margin: 6px 6px 0px 6px;
+  margin: 4px 6px 0px 6px;
   border-radius: 6px;
   border: 1px solid #4c4e57;
   background-color: rgba(31, 31, 40, 1);
@@ -47,7 +47,7 @@ window#waybar {
 
 #window {
   font-weight: bold;
-  padding: 0px 5px;
+  /* padding: 0px 5px; */
 }
 
 #workspaces button {
