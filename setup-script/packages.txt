@@ -14,7 +14,6 @@ btop
 btrfs-progs
 calcurse
 chezmoi
-cider
 classifier-git
 cmake
 cmatrix
@@ -27,6 +26,7 @@ dmenu
 dnsmasq
 docker
 docker-compose
+dua-cli
 dust
 efibootmgr
 eza
@@ -107,11 +107,12 @@ noto-fonts-cjk
 noto-fonts-emoji
 noto-fonts-extra
 npm
-otb-tamzen-font-git
+obs-studio
 otf-geist-mono-nerd
 otf-libertinus
 pamixer
 paru
+paru-debug
 pavucontrol
 php
 php-sqlite
@@ -122,12 +123,13 @@ pipewire-pulse
 plymouth
 polkit-gnome
 pyrefly-bin
+python-django
 python-ipykernel
+python-pipenv
 qt5-wayland
 reflector
 remmina
 ripgrep
-rofi
 rsync
 sd
 slurp
@@ -160,6 +162,7 @@ unrar
 unzip
 uv
 ventoy-bin
+vicinae-bin
 vulkan-intel
 vulkan-radeon
 waybar
@@ -188,6 +191,7 @@ xorg-xwayland
 xwayland-satellite
 yazi
 yt-dlp
+yt-dlp-ejs
 zathura
 zathura-pdf-mupdf
 zed
