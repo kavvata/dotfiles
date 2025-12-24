@@ -137,8 +137,6 @@ layer-rule {
     match namespace="waybar"
 }
 
-
-
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
@@ -402,9 +400,15 @@ window-rule {
 }
 
 window-rule {
-  match app-id="io.bassi.Amberol"
-  default-column-width { proportion 0.250; }
+    match app-id="io.bassi.Amberol"
+    default-column-width { proportion 0.250; }
 }
+
+// window-rule {
+//     match app-id=r#"^chrome\-.*-Default$"#
+//     open-floating true
+// }
+
 
 binds {
     // Keys consist of modifiers separated by + signs, followed by an XKB key name
