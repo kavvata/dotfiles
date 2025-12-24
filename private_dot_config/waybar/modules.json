@@ -89,7 +89,7 @@
   },
   "clock": {
     "tooltip": false,
-    "format": "   {:%a, %H:%M %b %d}",
+    "format": "   {:%a, %H:%M • %b %d}",
     "on-double-click": "niri msg exec xdg-open https://calendar.google.com/"
   },
   "custom/system": {
