@@ -1,6 +1,6 @@
 {
   "include": [
-    "~/.config/waybar/modules.json"
+    "~/.config/waybar/modules.jsonc"
   ],
   "modules-left": [
     "sway/workspaces",

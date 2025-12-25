@@ -1,11 +1,12 @@
 {
+  "position": "top",
+  "layer": "top",
   "include": [
-    "~/.config/ml4w/settings/waybar-quicklinks.json",
-    "~/.config/waybar/modules.json"
+    "~/.config/waybar/modules.jsonc"
   ],
   "modules-left": [
-    "hyprland/workspaces",
-    "hyprland/submap"
+    "niri/workspaces",
+    "niri/mode"
   ],
   "modules-center": [
     "clock"
