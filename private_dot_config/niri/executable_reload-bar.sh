@@ -1,4 +1,4 @@
 #!/bin/env bash
 killall waybar
-waybar --config /home/kav/.config/waybar/niri-config.json &
+waybar --config /home/kav/.config/waybar/niri-config.jsonc &
 disown
