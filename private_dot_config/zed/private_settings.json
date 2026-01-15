@@ -9,13 +9,13 @@
 {
   "diagnostics": {
     "inline": {
-      "enabled": true
-    }
+      "enabled": true,
+    },
   },
   "features": {},
   "vim_mode": true,
   "vim": {
-    "toggle_relative_line_numbers": true
+    "toggle_relative_line_numbers": true,
   },
   "ui_font_size": 14,
   "buffer_font_size": 12.0,
@@ -23,21 +23,21 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Kanagawa Wave"
+    "dark": "Kanagawa Wave",
   },
   "tab_bar": {
-    "show": true
+    "show": true,
   },
   "title_bar": {
-    "show_branch_icon": true
+    "show_branch_icon": true,
   },
   "toolbar": {
     "breadcrumbs": false,
-    "quick_actions": false
+    "quick_actions": false,
   },
   "gutter": {
     "folds": false,
-    "runnables": false
+    "runnables": false,
   },
   "preferred_line_length": 100,
   "wrap_guides": [100],
@@ -50,9 +50,9 @@
     "basedpyright": {
       "settings": {
         "basedpyright.analysis": {
-          "typeCheckingMode": "off"
-        }
-      }
-    }
-  }
+          "typeCheckingMode": "off",
+        },
+      },
+    },
+  },
 }
