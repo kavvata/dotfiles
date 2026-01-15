@@ -1,5 +1,5 @@
 spawn-at-startup "waybar" "--config" "/home/kav/.config/waybar/niri-config.jsonc"
-spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+spawn-at-startup "/usr/libexec/polkit-mate-authentication-agent-1"
 spawn-at-startup "udiskie"
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "hyprpaper"
