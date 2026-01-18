@@ -2,7 +2,7 @@
   border: none;
   border-radius: 0;
   font-family:
-    Inter,
+    Lato,
     JetBrainsMono Nerd Font,
     sans-serif;
   font-size: 11px;
@@ -23,14 +23,17 @@
 #custom-wofi-exit,
 #networks,
 #backlight,
-#mpd,
-#misc {
+#mpd {
   padding: 0 8px;
-  margin: 4px 6px 0px 6px;
-  border-radius: 6px;
-  border: 1px solid #4c4e57;
-  background-color: rgba(31, 31, 40, 1);
+  /* margin: 4px 6px 0px 6px; */
+  /* border-radius: 6px; */
+  /* border: 1px solid #4c4e57; */
+  /* background-color: rgba(31, 31, 40, 1); */
   /* box-shadow: rgba(0, 0, 0, 0.30) 0px -4px 8px; */
+}
+
+#idle_inhibitor {
+  margin: 0px 0px 0px 8px;
 }
 
 window#waybar {
@@ -43,6 +46,12 @@ window#waybar {
 .modules-left,
 .modules-right,
 .modules-center {
+  /* padding: 0 8px; */
+  margin: 4px 6px 0px 6px;
+  border-radius: 6px;
+  border: 1px solid #4c4e57;
+  background-color: rgba(31, 31, 40, 1);
+  /* box-shadow: rgba(0, 0, 0, 0.30) 0px -4px 8px; */
 }
 
 #window {
@@ -71,14 +80,6 @@ window#waybar {
   border-top: 2px solid #c8c093;
 }
 
-#battery,
-#network,
-#bluetooth,
-#tray,
-#idle_inhibitor {
-  padding: 0 4px;
-}
-
 #idle_inhibitor.deactivated {
   color: #585864;
 }
@@ -94,13 +95,6 @@ window#waybar {
 #battery.charging {
 }
 
-/*@keyframes blink {*/
-/*    to {*/
-/*        background-color: #DCD7BA;*/
-/*        color: #16161D;*/
-/*    }*/
-/*}*/
-
 #battery.warning:not(.charging) {
   color: #dcd7ba;
   animation-name: blink;
@@ -110,24 +104,58 @@ window#waybar {
   animation-direction: alternate;
 }
 
-#cpu {
-}
-
-#memory {
-}
-
 #network.disconnected {
   color: #c34043;
 }
 
-#pulseaudio {
+#pulseaudio-slider {
+  padding: 0;
+  margin: 0;
+}
+#pulseaudio-slider slider {
+  min-height: 0px;
+  min-width: 0px;
+  opacity: 0;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+#pulseaudio-slider trough {
+  min-height: 4px;
+  min-width: 40px;
+  border-radius: 5px;
+  border: 1px #39394d solid;
+  background: transparent;
+}
+#pulseaudio-slider highlight {
+  min-width: 10px;
+  border-radius: 5px;
+  background: #d3ceb3;
 }
 
-#pulseaudio.muted {
+#backlight-slider {
+  padding: 0;
+  margin: 0;
 }
-
-#tray {
+#backlight-slider slider {
+  min-height: 0px;
+  min-width: 0px;
+  opacity: 0;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+  background: transparent;
 }
-
-#hardware {
+#backlight-slider trough {
+  min-height: 4px;
+  min-width: 40px;
+  border-radius: 5px;
+  border: 1px #39394d solid;
+  background: transparent;
+}
+#backlight-slider highlight {
+  min-width: 10px;
+  border-radius: 5px;
+  background: #d3ceb3;
 }

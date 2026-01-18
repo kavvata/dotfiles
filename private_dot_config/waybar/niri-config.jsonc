@@ -14,8 +14,11 @@
   "modules-right": [
     "group/misc",
     "pulseaudio",
+    "pulseaudio/slider",
+    "backlight",
+    "backlight/slider",
     "group/networks",
-    "group/power",
+    "battery#int",
     "custom/wofi-exit"
   ]
 }
