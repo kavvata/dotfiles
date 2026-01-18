@@ -142,7 +142,7 @@ layer-rule {
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 8
+    gaps 6
 
     // NOTE: Enable this to let the overview background show up
     background-color "transparent"
