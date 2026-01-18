@@ -22,6 +22,8 @@
   },
   "niri/workspaces": {
     "on-click": "activate",
+    "on-scroll-up": "niri msg action focus-workspace-up",
+    "on-scroll-down": "niri msg action focus-workspace-down",
     "active-only": false,
     "all-outputs": true,
     "format": "{icon}",
@@ -114,7 +116,7 @@
     "format": "/ K {short}"
   },
   "network": {
-    "format-wifi": "{icon}   {essid}",
+    "format-wifi": "{icon}",
     "tooltip-format": "{essid} - {frequency}G ({signalStrength}%)",
     "format-ethernet": "{ifname} ",
     "format-alt": "{icon} ",
@@ -122,11 +124,11 @@
     "max-length": 50,
     "on-double-click": "kitty -e nmtui",
     "format-icons": [
-      "󰤯",
-      "󰤟",
-      "󰤢",
-      "󰤥",
-      "󰤨"
+      "󰤯 ",
+      "󰤟 ",
+      "󰤢 ",
+      "󰤥 ",
+      "󰤨 "
     ]
   },
   "battery": {
@@ -147,9 +149,9 @@
     ]
   },
   "pulseaudio": {
-    "format": "{icon}   {volume}% ",
-    "format-bluetooth": "{icon}   {volume}% ",
-    "format-bluetooth-muted": " {icon}",
+    "format": "{icon}",
+    "format-bluetooth": "{icon}",
+    "format-bluetooth-muted": " ",
     "format-muted": "   0% ",
     "format-source": "{volume}% ",
     "format-source-muted": "",
@@ -157,9 +159,6 @@
       "headphone": "",
       "hands-free": "",
       "headset": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
       "default": [
         "",
         "",
@@ -185,8 +184,8 @@
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
-      "activated": "󰅶",
-      "deactivated": "󰾪"
+      "activated": "󰅶 ",
+      "deactivated": "󰾪 "
     },
     "on-click-right": "hyprlock"
   },
@@ -230,12 +229,12 @@
   },
   "backlight": {
     "device": "intel_backlight",
-    "format": "{percent}% {icon}",
+    "format": "{icon}",
     "format-icons": [
-      "󰃞 ",
-      "󰃝 ",
-      "󰃟 ",
-      "󰃠 "
+      "󰃞",
+      "󰃝",
+      "󰃟",
+      "󰃠"
     ],
     "scroll-step": 5
   },
