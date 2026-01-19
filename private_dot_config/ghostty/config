@@ -1,17 +1,21 @@
 font-family = "JetBrainsMono Nerd Font"
+# font-family-italic = "VictorMono Nerd Font"
+
 font-size = 9
-bold-is-bright = true
+bold-is-bright = false
 font-thicken = true
 # adjust-cell-width = -10%
-background-opacity = 0.40
+# background-opacity = 0.40
 # background-blur-radius = 20
 
-window-padding-x = 4
-window-padding-y = 4
-theme = "kanagawabones"
+window-padding-x = 2
+window-padding-y = 2
+theme = "Kanagawabones"
 window-theme = ghostty
-gtk-tabs-location = hidden
 adw-toolbar-style = flat
+gtk-tabs-location = hidden
+# gtk-titlebar-style = tabs
+# gtk-titlebar-hide-when-maximized = true
 
 window-height = 30
 window-width = 110

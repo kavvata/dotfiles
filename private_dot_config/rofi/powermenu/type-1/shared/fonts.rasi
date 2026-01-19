@@ -8,5 +8,5 @@
  **/
 
 * {
-    font: "Inter 8, JetBrainsMono Nerd Font 8";
+    font: "Lato 8, JetBrainsMono Nerd Font 8";
 }
