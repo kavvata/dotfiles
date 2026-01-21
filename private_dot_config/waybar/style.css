@@ -132,7 +132,6 @@ window#waybar {
   background: transparent;
 }
 #pulseaudio-slider highlight {
-  min-width: 10px;
   border-radius: 5px;
   background: #d3ceb3;
 }

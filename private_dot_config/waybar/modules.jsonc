@@ -151,7 +151,7 @@
     "format": "{icon}",
     "format-bluetooth": "{icon}",
     "format-bluetooth-muted": " ",
-    "format-muted": "   0% ",
+    "format-muted": "",
     "format-source": "{volume}% ",
     "format-source-muted": "",
     "format-icons": {
