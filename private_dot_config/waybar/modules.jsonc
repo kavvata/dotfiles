@@ -119,10 +119,9 @@
     "format-wifi": "{icon}",
     "tooltip-format": "{essid} - {frequency}G ({signalStrength}%)",
     "format-ethernet": "{ifname} ",
-    "format-alt": "{icon} ",
     "format-disconnected": " ",
     "max-length": 50,
-    "on-double-click": "kitty -e nmtui",
+    "on-double-click": "vicinae deeplink vicinae://extensions/dagimg-dot/wifi-commander/scan-wifi",
     "format-icons": [
       "󰤯 ",
       "󰤟 ",
@@ -173,7 +172,7 @@
     "format-disabled": "",
     "format-off": "",
     "interval": 30,
-    "on-click": "",
+    "on-double-click": "vicinae deeplink vicinae://extensions/Gelei/bluetooth/devices",
     "format-no-controller": ""
   },
   "user": {
