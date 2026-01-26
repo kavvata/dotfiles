@@ -1,4 +1,3 @@
-function ls --wraps=eza --description 'alias ls lsd'
+function ls --wraps='eza --icons auto' --description 'alias ls eza --icons auto'
     eza --icons auto $argv
-
 end
