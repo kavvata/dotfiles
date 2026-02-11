@@ -5,11 +5,17 @@ spawn-at-startup "xwayland-satellite"
 spawn-at-startup "hyprpaper"
 spawn-at-startup "swayidle" "-w"  "timeout" "300" "~/.config/sway/lock.sh"  "timeout" "600" "niri msg action power-off-monitors" "timeout" "1200" "systemctl suspend-then-hibernate" "before-sleep" "~/.config/sway/lock.sh"
 
+spawn-at-startup "systemctl" "--user" "start" "plasma-polkit-agent.service"
+
 spawn-at-startup "systemctl" "--user" "import-environment" "DISPLAY" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"
 
 // spawn-at-startup "vicinae" "server"
 
 prefer-no-csd
+
+cursor {
+    xcursor-theme "Adwaita"
+}
 
 environment {
     XDG_CURRENT_DESKTOP "niri"
