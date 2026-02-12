@@ -1,15 +1,12 @@
 spawn-at-startup "waybar" "--config" "/home/kav/.config/waybar/niri-config.jsonc"
-spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "udiskie"
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "hyprpaper"
 spawn-at-startup "swayidle" "-w"  "timeout" "300" "~/.config/sway/lock.sh"  "timeout" "600" "niri msg action power-off-monitors" "timeout" "1200" "systemctl suspend-then-hibernate" "before-sleep" "~/.config/sway/lock.sh"
 
-spawn-at-startup "systemctl" "--user" "start" "plasma-polkit-agent.service"
+// spawn-at-startup "systemctl" "--user" "import-environment" "DISPLAY" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"
 
-spawn-at-startup "systemctl" "--user" "import-environment" "DISPLAY" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"
-
-// spawn-at-startup "vicinae" "server"
+spawn-at-startup "vicinae" "server" "--replace"
 
 prefer-no-csd
 
@@ -196,7 +193,7 @@ layout {
     // You can change how the focus ring looks.
     focus-ring {
         // Uncomment this line to disable the focus ring.
-        // off
+        off
 
         // How many logical pixels the ring extends out from the windows.
         width 1
@@ -237,7 +234,7 @@ layout {
     border {
         // The settings are the same as for the focus ring.
         // If you enable the border, you probably want to disable the focus ring.
-        off
+        // off
 
         width 1
         active-color "#C8C093"
@@ -437,7 +434,7 @@ binds {
     Mod+D hotkey-overlay-title="Open Applicaiton Launcher" { spawn "fuzzel"; }
     Mod+Tab hotkey-overlay-title="Open Window Search" { spawn "vicinae" "deeplink" "vicinae://extensions/vicinae/wm/switch-windows"; }
     Alt+Space hotkey-overlay-title="Open Applicaiton Launcher" { spawn "vicinae" "toggle"; }
-    Mod+Return hotkey-overlay-title="Open a Terminal: kitty" {spawn "kitty"; }
+    Mod+Return repeat=false hotkey-overlay-title="Open a Terminal: kitty" {spawn "kitty"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
     Mod+N hotkey-overlay-title="Open emoji picker" { spawn "vicinae" "deeplink" "vicinae://extensions/vicinae/core/search-emojis"; }
     Mod+M hotkey-overlay-title="Open power menu" { spawn "/home/kav/.config/kav-scripts/power-menu.sh"; }
