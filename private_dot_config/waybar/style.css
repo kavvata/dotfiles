@@ -3,6 +3,7 @@
   border-radius: 0;
   font-family:
     Geist,
+    Inter,
     JetBrainsMono Nerd Font,
     sans-serif;
   font-size: 11px;
@@ -31,6 +32,12 @@
   /* box-shadow: rgba(0, 0, 0, 0.30) 0px -4px 8px; */
 }
 
+#custom-appmenu {
+  font-size: 14px;
+}
+#custom-wofi-exit {
+  font-size: 11px;
+}
 #battery.ext {
   padding: 0 8px 0px 0px;
 }
@@ -40,7 +47,7 @@
 }
 
 window#waybar {
-  background: transparent;
+  background-color: rgba(31, 31, 40, 1);
   transition-property: background-color;
   transition-duration: 0.5s;
   color: #dcd7ba;
@@ -49,17 +56,12 @@ window#waybar {
 .modules-left,
 .modules-right,
 .modules-center {
-  min-height: 24px;
+  min-height: 32px;
   /* padding: 0 8px; */
-  margin: 4px 6px 0px 6px;
-  border-radius: 6px;
-  border: 1px solid #4c4e57;
-  background-color: rgba(31, 31, 40, 1);
   /* box-shadow: rgba(0, 0, 0, 0.30) 0px -4px 8px; */
 }
 
 #window {
-  font-weight: bold;
   /* padding: 0px 5px; */
 }
 
@@ -89,7 +91,7 @@ window#waybar {
 }
 
 #clock {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 #battery icon {
