@@ -48,8 +48,6 @@
 
 window#waybar {
   background-color: rgba(31, 31, 40, 1);
-  transition-property: background-color;
-  transition-duration: 0.5s;
   color: #dcd7ba;
 }
 
@@ -59,10 +57,6 @@ window#waybar {
   min-height: 32px;
   /* padding: 0 8px; */
   /* box-shadow: rgba(0, 0, 0, 0.30) 0px -4px 8px; */
-}
-
-#window {
-  /* padding: 0px 5px; */
 }
 
 #workspaces button {
@@ -91,7 +85,6 @@ window#waybar {
 }
 
 #clock {
-  font-weight: 600;
 }
 
 #battery icon {
