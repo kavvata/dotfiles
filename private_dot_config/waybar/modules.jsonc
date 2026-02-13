@@ -16,9 +16,12 @@
       "9": "九",
       "10": "十",
       "urgent": "",
-      "default": ""
+      "default": "",
     },
-    "sort-by-number": true
+    "sort-by-number": true,
+  },
+  "niri/window": {
+    "format": "{app_id}",
   },
   "niri/workspaces": {
     "on-click": "activate",
@@ -39,9 +42,9 @@
       "9": "九",
       "10": "十",
       "urgent": "",
-      "default": ""
+      "default": "",
     },
-    "sort-by-number": true
+    "sort-by-number": true,
   },
   "sway/workspaces": {
     "on-click": "activate",
@@ -60,22 +63,22 @@
       "9": "九",
       "10": "十",
       "urgent": "",
-      "default": ""
+      "default": "",
     },
-    "sort-by-number": true
+    "sort-by-number": true,
   },
   "custom/appmenu": {
     "format": " ",
     "on-click": "vicinae toggle",
-    "tooltip": false
+    "tooltip": false,
   },
   "custom/exit": {
     "format": "  ",
-    "on-click": "bash /home/kav/.config/rofi/scripts/powermenu_t1"
+    "on-click": "bash /home/kav/.config/rofi/scripts/powermenu_t1",
   },
   "custom/wofi-exit": {
     "format": " ",
-    "on-click": "/home/kav/.config/kav-scripts/power-menu.sh"
+    "on-click": "/home/kav/.config/kav-scripts/power-menu.sh",
   },
   "keyboard-state": {
     "numlock": true,
@@ -83,37 +86,37 @@
     "format": "{name} {icon}",
     "format-icons": {
       "locked": "",
-      "unlocked": ""
-    }
+      "unlocked": "",
+    },
   },
   "tray": {
-    "spacing": 10
+    "spacing": 10,
   },
   "clock": {
     "tooltip": false,
     "format": "{:%a, %H:%M • %b %d}",
-    "on-double-click": "niri msg exec xdg-open https://calendar.google.com/"
+    "on-double-click": "niri msg exec xdg-open https://calendar.google.com/",
   },
   "custom/system": {
     "format": " ",
-    "tooltip": false
+    "tooltip": false,
   },
   "cpu": {
     "format": "  {usage}%",
-    "on-double-click": "kitty -e btop"
+    "on-double-click": "kitty -e btop",
   },
   "memory": {
     "format": "  {}%",
-    "on-double-click": "kitty -e btop"
+    "on-double-click": "kitty -e btop",
   },
   "disk": {
     "interval": 30,
     "format": "  {percentage_used}%",
     "path": "/",
-    "on-click": "kitty -e btop"
+    "on-click": "kitty -e btop",
   },
   "hyprland/language": {
-    "format": "/ K {short}"
+    "format": "/ K {short}",
   },
   "network": {
     "format-wifi": "{icon}",
@@ -128,12 +131,12 @@
       "󰤢 ",
       "󰤥 ",
       "󰤨 "
-    ]
+    ],
   },
   "battery": {
     "states": {
       "warning": 30,
-      "critical": 15
+      "critical": 15,
     },
     "format": "{icon}   {capacity}%",
     "format-charging": "  {capacity}%",
@@ -145,7 +148,7 @@
       " ",
       " ",
       " "
-    ]
+    ],
   },
   "pulseaudio": {
     "format": "{icon}",
@@ -162,37 +165,45 @@
         "",
         "",
         ""
-      ]
+      ],
     },
     "on-double-click": "pavucontrol",
-    "scroll-step": 5
+    "scroll-step": 5,
   },
   "bluetooth": {
     "format": "󰂯",
+    "format-connected-battery": "󰂯{icon}",
     "format-disabled": "",
     "format-off": "",
     "interval": 30,
     "on-click": "",
-    "format-no-controller": ""
+    "format-no-controller": "",
+    "format-icons": [
+      "󰤾 ",
+      "󰥀 ",
+      "󰥂 ",
+      "󰥄 ",
+      "󰥆 "
+    ]
   },
   "user": {
     "format": "{user}",
     "interval": 60,
-    "icon": false
+    "icon": false,
   },
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
       "activated": "󰅶 ",
-      "deactivated": "󰾪 "
+      "deactivated": "󰾪 ",
     },
-    "on-click-right": "hyprlock"
+    "on-click-right": "hyprlock",
   },
   "battery#ext": {
     "states": {
       "good": 95,
       "warning": 30,
-      "critical": 15
+      "critical": 15,
     },
     "bat": "BAT0",
     "format": "{capacity}% {icon} ",
@@ -205,13 +216,13 @@
       "",
       "",
       ""
-    ]
+    ],
   },
   "battery#int": {
     "states": {
       "good": 95,
       "warning": 30,
-      "critical": 15
+      "critical": 15,
     },
     "bat": "BAT1",
     "format": "{icon}  {capacity}%",
@@ -219,12 +230,12 @@
     "format-plugged": "  {capacity}%",
     "format-alt": "{icon} {time}",
     "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      ""
-    ]
+      " ",
+      " ",
+      " ",
+      " ",
+      " "
+    ],
   },
   "backlight": {
     "device": "intel_backlight",
@@ -235,33 +246,39 @@
       "󰃟",
       "󰃠"
     ],
-    "scroll-step": 5
+    "scroll-step": 5,
+  },
+  "custom/vpn": {
+    "interval": 3,
+    "format": "{}",
+    "exec": "ip add show | grep -qF tap0 && echo '󰦝 '",
+    "max-length": "100",
   },
   "group/batteries": {
     "orientation": "inherit",
     "modules": [
       "battery#ext",
       "battery#int"
-    ]
+    ],
   },
   "group/power": {
     "orientation": "inherit",
     "drawer": {
       "transition-duration": 300,
       "children-class": "not-memory",
-      "transition-left-to-right": false
+      "transition-left-to-right": false,
     },
     "modules": [
       "group/batteries",
       "backlight"
-    ]
+    ],
   },
   "group/hardware": {
     "orientation": "inherit",
     "drawer": {
       "transition-duration": 300,
       "children-class": "not-memory",
-      "transition-left-to-right": false
+      "transition-left-to-right": false,
     },
     "modules": [
       "idle_inhibitor",
@@ -269,50 +286,26 @@
       "memory",
       "cpu",
       "tray"
-    ]
+    ],
   },
   "group/misc": {
     "orientation": "inherit",
     "drawer": {
       "transition-duration": 300,
       "children-class": "not-memory",
-      "transition-left-to-right": false
+      "transition-left-to-right": false,
     },
     "modules": [
       "idle_inhibitor",
       "tray"
-    ]
+    ],
   },
   "group/networks": {
     "orientation": "inherit",
     "modules": [
       "network",
+      "custom/vpn",
       "bluetooth"
-    ]
+    ],
   },
-  "mpd": {
-    "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ",
-    "format-disconnected": "Disconnected ",
-    "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
-    "interval": 10,
-    "consume-icons": {
-      "on": " "
-    },
-    "random-icons": {
-      "off": "<span color=\"#f53c3c\"></span> ",
-      "on": " "
-    },
-    "repeat-icons": {
-      "on": " "
-    },
-    "single-icons": {
-      "on": "1 "
-    },
-    "state-icons": {
-      "paused": "",
-      "playing": ""
-    },
-    "tooltip-format": "MPD (connected)",
-    "tooltip-format-disconnected": "MPD (disconnected)"
-  }
 }
