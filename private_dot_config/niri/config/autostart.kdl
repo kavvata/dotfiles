@@ -1,18 +1,19 @@
-environment {
-    XDG_CURRENT_DESKTOP "niri"
-    XDG_SESSION_DESKTOP "niri"
-    QT_QPA_PLATFORM "wayland"
-    XDG_SESSION_TYPE "wayland"
-    OZONE_PLATFORM "wayland"
-    QT_QPA_PLATFORM "wayland;xcb"
-
-    GDK_SCALE "1"
-    QT_QPA_PLATFORMTHEME "qt6ct"
-    QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
-
-    MOZ_ENABLE_WAYLAND "1"
-    DISPLAY ":0"
-}
+// environment {
+//     XDG_CURRENT_DESKTOP "niri"
+//     XDG_SESSION_DESKTOP "niri"
+//     QT_QPA_PLATFORM "wayland"
+//     XDG_SESSION_TYPE "wayland"
+//     OZONE_PLATFORM "wayland"
+//     QT_QPA_PLATFORM "wayland;xcb"
+//
+//     GDK_SCALE "1"
+//     QT_QPA_PLATFORMTHEME "qt6ct"
+//     QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
+//
+//     MOZ_ENABLE_WAYLAND "1"
+//     DISPLAY ":0"
+// }
+// spawn-at-startup "systemctl" "--user" "import-environment" "DISPLAY" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"
 
 
 spawn-at-startup "waybar" "--config" "/home/kav/.config/waybar/niri-config.jsonc"
@@ -20,7 +21,12 @@ spawn-at-startup "udiskie"
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "hyprpaper"
 spawn-at-startup "swayidle" "-w"  "timeout" "300" "~/.config/sway/lock.sh"  "timeout" "600" "niri msg action power-off-monitors" "timeout" "1200" "systemctl suspend-then-hibernate" "before-sleep" "~/.config/sway/lock.sh"
-
-// spawn-at-startup "systemctl" "--user" "import-environment" "DISPLAY" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"
-
 spawn-at-startup "vicinae" "server" "--replace"
+
+
+
+hotkey-overlay {
+    skip-at-startup
+}
+
+

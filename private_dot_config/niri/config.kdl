@@ -1,16 +1,16 @@
 include "config/autostart.kdl"
+include "config/input.kdl"
+include "config/output.kdl"
+include "config/layout.kdl"
+include "config/window-rules.kdl"
+include "config/animations.kdl"
+include "config/binds.kdl"
 
 prefer-no-csd
 
 cursor {
     xcursor-theme "Adwaita"
 }
-
-hotkey-overlay {
-    skip-at-startup
-}
-
-
 overview {
   backdrop-color "#1E1E26"
   workspace-shadow {
@@ -24,9 +24,3 @@ overview {
 // The path is formatted with strftime(3) to give you the screenshot date and time.
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
-include "config/input.kdl"
-include "config/output.kdl"
-include "config/layout.kdl"
-include "config/window-rules.kdl"
-include "config/animations.kdl"
-include "config/binds.kdl"
