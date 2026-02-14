@@ -11,14 +11,6 @@ prefer-no-csd
 cursor {
     xcursor-theme "Adwaita"
 }
-overview {
-  backdrop-color "#1E1E26"
-  workspace-shadow {
-      off
-  }
-  zoom 0.50
-}
-
 // You can change the path where screenshots are saved.
 // A ~ at the front will be expanded to the home directory.
 // The path is formatted with strftime(3) to give you the screenshot date and time.

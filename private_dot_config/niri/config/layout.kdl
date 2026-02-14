@@ -2,6 +2,28 @@
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
 
+layer-rule {
+    match namespace="waybar"
+}
+
+overview {
+  backdrop-color "#1E1E26"
+  workspace-shadow {
+      off
+  }
+  zoom 0.50
+}
+
+layer-rule {
+    match namespace="^hyprpaper$"
+    place-within-backdrop true
+}
+
+window-rule {
+    geometry-corner-radius 3
+    clip-to-geometry true
+}
+
 layout {
     // Set gaps around windows in logical pixels.
     gaps 6
@@ -9,12 +31,6 @@ layout {
     // NOTE: Enable this to let the overview background show up
     background-color "transparent"
 
-    // When to center a column when changing focus, options are:
-    // - "never", default behavior, focusing an off-screen column will keep at the left
-    //   or right edge of the screen.
-    // - "always", the focused column will always be centered.
-    // - "on-overflow", focusing a column will center it if it doesn't fit
-    //   together with the previously focused column.
     center-focused-column "on-overflow"
 
     preset-column-widths {
@@ -23,15 +39,10 @@ layout {
         proportion 0.66667
     }
 
-    // You can also customize the heights that "switch-preset-window-height" (Mod+Shift+R) toggles between.
     // preset-window-heights { }
 
-    // You can change the default width of the new windows.
     default-column-width { proportion 0.5; }
-    // If you leave the brackets empty, the windows themselves will decide their initial width.
-    // default-column-width {}
 
-    // Alternatively, you can override it with a window rule called
     // `draw-border-with-background`.
 
     // You can change how the focus ring looks.
@@ -79,7 +90,7 @@ layout {
         softness 20
 
         // Spread expands the shadow.
-        spread 3
+        spread 5
 
         // Offset moves the shadow relative to the window.
         offset x=0 y=5
