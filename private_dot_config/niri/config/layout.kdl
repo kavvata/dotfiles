@@ -47,7 +47,7 @@ layout {
 
     // You can change how the focus ring looks.
     focus-ring {
-        // off
+        off
 
         width 1
 
@@ -65,7 +65,7 @@ layout {
 
     // You can also add a border. It's similar to the focus ring, but always visible.
     border {
-        // off
+        on
 
         width 1
         active-color "#C8C093"
