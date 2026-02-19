@@ -1,0 +1,7 @@
+// workspace "chat"
+//
+// window-rule {
+//   match app-id=r#"^thunderbird|legcord$"#
+//   open-on-workspace "chat"
+// }
+//

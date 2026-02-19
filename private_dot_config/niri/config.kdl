@@ -5,6 +5,7 @@ include "config/layout.kdl"
 include "config/window-rules.kdl"
 include "config/animations.kdl"
 include "config/binds.kdl"
+include "config/workspaces.kdl"
 
 prefer-no-csd
 

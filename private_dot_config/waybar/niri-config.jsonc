@@ -20,7 +20,6 @@
     "backlight/slider",
     "group/networks",
     "group/batteries",
-    "clock",
-    "custom/wofi-exit"
+    "clock"
   ]
 }

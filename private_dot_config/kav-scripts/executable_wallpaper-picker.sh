@@ -83,7 +83,9 @@ if [ -n "$selected" ]; then
 
     # Save the selection for persistence
     echo "$original_path" >"$HOME/.cache/current_wallpaper"
-    ~/.config/ml4w/scripts/reload-hyprpaper.sh
+    killall swaybg
+    sleep 1
+    swaybg -o '*' -i ~/.wallpaper
 
     # Optional: Notify user
     notify-send "Wallpaper" "Wallpaper has been updated" -i "$original_path"
