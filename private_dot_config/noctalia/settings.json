@@ -20,7 +20,7 @@
         "sortByMostUsed": true,
         "terminalCommand": "kitty -e",
         "useApp2Unit": false,
-        "viewMode": "grid"
+        "viewMode": "list"
     },
     "audio": {
         "cavaFrameRate": 30,
@@ -281,6 +281,11 @@
         "enabled": false,
         "gridSnap": false,
         "monitorWidgets": [
+            {
+                "name": "eDP-1",
+                "widgets": [
+                ]
+            }
         ]
     },
     "dock": {
@@ -490,10 +495,6 @@
     },
     "templates": {
         "activeTemplates": [
-            {
-                "enabled": true,
-                "id": "niri"
-            }
         ],
         "enableUserTheming": false
     },
