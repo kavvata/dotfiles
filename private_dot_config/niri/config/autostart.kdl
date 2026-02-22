@@ -19,7 +19,7 @@
 spawn-at-startup "waybar" "--config" "/home/kav/.config/waybar/niri-config.jsonc"
 spawn-at-startup "udiskie"
 spawn-at-startup "xwayland-satellite"
-spawn-at-startup "swaybg" "-o" "'*'" "-i" "~/.wallpaper"
+spawn-at-startup "swaybg" "-i" "/home/kav/.wallpaper" "-o" "'*'" 
 spawn-at-startup "swayidle" "-w"  "timeout" "300" "~/.config/sway/lock.sh"  "timeout" "600" "niri msg action power-off-monitors" "timeout" "1200" "systemctl suspend-then-hibernate" "before-sleep" "~/.config/sway/lock.sh"
 spawn-at-startup "vicinae" "server" "--replace"
 
