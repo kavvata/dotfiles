@@ -26,7 +26,7 @@ window-rule {
 
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 6
+    gaps 4
 
     // NOTE: Enable this to let the overview background show up
     background-color "transparent"
