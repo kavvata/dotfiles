@@ -1,2 +1,2 @@
-#!/bin/bash
+#!/usr/bin/env sh
 waybar --config /home/kav/.config/waybar/sway-config.jsonc
