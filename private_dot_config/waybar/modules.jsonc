@@ -46,6 +46,9 @@
     },
     "sort-by-number": true,
   },
+  "sway/window": {
+    "format": "{app_id}",
+  },
   "sway/workspaces": {
     "on-click": "activate",
     "active-only": false,
