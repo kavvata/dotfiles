@@ -3,17 +3,21 @@
     "~/.config/waybar/modules.jsonc"
   ],
   "modules-left": [
-    "sway/workspaces",
-    "sway/mode"
+    "custom/appmenu",
+    "sway/window"
   ],
   "modules-center": [
-    "clock"
+    "sway/workspaces",
+    "sway/mode"
   ],
   "modules-right": [
     "group/misc",
     "pulseaudio",
+    "pulseaudio/slider",
+    "backlight",
+    "backlight/slider",
     "group/networks",
-    "group/power",
-    "custom/wofi-exit"
+    "group/batteries",
+    "clock"
   ]
 }

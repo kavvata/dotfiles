@@ -78,12 +78,14 @@ if [ -n "$selected" ]; then
 
   # Ensure a valid wallpaper was found before proceeding
   if [ -n "$original_path" ]; then
-    ln -sf $original_path ~/.wallpaper
-    ln -sf $original_path ~/.lockscreen
+    ln -sf "$original_path" ~/.wallpaper
+    ln -sf "$original_path" ~/.lockscreen
 
     # Save the selection for persistence
     echo "$original_path" >"$HOME/.cache/current_wallpaper"
-    ~/.config/ml4w/scripts/reload-hyprpaper.sh
+    killall .swaybg-wrapped
+    swaybg -o '*' -i ~/.wallpaper &
+    disown
 
     # Optional: Notify user
     notify-send "Wallpaper" "Wallpaper has been updated" -i "$original_path"

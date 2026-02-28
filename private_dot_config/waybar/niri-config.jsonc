@@ -5,11 +5,12 @@
     "~/.config/waybar/modules.jsonc"
   ],
   "modules-left": [
-    "niri/workspaces",
-    "niri/mode"
+    "custom/appmenu",
+    "niri/window"
   ],
   "modules-center": [
-    "clock"
+    "niri/workspaces",
+    "niri/mode"
   ],
   "modules-right": [
     "group/misc",
@@ -19,6 +20,6 @@
     "backlight/slider",
     "group/networks",
     "group/batteries",
-    "custom/wofi-exit"
+    "clock"
   ]
 }

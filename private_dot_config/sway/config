@@ -19,6 +19,8 @@ bar {
     swaybar_command /home/kav/.config/sway/swaybar
 }
 
+seat seat0 xcursor_theme Adwaita 24
+
 include /etc/sway/config.d/*
 
 include ./conf/autostart.conf
