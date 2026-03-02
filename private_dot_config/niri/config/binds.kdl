@@ -19,7 +19,7 @@ binds {
     Mod+D hotkey-overlay-title="Open Applicaiton Launcher" { spawn "fuzzel"; }
     Mod+Tab hotkey-overlay-title="Open Window Search" { spawn "vicinae" "deeplink" "vicinae://extensions/vicinae/wm/switch-windows"; }
     Alt+Space hotkey-overlay-title="Open Applicaiton Launcher" { spawn "vicinae" "toggle"; }
-    Mod+Return repeat=false hotkey-overlay-title="Open a Terminal: kitty" {spawn "kitty"; }
+    Mod+Return repeat=false hotkey-overlay-title="Open a Terminal: foot" {spawn "footclient"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
     Mod+N hotkey-overlay-title="Open emoji picker" { spawn "vicinae" "deeplink" "vicinae://extensions/vicinae/core/search-emojis"; }
     Mod+M hotkey-overlay-title="Open power menu" { spawn "/home/kav/.config/kav-scripts/power-menu.sh"; }
