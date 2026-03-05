@@ -54,7 +54,7 @@ window#waybar {
 .modules-left,
 .modules-right,
 .modules-center {
-  min-height: 32px;
+  min-height: 28px;
   /* padding: 0 8px; */
   /* box-shadow: rgba(0, 0, 0, 0.30) 0px -4px 8px; */
 }

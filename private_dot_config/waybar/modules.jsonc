@@ -46,6 +46,9 @@
     },
     "sort-by-number": true,
   },
+  "sway/window": {
+    "format": "{app_id}",
+  },
   "sway/workspaces": {
     "on-click": "activate",
     "active-only": false,
@@ -95,11 +98,7 @@
   "clock": {
     "tooltip": false,
     "format": "{:%a, %H:%M • %b %d}",
-    "on-double-click": "niri msg exec xdg-open https://calendar.google.com/",
-  },
-  "custom/system": {
-    "format": " ",
-    "tooltip": false,
+    "on-double-click": "exec xdg-open https://calendar.google.com/",
   },
   "cpu": {
     "format": "  {usage}%",
@@ -125,13 +124,7 @@
     "format-disconnected": " ",
     "max-length": 50,
     "on-double-click": "vicinae deeplink vicinae://extensions/dagimg-dot/wifi-commander/scan-wifi",
-    "format-icons": [
-      "󰤯 ",
-      "󰤟 ",
-      "󰤢 ",
-      "󰤥 ",
-      "󰤨 "
-    ],
+    "format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "],
   },
   "battery": {
     "states": {
@@ -142,13 +135,7 @@
     "format-charging": "  {capacity}%",
     "format-plugged": "  {capacity}%",
     "format-alt": "{icon}  {time}",
-    "format-icons": [
-      " ",
-      " ",
-      " ",
-      " ",
-      " "
-    ],
+    "format-icons": [" ", " ", " ", " ", " "],
   },
   "pulseaudio": {
     "format": "{icon}",
@@ -161,11 +148,7 @@
       "headphone": "",
       "hands-free": "",
       "headset": "",
-      "default": [
-        "",
-        "",
-        ""
-      ],
+      "default": ["", "", ""],
     },
     "on-double-click": "pavucontrol",
     "scroll-step": 5,
@@ -178,13 +161,7 @@
     "interval": 30,
     "on-click": "",
     "format-no-controller": "",
-    "format-icons": [
-      "󰤾 ",
-      "󰥀 ",
-      "󰥂 ",
-      "󰥄 ",
-      "󰥆 "
-    ]
+    "format-icons": ["󰤾 ", "󰥀 ", "󰥂 ", "󰥄 ", "󰥆 "],
   },
   "user": {
     "format": "{user}",
@@ -210,13 +187,8 @@
     "format-charging": "{capacity}% ",
     "format-plugged": "{capacity}% ",
     "format-alt": "{time} {icon}",
-    "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      ""
-    ],
+    "format-icons": ["", "", "", "", ""],
+    "tooltip-format": "{time} ({health}% health)",
   },
   "battery#int": {
     "states": {
@@ -229,23 +201,13 @@
     "format-charging": "  {capacity}%",
     "format-plugged": "  {capacity}%",
     "format-alt": "{icon} {time}",
-    "format-icons": [
-      " ",
-      " ",
-      " ",
-      " ",
-      " "
-    ],
+    "format-icons": [" ", " ", " ", " ", " "],
+    "tooltip-format": "{time} ({health}% health)",
   },
   "backlight": {
     "device": "intel_backlight",
     "format": "{icon}",
-    "format-icons": [
-      "󰃞",
-      "󰃝",
-      "󰃟",
-      "󰃠"
-    ],
+    "format-icons": ["󰃞", "󰃝", "󰃟", "󰃠"],
     "scroll-step": 5,
   },
   "custom/vpn": {
@@ -256,10 +218,7 @@
   },
   "group/batteries": {
     "orientation": "inherit",
-    "modules": [
-      "battery#ext",
-      "battery#int"
-    ],
+    "modules": ["battery#ext", "battery#int"],
   },
   "group/power": {
     "orientation": "inherit",
@@ -268,10 +227,7 @@
       "children-class": "not-memory",
       "transition-left-to-right": false,
     },
-    "modules": [
-      "group/batteries",
-      "backlight"
-    ],
+    "modules": ["group/batteries", "backlight"],
   },
   "group/hardware": {
     "orientation": "inherit",
@@ -280,13 +236,7 @@
       "children-class": "not-memory",
       "transition-left-to-right": false,
     },
-    "modules": [
-      "idle_inhibitor",
-      "disk",
-      "memory",
-      "cpu",
-      "tray"
-    ],
+    "modules": ["idle_inhibitor", "disk", "memory", "cpu", "tray"],
   },
   "group/misc": {
     "orientation": "inherit",
@@ -295,17 +245,10 @@
       "children-class": "not-memory",
       "transition-left-to-right": false,
     },
-    "modules": [
-      "idle_inhibitor",
-      "tray"
-    ],
+    "modules": ["idle_inhibitor", "tray"],
   },
   "group/networks": {
     "orientation": "inherit",
-    "modules": [
-      "network",
-      "custom/vpn",
-      "bluetooth"
-    ],
+    "modules": ["network", "custom/vpn", "bluetooth"],
   },
 }
