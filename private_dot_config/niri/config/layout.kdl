@@ -20,13 +20,13 @@ layer-rule {
 }
 
 window-rule {
-    geometry-corner-radius 3
+    geometry-corner-radius 0
     clip-to-geometry true
 }
 
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 8
+    gaps 4
 
     // NOTE: Enable this to let the overview background show up
     background-color "transparent"

@@ -4,12 +4,20 @@ local config = wezterm.config_builder()
 config.color_scheme = "kanagawabones"
 
 config.enable_tab_bar = false
-config.window_background_opacity = 0.40
-
-config.font = wezterm.font("JetBrainsMono Nerd Font")
--- config.font = wezterm.font_with_fallback({ "Tamzen", "Cozette" })
-config.font_size = 9
-config.enable_wayland = true
 config.adjust_window_size_when_changing_font_size = false
+
+-- config.font = wezterm.font_with_fallback({ { family = "TX-02 Condensed", weight = "Regular" }, "TX02 Nerd Font Mono" })
+config.font_size = 10
+
+config.font = wezterm.font({ family = "IosevkaTerm Nerd Font", weight = "Regular" })
+-- config.font_rules = {
+-- 	{
+-- 		intensity = "Normal",
+-- 		italic = true,
+-- 		font = wezterm.font({ family = "VictorMono Nerd Font", style = "Italic" }),
+-- 	},
+-- }
+--
+config.enable_wayland = true
 
 return config
