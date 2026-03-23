@@ -18,12 +18,12 @@
     "toggle_relative_line_numbers": true,
   },
   "ui_font_size": 14,
-  "buffer_font_size": 12.0,
-  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_size": 13.0,
+  "buffer_font_family": "IosevkaTerm Nerd Font",
   "theme": {
-    "mode": "system",
+    "mode": "dark",
     "light": "One Light",
-    "dark": "Kanagawa Wave",
+    "dark": "Kanagawa",
   },
   "tab_bar": {
     "show": true,
@@ -43,16 +43,7 @@
   "wrap_guides": [100],
   "languages": {
     "Python": {
-      "language_servers": ["basedpyright", "ruff"],
-    },
-  },
-  "lsp": {
-    "basedpyright": {
-      "settings": {
-        "basedpyright.analysis": {
-          "typeCheckingMode": "off",
-        },
-      },
+      "language_servers": ["ty", "ruff"],
     },
   },
 }
