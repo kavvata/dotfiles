@@ -3,6 +3,8 @@
 @define-color comment #585864;
 @define-color border #39394d;
 @define-color accent #e46876;
+@define-color alt-accent #98BC6D;
+@define-color warning #98BC6D;
 
 * {
   background-color: @background;
@@ -79,6 +81,10 @@ tooltip {
   color: @comment;
 }
 
+#bluetooth.off {
+  color: @comment;
+}
+
 .hidden {
   opacity: 0;
 }
@@ -109,4 +115,12 @@ tooltip {
 
 #custom-voxtype.recording {
   color: #a55555;
+}
+
+#battery.charging.charged {
+  color: @alt-accent;
+}
+
+#battery.discharging.critical {
+  color: @accent;
 }

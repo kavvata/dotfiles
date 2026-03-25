@@ -50,7 +50,7 @@
     "on-click": "activate",
     "on-scroll-up": "niri msg action focus-workspace-up",
     "on-scroll-down": "niri msg action focus-workspace-down",
-    "format": "{icon}",
+    "format": "<span>{icon}</span>",
     "format-icons": {
       "default": "",
       "1": "1",
@@ -100,6 +100,7 @@
   "battery": {
     "format": "{capacity}% {icon}",
     "format-discharging": "{icon}",
+    "format-discharging-critical": "{capacity}% {icon}",
     "format-charging": "{icon}",
     "format-plugged": "",
     "format-icons": {
@@ -112,8 +113,9 @@
     "interval": 5,
     "on-click": "omarchy-menu power",
     "states": {
-      "warning": 20,
-      "critical": 10,
+      "charged": 100,
+      "normal": 84,
+      "critical": 25,
     },
   },
   "bluetooth": {
@@ -123,7 +125,7 @@
     "format-connected": "󰂱",
     "format-no-controller": "",
     "tooltip-format": "Devices connected: {num_connections}",
-    "on-click": "omarchy-launch-bluetooth",
+    "on-double-click": "kitty -e bluetuith",
   },
   "pulseaudio": {
     "format": "{icon}",
@@ -161,18 +163,6 @@
     "on-scroll-down": "",
     "on-scroll-left": "",
     "on-scroll-right": "",
-  },
-  "custom/screenrecording-indicator": {
-    "on-click": "omarchy-cmd-screenrecord",
-    "exec": "$OMARCHY_PATH/default/waybar/indicators/screen-recording.sh",
-    "signal": 8,
-    "return-type": "json",
-  },
-  "custom/idle-indicator": {
-    "on-click": "omarchy-toggle-idle",
-    "exec": "$OMARCHY_PATH/default/waybar/indicators/idle.sh",
-    "signal": 9,
-    "return-type": "json",
   },
   "tray": {
     "icon-size": 12,
