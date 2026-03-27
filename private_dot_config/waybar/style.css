@@ -117,7 +117,8 @@ tooltip {
   color: #a55555;
 }
 
-#battery.charging.charged {
+#battery.charging.charged,
+#battery.full {
   color: @alt-accent;
 }
 

@@ -65,13 +65,6 @@
       "10": "0",
       "active": "󱓻",
     },
-    "persistent-workspaces": {
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": [],
-      "5": [],
-    },
   },
 
   "cpu": {
@@ -115,7 +108,7 @@
     "states": {
       "charged": 100,
       "normal": 84,
-      "critical": 25,
+      "critical": 30,
     },
   },
   "bluetooth": {
