@@ -10,8 +10,8 @@
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-/": "workspace::ToggleBottomDock"
-    }
+      "ctrl-/": "workspace::ToggleBottomDock",
+    },
   },
   // Window's navigation
   {
@@ -21,30 +21,27 @@
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
-      "ctrl-j": "workspace::ActivatePaneDown"
-    }
+      "ctrl-j": "workspace::ActivatePaneDown",
+    },
   },
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
-      "j k": [
-        "workspace::SendKeystrokes",
-        "escape escape"
-      ]
-    }
+      "j k": ["workspace::SendKeystrokes", "escape escape"],
+    },
   },
   {
     "context": "GitPanel",
     "bindings": {
-      "q": "git_panel::Close"
-    }
+      "q": "git_panel::Close",
+    },
   },
   {
     "context": "AgentPanel",
     "bindings": {
       "ctrl-\\": "workspace::ToggleRightDock",
-      "cmd-k": "workspace::ToggleRightDock"
-    }
+      "cmd-k": "workspace::ToggleRightDock",
+    },
   },
   // File panel (netrw)
   {
@@ -77,8 +74,8 @@
       "shift-g": "menu::SelectLast",
       "g g": "menu::SelectFirst",
       "-": "project_panel::SelectParent",
-      "ctrl-6": "pane::AlternateFile"
-    }
+      "ctrl-6": "pane::AlternateFile",
+    },
   },
   // Empty pane, set of keybindings that are available when there is no active editor
   {
@@ -93,8 +90,8 @@
       // Search in all the files
       "space s g": "workspace::NewSearch",
       // Quit zed
-      "space q q": "zed::Quit"
-    }
+      "space q q": "zed::Quit",
+    },
   },
   {
     "context": "Editor && VimControl && !VimWaiting && !menu",
@@ -113,8 +110,8 @@
         "task::Spawn",
         {
           "task_name": "lazygit",
-          "reveal_target": "center"
-        }
+          "reveal_target": "center",
+        },
       ],
       "space g h d": "editor::ExpandAllDiffHunks",
       "space g h D": "git::Diff",
@@ -136,42 +133,15 @@
       // Tab things. Almost as good as harpoon.
       "shift-h": "tab_switcher::Toggle",
       "shift-l": "tab_switcher::Toggle",
-      "space 1": [
-        "pane::ActivateItem",
-        0
-      ],
-      "space 2": [
-        "pane::ActivateItem",
-        1
-      ],
-      "space 3": [
-        "pane::ActivateItem",
-        2
-      ],
-      "space 4": [
-        "pane::ActivateItem",
-        3
-      ],
-      "space 5": [
-        "pane::ActivateItem",
-        4
-      ],
-      "space 6": [
-        "pane::ActivateItem",
-        5
-      ],
-      "space 7": [
-        "pane::ActivateItem",
-        6
-      ],
-      "space 8": [
-        "pane::ActivateItem",
-        7
-      ],
-      "space 9": [
-        "pane::ActivateItem",
-        8
-      ],
+      "space 1": ["pane::ActivateItem", 0],
+      "space 2": ["pane::ActivateItem", 1],
+      "space 3": ["pane::ActivateItem", 2],
+      "space 4": ["pane::ActivateItem", 3],
+      "space 5": ["pane::ActivateItem", 4],
+      "space 6": ["pane::ActivateItem", 5],
+      "space 7": ["pane::ActivateItem", 6],
+      "space 8": ["pane::ActivateItem", 7],
+      "space 9": ["pane::ActivateItem", 8],
       "space 0": "pane::ActivateLastItem",
       "] b": "pane::ActivateNextItem",
       "[ b": "pane::ActivatePreviousItem",
@@ -231,76 +201,79 @@
       "[ q": "editor::MoveToStartOfExcerpt",
       "space v": "editor::SelectNext",
       "ctrl-d": "vim::SelectNext",
-      "space m n": "vim::SelectNext"
-    }
+      "space m n": "vim::SelectNext",
+    },
   },
   {
     "context": "Editor && vim_mode == visual && !VimWaiting && !VimObject",
     "bindings": {
       // Line's Motions
       "shift-j": "editor::MoveLineDown",
-      "shift-k": "editor::MoveLineUp"
-    }
+      "shift-k": "editor::MoveLineUp",
+    },
   },
   // Center the cursor on the screen when scrolling and find all references
   {
     "context": "VimControl && !menu",
     "bindings": {
-      "ctrl-d": [
-        "workspace::SendKeystrokes",
-        "ctrl-d z z"
-      ],
-      "ctrl-u": [
-        "workspace::SendKeystrokes",
-        "ctrl-u z z"
-      ],
-      "n": [
-        "workspace::SendKeystrokes",
-        "n z z z v"
-      ],
-      "shift-n": [
-        "workspace::SendKeystrokes",
-        "shift-n z z z v"
-      ],
-      "shift-g": [
-        "workspace::SendKeystrokes",
-        "shift-g z z"
-      ],
-      "g r": "editor::FindAllReferences"
-    }
+      "ctrl-d": ["workspace::SendKeystrokes", "ctrl-d z z"],
+      "ctrl-u": ["workspace::SendKeystrokes", "ctrl-u z z"],
+      "n": ["workspace::SendKeystrokes", "n z z z v"],
+      "shift-n": ["workspace::SendKeystrokes", "shift-n z z z v"],
+      "shift-g": ["workspace::SendKeystrokes", "shift-g z z"],
+      "g r": "editor::FindAllReferences",
+    },
   },
   {
     "context": "vim_operator == d",
     "bindings": {
       "o": "editor::ExpandAllDiffHunks",
-      "r": "git::Restore"
-    }
+      "r": "git::Restore",
+    },
   },
   {
     "context": "vim_mode == normal || vim_mode == visual",
     "bindings": {
       "s": "vim::PushSneak",
-      "S": "vim::PushSneakBackward"
-    }
+      "S": "vim::PushSneakBackward",
+    },
   },
   {
     "context": "vim_operator == a || vim_operator == i || vim_operator == cs",
     "bindings": {
-      "b": "vim::AnyBrackets"
-    }
+      "b": "vim::AnyBrackets",
+    },
   },
   {
     "context": "TabSwitcher > Picker",
     "bindings": {
       "shift-h": "menu::SelectPrevious",
-      "shift-l": "menu::SelectNext"
-    }
+      "shift-l": "menu::SelectNext",
+    },
   },
   {
     "context": "(ProjectPanel || Terminal || (Editor && vim_mode != insert) || EmptyPane ) && !((ProjectSearchBar || Picker) > Editor) && (!GitPanel) && !(CommitEditor > Editor)",
     "bindings": {
       "space e": "workspace::ToggleLeftDock",
-      "space space": "file_finder::Toggle"
-    }
-  }
+      "space space": "file_finder::Toggle",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-k ctrl-/": [
+        "editor::ToggleComments",
+        {
+          "advance_downwards": false,
+        },
+      ],
+      "ctrl-/": "terminal_panel::Toggle",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-/": "terminal_panel::Toggle",
+    },
+  },
 ]
