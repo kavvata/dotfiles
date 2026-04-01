@@ -1,25 +1,26 @@
 {
-  "position": "top",
+  "include": ["~/.config/waybar/modules.jsonc"],
+  "reload_style_on_change": true,
   "layer": "top",
-  "include": [
-    "~/.config/waybar/modules.jsonc"
-  ],
-  "modules-left": [
-    "custom/appmenu",
-    "niri/window"
-  ],
+  "position": "top",
+  "spacing": 0,
+  "height": 26,
+  "modules-left": ["custom/appmenu", "niri/workspaces"],
   "modules-center": [
-    "niri/workspaces",
-    "niri/mode"
+    "clock",
+    "custom/update",
+    "custom/voxtype",
+    "custom/screenrecording-indicator",
+    "custom/idle-indicator",
+    "custom/notification-silencing-indicator",
   ],
   "modules-right": [
-    "group/misc",
+    "group/tray-expander",
+    "idle_inhibitor",
+    "bluetooth",
+    "network",
+    "custom/vpn",
     "pulseaudio",
-    "pulseaudio/slider",
-    "backlight",
-    "backlight/slider",
-    "group/networks",
-    "group/batteries",
-    "clock"
-  ]
+    "battery",
+  ],
 }

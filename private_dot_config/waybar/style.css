@@ -1,159 +1,127 @@
+@define-color foreground #dcd7ba;
+@define-color background #1f1f28;
+@define-color comment #585864;
+@define-color border #39394d;
+@define-color accent #e46876;
+@define-color alt-accent #98BC6D;
+@define-color warning #98BC6D;
+
 * {
+  background-color: @background;
+  color: @foreground;
+
   border: none;
   border-radius: 0;
-  font-family:
-    Geist,
-    JetBrainsMono Nerd Font,
-    sans-serif;
-  font-size: 11px;
-  font-weight: 500;
+  min-height: 0;
+  font-family: "IosevkaTerm Nerd Font";
+  font-size: 12px;
 }
 
-#workspaces,
-#clock,
-#cpu,
-#memory,
-#temperature,
-#pulseaudio,
-#custom-media,
-#custom-appmenu,
-#mode,
-#submap,
-#custom-wofi-exit,
-#networks,
-#backlight,
-#mpd {
-  padding: 0 8px;
-  /* margin: 4px 6px 0px 6px; */
-  /* border-radius: 6px; */
-  /* border: 1px solid #4c4e57; */
-  /* background-color: rgba(31, 31, 40, 1); */
-  /* box-shadow: rgba(0, 0, 0, 0.30) 0px -4px 8px; */
+.modules-left {
+  margin-left: 8px;
 }
-
-#custom-appmenu {
-  font-size: 14px;
-}
-#custom-wofi-exit {
-  font-size: 11px;
-}
-#battery.ext {
-  padding: 0 8px 0px 0px;
-}
-
-#idle_inhibitor {
-  margin: 0px 0px 0px 8px;
-}
-
-window#waybar {
-  background-color: #1f1f28;
-  /* background-color: rgba(31, 31, 40, 1); */
-  color: #dcd7ba;
-}
-
-.modules-left,
-.modules-right,
-.modules-center {
-  min-height: 28px;
-  /* padding: 0 8px; */
-  /* box-shadow: rgba(0, 0, 0, 0.30) 0px -4px 8px; */
+.modules-right {
+  margin-right: 8px;
 }
 
 #workspaces button {
-  padding: 0 5px;
-  color: #dcd7ba;
-  border-top: 2px solid transparent;
+  all: initial;
+  padding: 0 6px;
+  margin: 0 1.5px;
+  min-width: 9px;
 }
 
-#workspaces button.active {
-  color: #e46876;
-  border-top: 2px solid #e46876;
+#workspaces button.empty {
+  opacity: 0.5;
 }
 
-#workspaces button.focused {
-  color: #e46876;
-  border-top: 2px solid #e46876;
+#cpu,
+#battery,
+#pulseaudio,
+#custom-appmenu,
+#idle_inhibitor,
+#custom-update {
+  min-width: 12px;
+  margin: 0 7.5px;
 }
 
-#mode,
-#submap {
-  border-top: 2px solid #c8c093;
+#tray {
+  margin-right: 16px;
 }
 
-#idle_inhibitor.deactivated {
-  color: #585864;
+#bluetooth {
+  margin-right: 17px;
+}
+
+#network {
+  margin-right: 13px;
+}
+
+#custom-expand-icon {
+  margin-right: 18px;
+}
+
+tooltip {
+  padding: 2px;
+}
+
+#custom-update {
+  font-size: 10px;
 }
 
 #clock {
+  margin-left: 8.75px;
 }
 
-#battery icon {
-  color: #c34043;
+#idle_inhibitor {
+  margin-right: 17px;
 }
 
-#battery.charging {
+#idle_inhibitor.deactivated {
+  color: @comment;
 }
 
-#battery.warning:not(.charging) {
-  color: #dcd7ba;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+#bluetooth.off {
+  color: @comment;
 }
 
-#network.disconnected {
-  color: #c34043;
-}
-
-#pulseaudio-slider {
-  padding: 0;
-  margin: 0;
-}
-#pulseaudio-slider slider {
-  min-height: 0px;
-  min-width: 0px;
+.hidden {
   opacity: 0;
-  background-image: none;
-  border: none;
-  box-shadow: none;
-  background: transparent;
-}
-#pulseaudio-slider trough {
-  min-height: 4px;
-  min-width: 40px;
-  border-radius: 5px;
-  border: 1px #39394d solid;
-  background: transparent;
-}
-#pulseaudio-slider highlight {
-  border-radius: 5px;
-  background: #d3ceb3;
 }
 
-#backlight-slider {
-  padding: 0;
-  margin: 0;
+#custom-screenrecording-indicator,
+#custom-idle-indicator,
+#custom-notification-silencing-indicator {
+  min-width: 12px;
+  margin-left: 5px;
+  margin-right: 0;
+  font-size: 10px;
+  padding-bottom: 1px;
 }
-#backlight-slider slider {
-  min-height: 0px;
-  min-width: 0px;
-  opacity: 0;
-  background-image: none;
-  border: none;
-  box-shadow: none;
-  background: transparent;
+
+#custom-screenrecording-indicator.active {
+  color: #a55555;
 }
-#backlight-slider trough {
-  min-height: 4px;
-  min-width: 40px;
-  border-radius: 5px;
-  border: 1px #39394d solid;
-  background: transparent;
+
+#custom-idle-indicator.active,
+#custom-notification-silencing-indicator.active {
+  color: #a55555;
 }
-#backlight-slider highlight {
-  min-width: 10px;
-  border-radius: 5px;
-  background: #d3ceb3;
+
+#custom-voxtype {
+  min-width: 12px;
+  margin: 0 0 0 7.5px;
+}
+
+#custom-voxtype.recording {
+  color: #a55555;
+}
+
+#battery.charging.charged,
+#battery.full {
+  color: @alt-accent;
+}
+
+#battery.discharging.critical {
+  color: @accent;
 }
