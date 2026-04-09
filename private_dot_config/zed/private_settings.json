@@ -7,6 +7,11 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)"
+  },
   "diagnostics": {
     "inline": {
       "enabled": true,
@@ -18,12 +23,12 @@
     "toggle_relative_line_numbers": true,
   },
   "ui_font_size": 14,
-  "buffer_font_size": 12.0,
-  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_size": 13.0,
+  "buffer_font_family": "IosevkaTerm Nerd Font",
   "theme": {
-    "mode": "system",
+    "mode": "dark",
     "light": "One Light",
-    "dark": "Kanagawa Wave",
+    "dark": "Kanagawa Dragon",
   },
   "tab_bar": {
     "show": true,
@@ -43,16 +48,7 @@
   "wrap_guides": [100],
   "languages": {
     "Python": {
-      "language_servers": ["basedpyright", "ruff"],
-    },
-  },
-  "lsp": {
-    "basedpyright": {
-      "settings": {
-        "basedpyright.analysis": {
-          "typeCheckingMode": "off",
-        },
-      },
+      "language_servers": ["ty", "ruff"],
     },
   },
 }
