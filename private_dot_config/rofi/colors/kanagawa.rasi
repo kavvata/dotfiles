@@ -7,11 +7,11 @@
  **/
 
 * {
-    background:     #1E1E26e0;
-    background-alt: #39394DFF;
-    foreground:     #D3CEB3FF;
-    selected:       #D3CEB3FF;
-    active:         #91B468FF;
-    urgent:         #DA6573FF;
-    focused:        #C8C093FF;
+    background:     #191919e0;
+    background-alt: #404040FF;
+    foreground:     #C9C9C9FF;
+    selected:       #C9C9C9FF;
+    active:         #8BAE68FF;
+    urgent:         #DE6E7CFF;
+    focused:        #BBBBBBFF;
 }

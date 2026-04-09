@@ -7,6 +7,11 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)"
+  },
   "diagnostics": {
     "inline": {
       "enabled": true,
@@ -23,7 +28,7 @@
   "theme": {
     "mode": "dark",
     "light": "One Light",
-    "dark": "Kanagawa",
+    "dark": "Kanagawa Dragon",
   },
   "tab_bar": {
     "show": true,
