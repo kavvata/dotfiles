@@ -56,3 +56,9 @@ themes:
       - "#8E8E8E"
       - "#BBBBBB"
       - "#C9C9C9"
+  - name: "zenwritten_monochrome"
+    colors:
+      - "#191919"
+      - "#8E8E8E"
+      - "#BBBBBB"
+      - "#C9C9C9"
