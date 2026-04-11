@@ -1,6 +1,6 @@
-font=Geist 8
+font=IosevkaTermSlab NF 9
 background-color=#191919FF
 default-timeout=6000
 border-size=1
-border-radius=3
-border-color=#303030
+border-radius=0
+border-color=#BBBBBB
