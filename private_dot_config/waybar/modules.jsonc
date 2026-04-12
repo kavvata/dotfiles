@@ -91,9 +91,6 @@
     "on-double-click": "vicinae deeplink vicinae://extensions/dagimg-dot/wifi-commander/scan-wifi",
   },
   "battery": {
-  {{ if eq .chezmoi.hostname "think" }}
-    "bat": "BAT0",
-  {{ end }}
     "format": "{capacity}% {icon}",
     "format-discharging": "{icon}",
     "format-discharging-critical": "{capacity}% {icon}",
