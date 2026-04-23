@@ -14,41 +14,41 @@
   },
   "diagnostics": {
     "inline": {
-      "enabled": true,
-    },
+      "enabled": true
+    }
   },
   "features": {},
   "vim_mode": true,
   "vim": {
-    "toggle_relative_line_numbers": true,
+    "toggle_relative_line_numbers": true
   },
   "ui_font_size": 14,
   "buffer_font_size": 13.0,
-  "buffer_font_family": "IosevkaTermSlab NF",
+  "buffer_font_family": "JetBrainsMono Nerd Font",
   "theme": {
     "mode": "dark",
     "light": "One Light",
-    "dark": "Kanagawa Dragon",
+    "dark": "Kanagawa Dragon"
   },
   "tab_bar": {
-    "show": true,
+    "show": true
   },
   "title_bar": {
-    "show_branch_icon": true,
+    "show_branch_icon": true
   },
   "toolbar": {
     "breadcrumbs": false,
-    "quick_actions": false,
+    "quick_actions": false
   },
   "gutter": {
     "folds": false,
-    "runnables": false,
+    "runnables": false
   },
   "preferred_line_length": 100,
   "wrap_guides": [100],
   "languages": {
     "Python": {
-      "language_servers": ["ty", "ruff"],
-    },
-  },
+      "language_servers": ["ty", "ruff"]
+    }
+  }
 }
