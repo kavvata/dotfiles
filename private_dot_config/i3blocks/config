@@ -32,7 +32,7 @@ markup=none
 # If the instance is not specified, use the interface used for default route.
 # The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
 [wifiname]
-color=#00FF00
+color=#2D4F67
 command=iwgetid -r
 interval=1
 
@@ -90,5 +90,5 @@ separator_block_width=0
 [seconds]
 command=date +:%S
 interval=1
-color=#999999
+color=#A292A3
 min_width=:300

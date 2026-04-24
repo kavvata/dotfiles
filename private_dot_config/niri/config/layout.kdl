@@ -7,7 +7,7 @@ layer-rule {
 }
 
 overview {
-  backdrop-color "#191919"
+  backdrop-color "#181616"
   workspace-shadow {
       off
   }
@@ -52,15 +52,15 @@ layout {
         width 1
 
 
-        active-color "#BBBBBB"
+        active-color "#C5C9C5"
 
-        inactive-color "#303030"
+        inactive-color "#181616"
 
-        urgent-color "#D68C67"
+        urgent-color "#C4746E"
 
-        // active-gradient from="#61ABDA" to="#BBBBBB" angle=45
+        // active-gradient from="#7FB4CA" to="#C5C9C5" angle=45
 
-        // inactive-gradient from="#404040" to="#8E8E8E" angle=45 relative-to="workspace-view"
+        // inactive-gradient from="#2D4F67" to="#8A9A7B" angle=45 relative-to="workspace-view"
     }
 
     // You can also add a border. It's similar to the focus ring, but always visible.
@@ -68,14 +68,14 @@ layout {
         on
 
         width 1
-        active-color "#BBBBBB"
-        inactive-color "#404040"
+        active-color "#C5C9C5"
+        inactive-color "#2D4F67"
 
-        urgent-color "#D68C67"
+        urgent-color "#C4746E"
 
-        // active-gradient from="#E8838F" to="#E8838F" angle=45 relative-to="workspace-view" in="oklch longer hue"
+        // active-gradient from="#E46876" to="#E46876" angle=45 relative-to="workspace-view" in="oklch longer hue"
 
-        // inactive-gradient from="#404040" to="#8E8E8E" angle=45 relative-to="workspace-view"
+        // inactive-gradient from="#2D4F67" to="#8A9A7B" angle=45 relative-to="workspace-view"
     }
 
     // You can enable drop shadows for windows.

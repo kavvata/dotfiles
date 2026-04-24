@@ -1,10 +1,10 @@
-@define-color foreground #C9C9C9;
-@define-color background #191919;
-@define-color comment #3D3839;
-@define-color border #404040;
-@define-color accent #DE6E7C;
-@define-color alt-accent #8BAE68;
-@define-color warning #8BAE68;
+@define-color foreground #C5C9C5;
+@define-color background #181616;
+@define-color comment #2D4F67;
+@define-color border #2D4F67;
+@define-color accent #E46876;
+@define-color alt-accent #8A9A7B;
+@define-color warning #8A9A7B;
 
 * {
   background-color: @background;
@@ -100,12 +100,12 @@ tooltip {
 }
 
 #custom-screenrecording-indicator.active {
-  color: #b77e64;
+  color: #C4746E;
 }
 
 #custom-idle-indicator.active,
 #custom-notification-silencing-indicator.active {
-  color: #b77e64;
+  color: #C4746E;
 }
 
 #custom-voxtype {
@@ -114,7 +114,7 @@ tooltip {
 }
 
 #custom-voxtype.recording {
-  color: #b77e64;
+  color: #C4746E;
 }
 
 #battery.charging.charged,
