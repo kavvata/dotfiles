@@ -1,7 +1,7 @@
 font=JetBrainsMono Nerd Font 9
-background-color=#191919FF
-text-color=#BBBBBB
+background-color=#181616FF
+text-color=#C5C9C5
 default-timeout=6000
 border-size=1
 border-radius=0
-border-color=#BBBBBB
+border-color=#C5C9C5

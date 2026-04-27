@@ -19,36 +19,36 @@ set selection-clipboard clipboard
 # zathurarc-dark
 
 set font "JetBrainsMono Nerd Font 9"
-set default-bg "#191919" #00
-set default-fg "#C9C9C9" #01
+set default-bg "#181616" #00
+set default-fg "#C5C9C5" #01
 
-set statusbar-fg "#BBBBBB" #04
-set statusbar-bg "#191919" #01
+set statusbar-fg "#C5C9C5" #04
+set statusbar-bg "#181616" #01
 
-set inputbar-bg "#191919" #00 currently not used
-set inputbar-fg "#C9C9C9" #02
+set inputbar-bg "#181616" #00 currently not used
+set inputbar-fg "#C5C9C5" #02
 
-set notification-error-bg "#B77E64" #08
-set notification-error-fg "#191919" #00
+set notification-error-bg "#C4746E" #08
+set notification-error-fg "#181616" #00
 
-set notification-warning-bg "#B77E64" #08
-set notification-warning-fg "#191919" #00
+set notification-warning-bg "#C4746E" #08
+set notification-warning-fg "#181616" #00
 
-set highlight-color "#D68C67" #0A
-set highlight-active-color "#66A5AD" #0D
+set highlight-color "#C4746E" #0A
+set highlight-active-color "#7AA89F" #0D
 
-set completion-highlight-fg "#191919" #02
-set completion-highlight-bg "#8BAE68" #0C
+set completion-highlight-fg "#181616" #02
+set completion-highlight-bg "#8A9A7B" #0C
 
-set completion-bg "#303030" #02
-set completion-fg "#C9C9C9" #0C
+set completion-bg "#181616" #02
+set completion-fg "#C5C9C5" #0C
 
-set notification-bg "#8BAE68" #0B
-set notification-fg "#191919" #00
+set notification-bg "#8A9A7B" #0B
+set notification-fg "#181616" #00
 
 set recolor "true"
-set recolor-lightcolor "#191919" #00
-set recolor-darkcolor "#C9C9C9" #01
+set recolor-lightcolor "#181616" #00
+set recolor-darkcolor "#C5C9C5" #01
 set recolor-reverse-video "true"
 set recolor-keephue "true"
 

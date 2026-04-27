@@ -10,23 +10,23 @@
 
 * {
     background: rgba(0,0,1,0.5);
-    foreground: #C9C9C9;
-    color0:     #191919;
-    color1:     #6099C0;
-    color2:     #6099C0;
-    color3:     #65B8C1;
-    color4:     #61ABDA;
-    color5:     #61ABDA;
-    color6:     #61ABDA;
-    color7:     #65B8C1;
-    color8:     #66A5AD;
-    color9:     #6099C0;
-    color10:    #6099C0;
-    color11:    #65B8C1;
-    color12:    #61ABDA;
-    color13:    #61ABDA;
-    color14:    #61ABDA;
-    color15:    #65B8C1;
+    foreground: #C5C9C5;
+    color0:     #181616;
+    color1:     #7FB4CA;
+    color2:     #7FB4CA;
+    color3:     #7FB4CA;
+    color4:     #7FB4CA;
+    color5:     #7FB4CA;
+    color6:     #7FB4CA;
+    color7:     #7FB4CA;
+    color8:     #7AA89F;
+    color9:     #7FB4CA;
+    color10:    #7FB4CA;
+    color11:    #7FB4CA;
+    color12:    #7FB4CA;
+    color13:    #7FB4CA;
+    color14:    #7FB4CA;
+    color15:    #7FB4CA;
 }
 
 * { border-width: 3px; }
@@ -58,9 +58,9 @@ window {
     spacing:                      0px;
     padding:                      0px;
     margin:                       0px; 
-    color:                        #C9C9C9;
+    color:                        #C5C9C5;
     border:                       @border-width;
-    border-color:                 #C9C9C9;
+    border-color:                 #C5C9C5;
     cursor:                       "default";
     transparency:                 "real";
     location:                     north;
