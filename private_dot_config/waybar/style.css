@@ -1,10 +1,10 @@
-@define-color foreground #C9C9C9;
-@define-color background #191919;
-@define-color comment #3D3839;
-@define-color border #404040;
-@define-color accent #DE6E7C;
-@define-color alt-accent #8BAE68;
-@define-color warning #8BAE68;
+@define-color foreground #C5C9C5;
+@define-color background #181616;
+@define-color comment #a6a69c;
+@define-color border #a6a69c;
+@define-color accent #72a7bc;
+@define-color alt-accent #8A9A7B;
+@define-color warning #E46876;
 
 * {
   background-color: @background;
@@ -13,7 +13,7 @@
   border: none;
   border-radius: 0;
   min-height: 0;
-  font-family: "IosevkaTerm Nerd Font";
+  font-family: "IosevkaTermSlab NF";
   font-size: 12px;
 }
 
@@ -100,12 +100,12 @@ tooltip {
 }
 
 #custom-screenrecording-indicator.active {
-  color: #b77e64;
+  color: #c4746e;
 }
 
 #custom-idle-indicator.active,
 #custom-notification-silencing-indicator.active {
-  color: #b77e64;
+  color: #c4746e;
 }
 
 #custom-voxtype {
@@ -114,7 +114,7 @@ tooltip {
 }
 
 #custom-voxtype.recording {
-  color: #b77e64;
+  color: #c4746e;
 }
 
 #battery.charging.charged,

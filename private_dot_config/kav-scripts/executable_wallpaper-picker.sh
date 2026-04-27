@@ -17,10 +17,10 @@ generate_thumbnail() {
 # Create shuffle icon thumbnail on the fly
 SHUFFLE_ICON="$CACHE_DIR/shuffle_thumbnail.png"
 # Create a properly sized shuffle icon thumbnail
-# magick -size "${THUMBNAIL_WIDTH}x${THUMBNAIL_HEIGHT}" xc:#191919 \
+# magick -size "${THUMBNAIL_WIDTH}x${THUMBNAIL_HEIGHT}" xc:#181616 \
 #     "$HOME/Repos/wallpaper-selector/assets/shuffle.png" -resize "120x120" -gravity center -composite \
 #     "$SHUFFLE_ICON"
-magick -size "${THUMBNAIL_WIDTH}x${THUMBNAIL_HEIGHT}" xc:#191919 \
+magick -size "${THUMBNAIL_WIDTH}x${THUMBNAIL_HEIGHT}" xc:#181616 \
   -gravity center -composite "$SHUFFLE_ICON"
 
 # Generate thumbnails and create menu items

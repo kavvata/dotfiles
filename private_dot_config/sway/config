@@ -6,10 +6,10 @@ gaps inner 4
 gaps outer 0
 default_border pixel 1
 default_floating_border pixel 1
-client.unfocused        #303030 #303030 #303030 #303030     #303030
-client.focused          #BBBBBB #BBBBBB #BBBBBB #BBBBBB     #BBBBBB
-client.urgent           #D68C67 #D68C67 #D68C67 #D68C67     #D68C67
-client.focused_inactive #303030 #303030 #303030 #303030     #303030
+client.unfocused        #181616 #181616 #181616 #181616     #181616
+client.focused          #C5C9C5 #C5C9C5 #C5C9C5 #C5C9C5     #C5C9C5
+client.urgent           #C4746E #C4746E #C4746E #C4746E     #C4746E
+client.focused_inactive #181616 #181616 #181616 #181616     #181616
 
 
 # Status Bar:
