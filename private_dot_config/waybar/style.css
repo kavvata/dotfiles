@@ -123,5 +123,5 @@ tooltip {
 }
 
 #battery.discharging.critical {
-  color: @accent;
+  color: @warning;
 }
