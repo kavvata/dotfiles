@@ -24,7 +24,7 @@
   },
   "ui_font_size": 14,
   "buffer_font_size": 13.0,
-  "buffer_font_family": "IoskeleyMono Nerd Font SemiCondensed",
+  "buffer_font_family": "IosevkaTermSlab NF",
   "theme": {
     "mode": "dark",
     "light": "One Light",
