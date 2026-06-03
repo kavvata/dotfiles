@@ -9,7 +9,7 @@ config.adjust_window_size_when_changing_font_size = false
 -- config.font = wezterm.font_with_fallback({ { family = "TX-02 Condensed", weight = "Regular" }, "TX02 Nerd Font Mono" })
 config.font_size = 9
 
-config.font = wezterm.font({ family = "JetBrainsMono Nerd Font", weight = "Regular" })
+config.font = wezterm.font({ family = "VictorMono Nerd Font", weight = "Regular" })
 -- config.font_rules = {
 -- 	{
 -- 		intensity = "Normal",
