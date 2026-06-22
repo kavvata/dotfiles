@@ -1,5 +1,6 @@
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv fish)"
 set -gx EDITOR nvim
+set -gx KUBECONFIG ~/.kube/config
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
