@@ -141,6 +141,13 @@
     },
     "on-click-right": "hyprlock",
   },
+  "custom/notification-silencing-indicator": {
+    "exec": "if makoctl mode | grep -q 'do-not-disturb'; then echo '{\"text\":\"\",\"class\":\"active\",\"tooltip\":\"Notifications muted\"}'; else echo '{\"text\":\"\",\"class\":\"default\",\"tooltip\":\"Notifications active\"}'; fi",
+    "on-click": "if makoctl mode | grep -q 'do-not-disturb'; then makoctl mode -r do-not-disturb; else makoctl mode -a do-not-disturb; fi",
+    "return-type": "json",
+    "interval": 5,
+    "tooltip": true,
+  },
   "group/tray-expander": {
     "orientation": "inherit",
     "drawer": {
