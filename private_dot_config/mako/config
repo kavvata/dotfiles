@@ -5,3 +5,6 @@ default-timeout=6000
 border-size=1
 border-radius=0
 border-color=#C5C9C5
+
+[mode=do-not-disturb]
+invisible=1
