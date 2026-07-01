@@ -24,3 +24,19 @@ window-rule {
 //     match app-id=r#"^chrome\-.*-Default$"#
 //     open-floating true
 // }
+
+// window-rule {
+//     match app-id="^kitty$"
+//     background-effect {
+//         blur true
+//         xray true // Uses a cheaper, highly efficient wallpaper-only blur
+//     }
+// }
+//
+// window-rule {
+//     match app-id="^zen$"
+//     background-effect {
+//         blur false
+//         xray false
+//     }
+// }
