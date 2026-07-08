@@ -24,8 +24,8 @@
 ;;(setq doom-font (font-spec :family "Fira Code" :size 12 :weight 'semi-light)
 ;;      doom-variable-pitch-font (font-spec :family "Fira Sans" :size 13))
 
-(setq doom-font (font-spec :family "JetBrainsMono Nerd Font" :size 12 :weight 'semi-light)
-      doom-variable-pitch-font (font-spec :family "JetBrainsMono Nerd Font" :size 13))
+(setq doom-font (font-spec :family "Iosevka Nerd Font" :size 13 :weight 'semi-light)
+      doom-variable-pitch-font (font-spec :family "Iosevka Nerd Font" :size 14))
 
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
 ;; up, `M-x eval-region' to execute elisp code, and 'M-x doom/reload-font' to
@@ -35,7 +35,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-one)
+(setq doom-theme 'doom-flatwhite)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -78,10 +78,6 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
-;; setting filetype extensions
-(add-to-list 'auto-mode-alist '("\\.puml\\'" . plantuml-mode))
-(setq plantuml-executable-path "/usr/bin/plantuml")
-    (setq plantuml-default-exec-mode 'executable)
 ;; jk to escape from insert mode
 (after! evil-escape
   (setq evil-escape-key-sequence "jk"))
