@@ -90,3 +90,7 @@
 
 ;; hledger-mode
 (add-to-list 'auto-mode-alist '("\\.journal\\'" . hledger-mode))
+
+;; enables ruff for python formatting
+(with-eval-after-load 'python
+  (set-formatter! 'ruff :modes '(python-mode python-ts-mode)))
