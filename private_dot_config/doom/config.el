@@ -35,7 +35,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-flatwhite)
+(setq doom-theme 'kanagawa-dragon)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -81,3 +81,12 @@
 ;; jk to escape from insert mode
 (after! evil-escape
   (setq evil-escape-key-sequence "jk"))
+
+;; shell configurations recommended by `doom doctor`
+(setq shell-file-name (executable-find "bash"))
+(setq-default vterm-shell "/run/current-system/sw/bin/fish")
+(setq-default explicit-shell-file-name "/run/current-system/sw/bin/fish")
+
+
+;; hledger-mode
+(add-to-list 'auto-mode-alist '("\\.journal\\'" . hledger-mode))
