@@ -3,7 +3,6 @@
 ;; Place your private configuration here! Remember, you do not need to run 'doom
 ;; sync' after modifying this file!
 
-
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets. It is optional.
 ;; (setq user-full-name "John Doe"
@@ -35,15 +34,16 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'kanagawa-dragon)
+(setq doom-theme 'doom-monokai-pro)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type 'relative)
 
+
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
-(setq org-directory "~/Documents/Notes/org/")
+(setq org-directory "~/Documents/Notes/MDBase/Org/")
 
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
@@ -84,13 +84,23 @@
 
 ;; shell configurations recommended by `doom doctor`
 (setq shell-file-name (executable-find "bash"))
-(setq-default vterm-shell "/run/current-system/sw/bin/fish")
-(setq-default explicit-shell-file-name "/run/current-system/sw/bin/fish")
+(setq-default explicit-shell-file-name (executable-find "bash"))
 
+(setq org-babel-sh-command "bash")
 
 ;; hledger-mode
 (add-to-list 'auto-mode-alist '("\\.journal\\'" . hledger-mode))
 
+
 ;; enables ruff for python formatting
 (with-eval-after-load 'python
   (set-formatter! 'ruff :modes '(python-mode python-ts-mode)))
+
+;; NOTE: Dashboard
+(setq fancy-splash-image "~/.config/doom/splash-images/doomacs.png")
+;;
+
+(setq +dashboard-functions '(+dashboard-widget-banner
+                             +dashboard-widget-shortmenu
+                             +dashboard-widget-loaded
+                             ))
