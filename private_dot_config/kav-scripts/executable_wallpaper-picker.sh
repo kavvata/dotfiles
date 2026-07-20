@@ -14,19 +14,15 @@ generate_thumbnail() {
   magick "$input" -thumbnail "${THUMBNAIL_WIDTH}x${THUMBNAIL_HEIGHT}^" -gravity center -extent "${THUMBNAIL_WIDTH}x${THUMBNAIL_HEIGHT}" "$output"
 }
 
-# Create shuffle icon thumbnail on the fly
 SHUFFLE_ICON="$CACHE_DIR/shuffle_thumbnail.png"
-# Create a properly sized shuffle icon thumbnail
-# magick -size "${THUMBNAIL_WIDTH}x${THUMBNAIL_HEIGHT}" xc:#181616 \
-#     "$HOME/Repos/wallpaper-selector/assets/shuffle.png" -resize "120x120" -gravity center -composite \
-#     "$SHUFFLE_ICON"
 magick -size "${THUMBNAIL_WIDTH}x${THUMBNAIL_HEIGHT}" xc:#181616 \
-  -gravity center -composite "$SHUFFLE_ICON"
+  -fill "#c0c0c0" -gravity center -pointsize 48 -annotate 0 "?" \
+  "$SHUFFLE_ICON"
 
 # Generate thumbnails and create menu items
 generate_menu() {
   # Add random/shuffle option with a name that sorts first (using ! prefix)
-  echo -en "img:$SHUFFLE_ICON\x00info:!Random Wallpaper\x1fRANDOM\n"
+  printf 'img:%s\n' "$SHUFFLE_ICON"
 
   # Then add all wallpapers
   for img in "$WALLPAPER_DIR"/*.{jpg,jpeg,png}; do
@@ -41,8 +37,8 @@ generate_menu() {
       generate_thumbnail "$img" "$thumbnail"
     fi
 
-    # Output menu item (filename and path)
-    echo -en "img:$thumbnail\x00info:$(basename "$img")\x1f$img\n"
+    # Output menu item
+    printf 'img:%s\n' "$thumbnail"
   done
 }
 
