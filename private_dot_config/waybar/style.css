@@ -1,5 +1,5 @@
 @define-color foreground #C5C9C5;
-@define-color background #181616;
+@define-color background rgba(24, 22, 22, 0.9);
 @define-color comment #a6a69c;
 @define-color border #a6a69c;
 @define-color accent #72a7bc;
@@ -7,15 +7,17 @@
 @define-color warning #E46876;
 
 * {
-  background-color: @background;
   color: @foreground;
-
   border: none;
   border-radius: 0;
   min-height: 0;
   font-family: "Iosevka Nerd Font";
   font-size: 12px;
   font-weight: 500;
+}
+
+window#waybar {
+  background-color: @background;
 }
 
 .modules-left {
