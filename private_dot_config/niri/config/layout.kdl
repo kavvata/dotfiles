@@ -4,6 +4,10 @@
 
 layer-rule {
     match namespace="waybar"
+    background-effect {
+        blur true
+        xray true // Uses a cheaper, highly efficient wallpaper-only blur
+    }
 }
 
 overview {
@@ -20,7 +24,7 @@ layer-rule {
 }
 
 window-rule {
-    geometry-corner-radius 0
+    geometry-corner-radius 3
     clip-to-geometry true
 }
 
@@ -43,7 +47,6 @@ layout {
 
     default-column-width { proportion 0.5; }
 
-    // `draw-border-with-background`.
 
     // You can change how the focus ring looks.
     focus-ring {

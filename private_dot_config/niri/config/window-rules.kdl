@@ -33,10 +33,13 @@ window-rule {
     }
 }
 
-// window-rule {
-//     match app-id="zen"
-//     background-effect {
-//         blur true
-//         xray true
-//     }
-// }
+
+window-rule {
+    match app-id="zen"
+    draw-border-with-background false
+    default-column-width { proportion 0.7; }
+    background-effect {
+        blur true
+        xray true
+    }
+}
