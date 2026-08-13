@@ -14,7 +14,7 @@ generate_thumbnail() {
   magick "$input" -thumbnail "${THUMBNAIL_WIDTH}x${THUMBNAIL_HEIGHT}^" -gravity center -extent "${THUMBNAIL_WIDTH}x${THUMBNAIL_HEIGHT}" "$output"
 }
 
-SHUFFLE_ICON="$CACHE_DIR/shuffle_thumbnail.png"
+SHUFFLE_ICON="$WALLPAPER_DIR/shuffle_thumbnail.png"
 magick -size "${THUMBNAIL_WIDTH}x${THUMBNAIL_HEIGHT}" xc:#181616 \
   -fill "#c0c0c0" -gravity center -pointsize 48 -annotate 0 "?" \
   "$SHUFFLE_ICON"
