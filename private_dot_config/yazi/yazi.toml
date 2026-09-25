@@ -1,4 +1,4 @@
-[opener]
-open = [
-  { run = 'xdg-open "$@" &', desc = "Open" },
-]
+# [opener]
+# open = [
+#   { run = 'xdg-open "$@" &', desc = "Open" },
+# ]
