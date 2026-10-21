@@ -30,12 +30,24 @@ window#waybar {
 #workspaces button {
   all: initial;
   padding: 0 6px;
-  margin: 0 1.5px;
+  margin: 3px 1.5px;
   min-width: 9px;
 }
 
 #workspaces button.empty {
   opacity: 0.5;
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+  background-color: @foreground;
+  border-radius: 4px;
+  padding: 2px 8px;
+}
+
+#workspaces button.focused label,
+#workspaces button.active label {
+  color: @background;
 }
 
 #cpu,
