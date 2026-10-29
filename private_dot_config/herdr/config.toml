@@ -1,1 +1,11 @@
 onboarding = false
+
+[theme]
+name = "kanagawa"
+auto_switch = false
+
+[ui]
+status_indicators = "dots"
+
+[ui.toast]
+delivery = "system"
