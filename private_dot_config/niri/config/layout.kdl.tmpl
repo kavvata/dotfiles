@@ -11,7 +11,7 @@ layer-rule {
 }
 
 overview {
-  backdrop-color "#181616"
+  backdrop-color "{{ .colorscheme.background }}"
   workspace-shadow {
       off
   }
@@ -55,9 +55,9 @@ layout {
         width 1
 
 
-        active-color "#C5C9C5"
+        active-color "{{ .colorscheme.foreground }}"
 
-        inactive-color "#181616"
+        inactive-color "{{ .colorscheme.background }}"
 
         urgent-color "#C4746E"
 
@@ -71,7 +71,7 @@ layout {
         on
 
         width 1
-        active-color "#C5C9C5"
+        active-color "{{ .colorscheme.foreground }}"
         // inactive-color "#a6a69c"
         
         urgent-color "#C4746E"

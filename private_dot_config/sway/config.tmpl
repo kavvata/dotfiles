@@ -6,10 +6,10 @@ gaps inner 4
 gaps outer 0
 default_border pixel 1
 default_floating_border pixel 1
-client.unfocused        #181616 #181616 #181616 #181616     #181616
-client.focused          #C5C9C5 #C5C9C5 #C5C9C5 #C5C9C5     #C5C9C5
+client.unfocused        {{ .colorscheme.background }} {{ .colorscheme.background }} {{ .colorscheme.background }} {{ .colorscheme.background }}     {{ .colorscheme.background }}
+client.focused          {{ .colorscheme.foreground }} {{ .colorscheme.foreground }} {{ .colorscheme.foreground }} {{ .colorscheme.foreground }}     {{ .colorscheme.foreground }}
 client.urgent           #C4746E #C4746E #C4746E #C4746E     #C4746E
-client.focused_inactive #181616 #181616 #181616 #181616     #181616
+client.focused_inactive {{ .colorscheme.background }} {{ .colorscheme.background }} {{ .colorscheme.background }} {{ .colorscheme.background }}     {{ .colorscheme.background }}
 
 
 # Status Bar:
