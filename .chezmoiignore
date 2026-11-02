@@ -3,3 +3,4 @@ systemspace-configs
 setup-script
 plymouth-theme
 replace-colors.sh
+chezmoi.example.yaml

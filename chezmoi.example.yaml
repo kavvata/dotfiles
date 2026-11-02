@@ -1,0 +1,14 @@
+data:
+  colorscheme:
+    name: "kanagawa_dragon"
+    foreground: "#C5C9C5"
+    foreground_rgba: "197, 201, 197"
+    background: "#181616"
+    background_rgba: "24, 22, 22"
+    comment: "#a6a69c"
+    border: "#a6a69c"
+    accent: "#72a7bc"
+    alt-accent: "#8A9A7B"
+    warning: "#E46876"
+    red: "#C4746E"
+    selection_background: "#2D4F67"
