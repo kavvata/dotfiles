@@ -39,15 +39,11 @@ window#waybar {
 }
 
 #workspaces button.focused,
-#workspaces button.active {
-  background-color: @foreground;
-  border-radius: 4px;
-  padding: 2px 8px;
-}
-
+#workspaces button.active,
 #workspaces button.focused label,
 #workspaces button.active label {
-  color: @background;
+  color: @accent;
+  font-weight: bold;
 }
 
 #cpu,
