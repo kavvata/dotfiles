@@ -10,8 +10,8 @@
 
 * {
     background: rgba(0,0,1,0.5);
-    foreground: {{ .colorscheme.foreground }};
-    color0:     {{ .colorscheme.background }};
+    foreground: {{ .colorscheme.colors.foreground }};
+    color0:     {{ .colorscheme.colors.background }};
     color1:     #7FB4CA;
     color2:     #7FB4CA;
     color3:     #7FB4CA;
@@ -58,9 +58,9 @@ window {
     spacing:                      0px;
     padding:                      0px;
     margin:                       0px; 
-    color:                        {{ .colorscheme.foreground }};
+    color:                        {{ .colorscheme.colors.foreground }};
     border:                       @border-width;
-    border-color:                 {{ .colorscheme.foreground }};
+    border-color:                 {{ .colorscheme.colors.foreground }};
     cursor:                       "default";
     transparency:                 "real";
     location:                     north;

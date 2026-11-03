@@ -15,7 +15,7 @@ generate_thumbnail() {
 }
 
 SHUFFLE_ICON="$WALLPAPER_DIR/shuffle_thumbnail.png"
-magick -size "${THUMBNAIL_WIDTH}x${THUMBNAIL_HEIGHT}" xc:{{ .colorscheme.background }} \
+magick -size "${THUMBNAIL_WIDTH}x${THUMBNAIL_HEIGHT}" xc:{{ .colorscheme.colors.background }} \
   -fill "#c0c0c0" -gravity center -pointsize 48 -annotate 0 "?" \
   "$SHUFFLE_ICON"
 

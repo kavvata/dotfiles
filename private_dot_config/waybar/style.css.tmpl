@@ -1,10 +1,10 @@
-@define-color foreground {{ .colorscheme.foreground }};
-@define-color background rgba({{ .colorscheme.background_rgba }}, 0.9);
-@define-color comment {{ .colorscheme.comment }};
-@define-color border {{ .colorscheme.border }};
-@define-color accent {{ .colorscheme.accent }};
-@define-color alt-accent {{ index .colorscheme "alt-accent" }};
-@define-color warning {{ .colorscheme.warning }};
+@define-color foreground {{ .colorscheme.colors.foreground }};
+@define-color background rgba({{ .colorscheme.colors.background_rgba }}, 0.9);
+@define-color comment {{ .colorscheme.colors.comment }};
+@define-color border {{ .colorscheme.colors.border }};
+@define-color accent {{ .colorscheme.colors.accent }};
+@define-color alt_accent {{ .colorscheme.colors.alt_accent }};
+@define-color warning {{ .colorscheme.colors.warning }};
 
 * {
   color: @foreground;
@@ -133,7 +133,7 @@ tooltip {
 
 #battery.charging.charged,
 #battery.full {
-  color: @alt-accent;
+  color: @alt_accent;
 }
 
 #battery.discharging.critical {

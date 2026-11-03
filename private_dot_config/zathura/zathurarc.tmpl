@@ -19,36 +19,36 @@ set selection-clipboard clipboard
 # zathurarc-dark
 
 set font "JetBrainsMono Nerd Font 9"
-set default-bg "{{ .colorscheme.background }}" #00
-set default-fg "{{ .colorscheme.foreground }}" #01
+set default-bg "{{ .colorscheme.colors.background }}" #00
+set default-fg "{{ .colorscheme.colors.foreground }}" #01
 
-set statusbar-fg "{{ .colorscheme.foreground }}" #04
-set statusbar-bg "{{ .colorscheme.background }}" #01
+set statusbar-fg "{{ .colorscheme.colors.foreground }}" #04
+set statusbar-bg "{{ .colorscheme.colors.background }}" #01
 
-set inputbar-bg "{{ .colorscheme.background }}" #00 currently not used
-set inputbar-fg "{{ .colorscheme.foreground }}" #02
+set inputbar-bg "{{ .colorscheme.colors.background }}" #00 currently not used
+set inputbar-fg "{{ .colorscheme.colors.foreground }}" #02
 
 set notification-error-bg "#C4746E" #08
-set notification-error-fg "{{ .colorscheme.background }}" #00
+set notification-error-fg "{{ .colorscheme.colors.background }}" #00
 
 set notification-warning-bg "#C4746E" #08
-set notification-warning-fg "{{ .colorscheme.background }}" #00
+set notification-warning-fg "{{ .colorscheme.colors.background }}" #00
 
 set highlight-color "#C4746E" #0A
 set highlight-active-color "#7AA89F" #0D
 
-set completion-highlight-fg "{{ .colorscheme.background }}" #02
-set completion-highlight-bg "{{ index .colorscheme "alt-accent" }}" #0C
+set completion-highlight-fg "{{ .colorscheme.colors.background }}" #02
+set completion-highlight-bg "{{ .colorscheme.colors.alt_accent }}" #0C
 
-set completion-bg "{{ .colorscheme.background }}" #02
-set completion-fg "{{ .colorscheme.foreground }}" #0C
+set completion-bg "{{ .colorscheme.colors.background }}" #02
+set completion-fg "{{ .colorscheme.colors.foreground }}" #0C
 
-set notification-bg "{{ index .colorscheme "alt-accent" }}" #0B
-set notification-fg "{{ .colorscheme.background }}" #00
+set notification-bg "{{ .colorscheme.colors.alt_accent }}" #0B
+set notification-fg "{{ .colorscheme.colors.background }}" #00
 
 set recolor "true"
-set recolor-lightcolor "{{ .colorscheme.background }}" #00
-set recolor-darkcolor "{{ .colorscheme.foreground }}" #01
+set recolor-lightcolor "{{ .colorscheme.colors.background }}" #00
+set recolor-darkcolor "{{ .colorscheme.colors.foreground }}" #01
 set recolor-reverse-video "true"
 set recolor-keephue "true"
 
